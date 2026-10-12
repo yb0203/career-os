@@ -1,0 +1,98 @@
+# Tier-1 watchlist: companies with a public Greenhouse / Lever / Ashby board.
+# Every slug below was verified live on 2026-10-12. Add a company = add one entry.
+# Check a new slug with:  python -m pipeline.probe <slug>
+
+companies:
+  - {name: "Anthropic", ats: greenhouse, slug: anthropic}
+  - {name: "OpenAI", ats: ashby, slug: openai}
+  - {name: "Groww", ats: greenhouse, slug: groww}
+  - {name: "CRED", ats: lever, slug: cred}
+  - {name: "Meesho", ats: lever, slug: meesho}
+  - {name: "Sarvam AI", ats: ashby, slug: sarvam}
+  - {name: "Oscilar", ats: ashby, slug: oscilar}
+  - {name: "Drivetrain", ats: lever, slug: drivetrain}
+  - {name: "Notion", ats: ashby, slug: notion}
+  - {name: "Figma", ats: greenhouse, slug: figma}
+  - {name: "Stripe", ats: greenhouse, slug: stripe}
+  - {name: "Plaid", ats: ashby, slug: plaid}
+  - {name: "Ramp", ats: ashby, slug: ramp}
+  - {name: "Brex", ats: greenhouse, slug: brex}
+  - {name: "Mercury", ats: greenhouse, slug: mercury}
+  - {name: "Remote", ats: greenhouse, slug: remote}
+  - {name: "Gusto", ats: greenhouse, slug: gusto}
+  - {name: "Zapier", ats: ashby, slug: zapier}
+  - {name: "Airtable", ats: greenhouse, slug: airtable}
+  - {name: "Vercel", ats: greenhouse, slug: vercel}
+  - {name: "Supabase", ats: ashby, slug: supabase}
+  - {name: "Linear", ats: ashby, slug: linear}
+  - {name: "PostHog", ats: ashby, slug: posthog}
+  - {name: "Cohere", ats: ashby, slug: cohere}
+  - {name: "Perplexity", ats: ashby, slug: perplexity}
+  - {name: "ElevenLabs", ats: ashby, slug: elevenlabs}
+  - {name: "Harvey", ats: ashby, slug: harvey}
+  - {name: "Sierra", ats: ashby, slug: sierra}
+  - {name: "Decagon", ats: ashby, slug: decagon}
+  - {name: "Cresta", ats: greenhouse, slug: cresta}
+  - {name: "Attio", ats: ashby, slug: attio}
+  - {name: "Hightouch", ats: ashby, slug: hightouch}
+  - {name: "Airbyte", ats: ashby, slug: airbyte}
+  - {name: "Fivetran", ats: greenhouse, slug: fivetran}
+  - {name: "Hex", ats: ashby, slug: hex}
+  - {name: "Amplitude", ats: ashby, slug: amplitude}
+  - {name: "Mixpanel", ats: greenhouse, slug: mixpanel}
+  - {name: "Intercom", ats: greenhouse, slug: intercom}
+  - {name: "Duolingo", ats: greenhouse, slug: duolingo}
+  - {name: "Coursera", ats: greenhouse, slug: coursera}
+  - {name: "slice", ats: greenhouse, slug: slice}
+  - {name: "Paytm", ats: lever, slug: paytm}
+  - {name: "Observe.AI", ats: greenhouse, slug: observeai}
+  - {name: "SpotDraft", ats: ashby, slug: spotdraft}
+  - {name: "Atlan", ats: ashby, slug: atlan}
+  - {name: "Hevo Data", ats: lever, slug: hevodata}
+  - {name: "Mindtickle", ats: lever, slug: mindtickle}
+  - {name: "Zeta", ats: lever, slug: zeta}
+  - {name: "FamPay", ats: lever, slug: fampay}
+  - {name: "100ms", ats: lever, slug: 100ms}
+  - {name: "Character.AI", ats: ashby, slug: character}
+  - {name: "Runway", ats: ashby, slug: runway}
+  - {name: "Typeface", ats: greenhouse, slug: typeface}
+  - {name: "Replit", ats: ashby, slug: replit}
+  - {name: "Cursor", ats: ashby, slug: cursor}
+  - {name: "Cognition", ats: ashby, slug: cognition}
+  - {name: "Lovable", ats: ashby, slug: lovable}
+  - {name: "StackBlitz", ats: greenhouse, slug: stackblitz}
+  - {name: "n8n", ats: ashby, slug: n8n}
+  - {name: "Relevance AI", ats: ashby, slug: relevanceai}
+  - {name: "LangChain", ats: ashby, slug: langchain}
+  - {name: "LlamaIndex", ats: ashby, slug: llamaindex}
+  - {name: "Pinecone", ats: ashby, slug: pinecone}
+  - {name: "Weaviate", ats: ashby, slug: weaviate}
+  - {name: "Arize AI", ats: greenhouse, slug: arizeai}
+  - {name: "Galileo", ats: greenhouse, slug: galileo}
+  - {name: "Patronus AI", ats: ashby, slug: patronus}
+  - {name: "Braintrust", ats: ashby, slug: braintrust}
+  - {name: "Scale AI", ats: greenhouse, slug: scaleai}
+  - {name: "Labelbox", ats: greenhouse, slug: labelbox}
+  - {name: "Turing", ats: greenhouse, slug: turing}
+  - {name: "Mercor", ats: ashby, slug: mercor}
+  - {name: "Toptal", ats: lever, slug: toptal}
+  - {name: "Andela", ats: ashby, slug: andela}
+  - {name: "Airwallex", ats: ashby, slug: airwallex}
+  - {name: "Wise", ats: greenhouse, slug: wise}
+  - {name: "Monzo", ats: greenhouse, slug: monzo}
+  - {name: "Adyen", ats: greenhouse, slug: adyen}
+  - {name: "GoCardless", ats: greenhouse, slug: gocardless}
+  - {name: "Payoneer", ats: greenhouse, slug: payoneer}
+  - {name: "Gainsight", ats: ashby, slug: gainsight}
+  - {name: "Postscript", ats: greenhouse, slug: postscript}
+  - {name: "Instacart", ats: greenhouse, slug: instacart}
+  - {name: "Coinbase", ats: greenhouse, slug: coinbase}
+  - {name: "Fireblocks", ats: greenhouse, slug: fireblocks}
+  - {name: "Alchemy", ats: ashby, slug: alchemy}
+  - {name: "Consensys", ats: greenhouse, slug: consensys}
+  - {name: "BitGo", ats: greenhouse, slug: bitgo}
+  - {name: "Anchorage Digital", ats: lever, slug: anchorage}
+  - {name: "MoonPay", ats: lever, slug: moonpay}
+  - {name: "Ledger", ats: ashby, slug: ledger}
+  - {name: "Tide", ats: greenhouse, slug: tide}
+  - {name: "Cube", ats: ashby, slug: cube}

@@ -1,0 +1,118 @@
+# Role lanes, gates and scoring weights. Edit here — no code changes needed.
+
+lanes:
+  growth_strategy:
+    label: Growth & Strategy
+    titles:
+      - founder's office
+      - founders office
+      - chief of staff
+      - growth
+      - strategy
+      - bizops
+      - business operations
+      - strategy & operations
+      - strategy and operations
+      - gtm
+      - go-to-market
+      - revenue operations
+      - deployment strategist
+      - deployment lead
+  ai_pm:
+    label: AI PM / TPM
+    titles:
+      - product manager
+      - product lead
+      - product owner
+      - technical program manager
+      - ai pm
+      - product operations
+      - solutions engineer
+      - solutions consultant
+      - forward deployed
+  fractional:
+    label: Fractional / Contract
+    titles:
+      - fractional
+      - contract
+      - part-time
+      - part time
+      - freelance
+    employment_types:
+      - contract
+      - parttime
+      - part-time
+      - part time
+      - temporary
+
+# Titles containing any of these are dropped (too senior, or not a target function).
+exclude_titles:
+  - director
+  - vice president
+  - " vp"
+  - "vp "
+  - head of
+  - principal
+  - staff
+  - senior manager
+  - group product
+  - engineer,
+  - software engineer
+  - designer
+  - intern
+  - recruiter
+  - account executive
+  - sales development
+  - sales representative
+  - sales executive
+  - marketer
+  - marketing manager
+  - administrator
+  - analyst, growth  # data-analyst roles under a growth team
+
+gates:
+  max_age_days: 14
+  max_years_experience: 5
+  # Accept if location text matches any of these
+  location_allow:
+    - bangalore
+    - bengaluru
+    - india
+    - anywhere
+    - worldwide
+    - global
+    - apac
+    - asia
+  # Remote roles restricted to these regions are rejected
+  remote_region_block:
+    - us only
+    - us-only
+    - united states only
+    - must be based in the us
+    - canada only
+    - eu only
+
+scoring:
+  p0: 80
+  p1: 65
+  keywords:  # +2 each in the description, capped at 10
+    - llm
+    - generative ai
+    - genai
+    - agent
+    - evals
+    - fintech
+    - bfsi
+    - banking
+    - payments
+    - compliance
+    - 0 to 1
+    - 0-to-1
+    - zero to one
+    - growth
+    - activation
+    - onboarding
+    - edtech
+    - automation
+    - early-stage
+    - seed

@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+# Private data never lives here: contacts, emails, tracker, credentials
+*credentials*.json
+*token*.json
+private/
