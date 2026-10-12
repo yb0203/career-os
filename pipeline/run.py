@@ -10,7 +10,6 @@ import argparse
 import collections
 import concurrent.futures as cf
 import csv
-import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -53,18 +52,14 @@ def collect(watchlist: list[dict], sources: dict, terms: list[str]):
     return jobs, errors, counts
 
 
-def norm(text: str) -> str:
-    return re.sub(r"[^a-z0-9]", "", text.lower())
-
-
 def dedupe(jobs: list[Job]) -> list[Job]:
     """Same company + title from several sources -> keep the most trustworthy copy."""
     def rank(j: Job):
         return (j.source not in ATS, j.posted_at is None, -len(j.description))
 
-    best: dict[tuple, Job] = {}
+    best: dict[str, Job] = {}
     for j in sorted(jobs, key=rank):
-        key = (norm(j.company), norm(j.title))
+        key = j.id
         if key not in best:
             best[key] = j
         else:
@@ -94,7 +89,7 @@ def write_outputs(kept: list[Job], scanned: int, counts: collections.Counter,
                   errors: list[str], dropped_dead: int) -> None:
     OUT.mkdir(exist_ok=True)
     kept.sort(key=lambda j: (-j.score, j.age_days if j.age_days is not None else 99))
-    fields = ["priority", "score", "lane", "company", "title", "location", "posted_at",
+    fields = ["id", "priority", "score", "lane", "company", "title", "location", "posted_at",
               "source", "url", "employment_type", "remote", "reasons"]
     with (OUT / "jobs.csv").open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")

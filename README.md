@@ -45,7 +45,20 @@ watchlist.yaml + config/sources.yaml ──► 14 sources in parallel
                         │  lane 35 · exact title 5 · location 20 · freshness 15 · seniority 15 · keywords 10
                         ▼
           output/jobs.csv  +  output/digest.md   (committed daily by GitHub Actions)
+                        │
+                        ▼
+          Google Sheet "Openings" tab (two-way sync) + "Summary" tab
 ```
+
+### Google Sheet sync
+
+`python -m pipeline.sheets` upserts every kept role into a private Google Sheet, keyed by a stable job ID (company + title).
+
+- **The sync owns** Priority, Score, Company, Role (linked), Lane, Location, Posted, Source, Why, Open, First/Last seen.
+- **I own** `Status` (New → Shortlisted → Applied → Interviewing → Offer / Rejected / Skip), `Notes`, and any column I add. These are read back and preserved on every run.
+- Roles that drop out of the feed stay with `Open = No`, never deleted, unless untouched (`New`) for 30 days.
+- Scraped text is escaped so it can never run as a sheet formula.
+- Runs daily in GitHub Actions with a service-account key (`GOOGLE_SERVICE_ACCOUNT_JSON` secret), or locally with your `gcloud` login.
 
 **P0 = apply today**: fresh, reachable location, target title. Roles with no post date (Instahyre, Cutshort, YC) are capped at P1 until verified.
 
