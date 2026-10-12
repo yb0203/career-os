@@ -1,12 +1,16 @@
-"""Daily run: fetch watchlist boards -> gates -> score -> output/jobs.csv + output/digest.md
+"""Daily run: all sources -> gates -> dedupe -> score -> live-check -> output/jobs.csv + output/digest.md
 
-    python -m pipeline.run [--limit N] [--company NAME]
+    python -m pipeline.run                     # everything
+    python -m pipeline.run --only linkedin yc  # just these sources ("ats" = company watchlist)
+    python -m pipeline.run --company Zeta      # one watchlist company
 """
 from __future__ import annotations
 
 import argparse
+import collections
 import concurrent.futures as cf
 import csv
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -15,33 +19,79 @@ import yaml
 from pipeline import gates, scorer
 from pipeline.fetchers import FETCHERS
 from pipeline.models import Job
+from pipeline.sources import SOURCES, session
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "output"
+ATS = set(FETCHERS)
+CLOSED_MARKERS = ("no longer accepting applications", "this job is no longer available",
+                  "job has expired", "position has been filled", "job not found")
 
 
 def load_yaml(name: str) -> dict:
     return yaml.safe_load((ROOT / name).read_text())
 
 
-def fetch_all(watchlist: list[dict]) -> tuple[list[Job], list[str]]:
-    jobs, errors = [], []
+def collect(watchlist: list[dict], sources: dict, terms: list[str]):
+    """Run every ATS board and every enabled source in parallel."""
+    tasks = {f"ats:{e['name']}": (FETCHERS[e["ats"]], (e["name"], e["slug"])) for e in watchlist}
+    for name, params in sources.items():
+        tasks[name] = (SOURCES[name], (params, terms))
 
-    def one(entry):
-        return entry, FETCHERS[entry["ats"]](entry["name"], entry["slug"])
-
-    with cf.ThreadPoolExecutor(max_workers=12) as pool:
-        futures = [pool.submit(one, e) for e in watchlist]
+    jobs, errors, counts = [], [], collections.Counter()
+    with cf.ThreadPoolExecutor(max_workers=16) as pool:
+        futures = {pool.submit(fn, *args): name for name, (fn, args) in tasks.items()}
         for fut in cf.as_completed(futures):
+            name = futures[fut]
             try:
-                _, got = fut.result()
-                jobs.extend(got)
-            except Exception as exc:  # one bad board shouldn't sink the run
-                errors.append(str(exc)[:200])
-    return jobs, errors
+                got = fut.result()
+            except Exception as exc:  # one broken source shouldn't sink the run
+                errors.append(f"{name}: {str(exc)[:160]}")
+                continue
+            jobs.extend(got)
+            counts["ats" if name.startswith("ats:") else name] += len(got)
+    return jobs, errors, counts
 
 
-def write_outputs(kept: list[Job], scanned: int, boards: int, errors: list[str]) -> None:
+def norm(text: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
+def dedupe(jobs: list[Job]) -> list[Job]:
+    """Same company + title from several sources -> keep the most trustworthy copy."""
+    def rank(j: Job):
+        return (j.source not in ATS, j.posted_at is None, -len(j.description))
+
+    best: dict[tuple, Job] = {}
+    for j in sorted(jobs, key=rank):
+        key = (norm(j.company), norm(j.title))
+        if key not in best:
+            best[key] = j
+        else:
+            best[key].reasons.append(f"also on {j.source.split(':')[0]}")
+    return list(best.values())
+
+
+def is_live(job: Job) -> bool:
+    try:
+        r = session().get(job.url, timeout=20, allow_redirects=True)
+    except Exception:
+        return False
+    if r.status_code in (403, 429, 999):  # blocked / rate-limited: can't tell, so keep it
+        return True
+    return r.status_code < 400 and not any(m in r.text.lower() for m in CLOSED_MARKERS)
+
+
+def verify_live(jobs: list[Job]) -> list[Job]:
+    """ATS API postings are live by definition; check everything else."""
+    to_check = [j for j in jobs if j.source not in ATS]
+    with cf.ThreadPoolExecutor(max_workers=12) as pool:
+        dead = {id(j) for j, ok in zip(to_check, pool.map(is_live, to_check)) if not ok}
+    return [j for j in jobs if id(j) not in dead]
+
+
+def write_outputs(kept: list[Job], scanned: int, counts: collections.Counter,
+                  errors: list[str], dropped_dead: int) -> None:
     OUT.mkdir(exist_ok=True)
     kept.sort(key=lambda j: (-j.score, j.age_days if j.age_days is not None else 99))
     fields = ["priority", "score", "lane", "company", "title", "location", "posted_at",
@@ -53,24 +103,33 @@ def write_outputs(kept: list[Job], scanned: int, boards: int, errors: list[str])
             w.writerow(j.to_row())
 
     today = datetime.now(timezone.utc).date().isoformat()
+    by_source = collections.Counter(j.source.split(":")[0] for j in kept)
     lines = [
         f"# Daily job digest — {today}",
         "",
-        f"Scanned **{scanned}** live postings across **{boards}** company boards → "
-        f"**{len(kept)}** passed the gates "
-        f"({sum(j.priority == 'P0' for j in kept)} P0, {sum(j.priority == 'P1' for j in kept)} P1).",
+        f"Scanned **{scanned:,}** live postings from **{len(counts)}** sources → "
+        f"**{len(kept)}** passed every gate "
+        f"({sum(j.priority == 'P0' for j in kept)} P0, {sum(j.priority == 'P1' for j in kept)} P1, "
+        f"{sum(j.priority == 'P2' for j in kept)} P2). {dropped_dead} dead links removed.",
         "",
-        "| Pri | Score | Lane | Company | Role | Location | Posted |",
-        "|---|---|---|---|---|---|---|",
+        "| Pri | Score | Lane | Company | Role | Location | Posted | Source |",
+        "|---|---|---|---|---|---|---|---|",
     ]
     for j in kept:
         if j.priority == "P2":
             continue
         posted = j.posted_at.date().isoformat() if j.posted_at else "?"
+        loc = j.location if len(j.location) <= 60 else j.location[:57] + "…"
         lines.append(f"| {j.priority} | {j.score} | {j.lane} | {j.company} | "
-                     f"[{j.title}]({j.url}) | {j.location} | {posted} |")
+                     f"[{j.title}]({j.url}) | {loc} | {posted} | {j.source.split(':')[0]} |")
+    lines += ["", "P2 roles are in [`jobs.csv`](jobs.csv).", "",
+              "<details><summary>Postings scanned / kept per source</summary>", "",
+              "| Source | Scanned | Kept |", "|---|---|---|"]
+    for name, n in counts.most_common():
+        lines.append(f"| {name} | {n:,} | {by_source.get(name, 0) + (sum(by_source[a] for a in ATS) if name == 'ats' else 0)} |")
+    lines += ["", "</details>"]
     if errors:
-        lines += ["", f"<details><summary>{len(errors)} board errors</summary>", ""]
+        lines += ["", f"<details><summary>{len(errors)} source errors</summary>", ""]
         lines += [f"- {e}" for e in errors]
         lines += ["", "</details>"]
     (OUT / "digest.md").write_text("\n".join(lines) + "\n")
@@ -78,22 +137,35 @@ def write_outputs(kept: list[Job], scanned: int, boards: int, errors: list[str])
 
 def main(argv=None) -> list[Job]:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--limit", type=int, help="only the first N watchlist companies")
-    ap.add_argument("--company", help="only this company (name match)")
+    ap.add_argument("--only", nargs="+", help="source names to run; 'ats' = the company watchlist")
+    ap.add_argument("--company", help="only this watchlist company (implies --only ats)")
+    ap.add_argument("--no-verify", action="store_true", help="skip the live-URL check")
     args = ap.parse_args(argv)
 
     cfg = load_yaml("config/lanes.yaml")
+    src_cfg = load_yaml("config/sources.yaml")
     watchlist = load_yaml("watchlist.yaml")["companies"]
-    if args.company:
-        watchlist = [c for c in watchlist if c["name"].lower() == args.company.lower()]
-    if args.limit:
-        watchlist = watchlist[: args.limit]
+    sources = {k: v for k, v in src_cfg["sources"].items() if v.get("enabled", True)}
 
-    jobs, errors = fetch_all(watchlist)
-    kept = [scorer.score(j, cfg) for j in jobs if gates.apply(j, cfg)]
-    write_outputs(kept, len(jobs), len(watchlist), errors)
-    print(f"{len(jobs)} postings from {len(watchlist)} boards -> {len(kept)} kept "
-          f"({sum(j.priority == 'P0' for j in kept)} P0). See output/digest.md")
+    only = set(args.only or [])
+    if args.company:
+        only = {"ats"}
+        watchlist = [c for c in watchlist if c["name"].lower() == args.company.lower()]
+    if only:
+        sources = {k: v for k, v in sources.items() if k in only}
+        if "ats" not in only:
+            watchlist = []
+
+    jobs, errors, counts = collect(watchlist, sources, src_cfg["search_terms"])
+    passed = dedupe([j for j in jobs if gates.apply(j, cfg)])
+    live = passed if args.no_verify else verify_live(passed)
+    kept = [scorer.score(j, cfg) for j in live]
+    write_outputs(kept, len(jobs), counts, errors, len(passed) - len(live))
+    print(f"{len(jobs):,} postings from {len(counts)} sources -> {len(kept)} kept "
+          f"({sum(j.priority == 'P0' for j in kept)} P0, {sum(j.priority == 'P1' for j in kept)} P1), "
+          f"{len(passed) - len(live)} dead links dropped. See output/digest.md")
+    for e in errors:
+        print("  error:", e)
     return kept
 
 

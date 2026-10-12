@@ -66,6 +66,23 @@ def test_min_years_required():
     assert gates.min_years_required("We have 10 years of history") is None
 
 
+def test_undated_job_never_p0():
+    j = job(desc="LLM agents for payments in fintech")
+    j.posted_at = None
+    assert scorer.score(j, CFG).priority != "P0"
+
+
+def test_dedupe_prefers_ats_copy():
+    from pipeline.run import dedupe
+    li = job(title="Product Manager II")
+    li.source = "linkedin"
+    ats = job(title="Product Manager II", desc="full JD")
+    ats.source = "lever"
+    kept = dedupe([li, ats])
+    assert len(kept) == 1 and kept[0].source == "lever"
+    assert "also on linkedin" in kept[0].reasons
+
+
 def test_score_bands():
     fresh_blr = scorer.score(job(desc="LLM agents for payments"), CFG)
     assert fresh_blr.score >= CFG["scoring"]["p0"] and fresh_blr.priority == "P0"

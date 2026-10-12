@@ -1,15 +1,28 @@
 """0-100 fit score for jobs that passed the gates.
 
-title/lane 40 · location 20 · freshness 15 · seniority 15 · keywords 10
+lane 35 · exact-title bonus 5 · location 20 · freshness 15 · seniority 15 · keywords 10
+
+P0 means "apply today": fresh, reachable location, target title. Postings with no date
+or no description can't prove freshness/seniority, so they top out around P1.
 """
 from __future__ import annotations
 
 from pipeline.gates import min_years_required
 from pipeline.models import Job
 
+STRONG_TITLES = (
+    "founder's office", "founders office", "chief of staff", "associate product manager",
+    "ai product manager", "product manager", "strategy & operations", "strategy and operations",
+    "business operations", "deployment strategist", "technical program manager",
+)
+SENIOR_WORDS = ("senior", "sr.", "sr ", "lead", "leader")
+
 
 def score(job: Job, cfg: dict) -> Job:
-    s = 40  # passed the lane gate
+    s = 35  # passed the lane gate
+    title = job.title.lower()
+    if any(t in title for t in STRONG_TITLES):
+        s += 5
 
     loc = job.location.lower()
     if any(x in loc for x in ("bangalore", "bengaluru")) or "india" in loc:
@@ -21,7 +34,7 @@ def score(job: Job, cfg: dict) -> Job:
 
     age = job.age_days
     if age is None:
-        s += 5
+        job.reasons.append("post date unknown")
     elif age <= 3:
         s += 15
     elif age <= 7:
@@ -30,12 +43,14 @@ def score(job: Job, cfg: dict) -> Job:
         s += 5
 
     years = min_years_required(job.description)
-    if years is None or years <= 3:
+    if not job.description.strip():
+        s += 8  # can't tell
+    elif years is None or years <= 3:
         s += 15
     elif years <= 5:
         s += 8
 
-    if "senior" in job.title.lower() or "sr." in job.title.lower():
+    if any(w in title for w in SENIOR_WORDS):
         s -= 10  # reachable at ~3 yrs, but a stretch
         job.reasons.append("senior title: stretch")
 
@@ -45,7 +60,9 @@ def score(job: Job, cfg: dict) -> Job:
     if hits:
         job.reasons.append("keywords: " + ", ".join(hits[:5]))
 
-    job.score = min(100, s)
+    if age is None:
+        s = min(s, cfg["scoring"]["p0"] - 1)  # freshness unproven: never P0
+    job.score = max(0, min(100, s))
     sc = cfg["scoring"]
     job.priority = "P0" if job.score >= sc["p0"] else "P1" if job.score >= sc["p1"] else "P2"
     return job

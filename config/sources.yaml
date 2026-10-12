@@ -1,0 +1,60 @@
+# Tier-2 sources: job boards and aggregators. Every result still goes through the same
+# gates + scorer, and postings not read straight from an ATS get a live-URL check.
+# Set enabled: false to switch a source off.
+
+search_terms:
+  - product manager
+  - founder's office
+  - chief of staff
+  - strategy and operations
+  - business operations
+  - growth
+  - technical program manager
+  - solutions engineer
+
+sources:
+  # --- Remote job boards (public APIs / feeds) ---
+  remotive: {enabled: true}
+  remoteok: {enabled: true}
+  himalayas: {enabled: true}
+  jobicy: {enabled: true, tags: [product, strategy, operations, growth, management]}
+  weworkremotely:
+    enabled: true
+    feeds: [remote-product-jobs, remote-management-and-finance-jobs, remote-sales-and-marketing-jobs, all-other-remote-jobs]
+  workingnomads: {enabled: true}
+
+  # --- Community ---
+  hn_whoishiring: {enabled: true}  # latest monthly "Ask HN: Who is hiring?" thread
+
+  # --- India-focused ---
+  linkedin:
+    enabled: true
+    # Public guest search, past 7 days. Kept small and polite: LinkedIn rate-limits heavy use.
+    locations: [Bengaluru, India]
+    pages: 2
+  instahyre: {enabled: true, job_functions: [11], pages: 10}  # 11 = Product Management
+  cutshort:
+    enabled: true
+    pages:
+      - product-manager-jobs-in-bangalore-bengaluru
+      - product-manager-jobs-in-remote
+      - business-analyst-jobs-in-bangalore-bengaluru
+      - operations-jobs-in-bangalore-bengaluru
+
+  # --- Startup / VC portfolio boards ---
+  yc:
+    enabled: true
+    pages: [role/product-manager, role/operations, role/sales, location/india, location/remote]
+  getro:  # VC boards on Getro; collection id is read from each board page
+    enabled: true
+    boards: [jobs.accel.com, jobs.blume.vc, jobs.3one4capital.com, careers.antler.co, jobs.generalcatalyst.com, jobs.insightpartners.com, jobs.thrivecap.com]
+  consider:  # VC boards on Consider: host -> board id
+    enabled: true
+    boards:
+      careers.peakxv.com: sequoia-capital-india
+      jobs.lsvp.com: lightspeed
+      jobs.sequoiacap.com: sequoia-capital
+      jobs.kleinerperkins.com: kleiner-perkins
+      jobs.firstround.com: first-round-capital
+      jobs.gv.com: gv
+      jobs.bvp.com: bessemer-ventures

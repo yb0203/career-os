@@ -17,10 +17,15 @@ TIMEOUT = 20
 HEADERS = {"User-Agent": "career-os/0.1 (+https://github.com/yb0203/career-os)"}
 
 
-def get_json(url: str):
-    resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
-    resp.raise_for_status()
-    return resp.json()
+def get_json(url: str, retries: int = 2):
+    for attempt in range(retries + 1):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=TIMEOUT)
+            resp.raise_for_status()
+            return resp.json()
+        except (requests.Timeout, requests.ConnectionError):
+            if attempt == retries:
+                raise
 
 
 def strip_html(text: str) -> str:

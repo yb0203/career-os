@@ -67,6 +67,10 @@ exclude_titles:
   - sales executive
   - marketer
   - marketing manager
+  - growth marketing
+  - "manager, growth marketing"
+  - sr manager
+  - leader
   - administrator
   - analyst, growth  # data-analyst roles under a growth team
 
