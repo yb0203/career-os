@@ -61,9 +61,28 @@ def test_stale_and_overleveled_jobs_dropped():
     assert gates.apply(job(desc="2-4 years of experience in product"), CFG) is True
 
 
-def test_min_years_required():
-    assert gates.min_years_required("3-5 years of experience") == 3
-    assert gates.min_years_required("We have 10 years of history") is None
+@pytest.mark.parametrize("text,years", [
+    ("6+ years of total experience, including 3–4 years in PM", 6),
+    ("2–4 years of experience in Product Management", 2),
+    ("3+ years of experience; 5+ years preferred", 3),
+    ("We have 10 years of history", None),
+    ("Experience: 2–3 years in a Founder's Office", 2),
+    ("Work experience required: 4 - 9 Years", 4),
+    ("3-5 years of experience", 3),
+    ("Founded 10 years ago. You bring 2+ years of experience in growth.", 2),
+    ("Nice to have: 7+ years of experience in fintech", None),
+    ("5+ years preferred, 3+ years of relevant experience required", 3),
+    ("Must-haves:\n• 2–4 years of experience in Product Management, preferably in FinTech", 2),
+    ("4+ years of experience, ideally in B2B SaaS", 4),
+    ("3+ years of experience. 6+ years of experience is a plus.", 3),
+])
+def test_min_years_required(text, years):
+    assert gates.min_years_required(text) == years
+
+
+def test_total_experience_beats_smaller_sub_requirement_at_gate():
+    desc = "6+ years of total experience, including 3–4 years in product management"
+    assert gates.apply(job(desc=desc), CFG) is False
 
 
 def test_undated_job_never_p0():

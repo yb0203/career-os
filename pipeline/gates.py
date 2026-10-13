@@ -6,7 +6,16 @@ from typing import Optional
 
 from pipeline.models import Job
 
-YEARS_RE = re.compile(r"(\d{1,2})\s*(?:\+|plus)?\s*(?:-|–|to)?\s*(?:\d{1,2})?\s*\+?\s*years?", re.I)
+YEARS_RE = re.compile(
+    r"(?<![\d.])(\d{1,2})\s*(?:\+|plus)?\s*(?:(?:-|–|—|to)\s*\d{1,2})?\s*\+?\s*(?:years?|yrs?)\b", re.I)
+WINDOW = 60  # chars of context either side of a "N years" mention
+# Trailing cue must sit in the same short clause ("5+ years preferred"); "preferably in
+# FinTech" qualifies the domain, not the years, so it doesn't count.
+PREFERRED_AFTER = re.compile(r"preferred|nice[- ]to[- ]have|bonus|is a plus|an advantage|desirable", re.I)
+TRAILING_CUE_WINDOW = 30
+PREFERRED_BEFORE = re.compile(
+    r"preferred\s*(?:qualifications|requirements|skills|experience)?\s*:|preferred qualifications"
+    r"|nice[- ]to[- ]haves?|bonus|ideally", re.I)
 
 
 def classify_lane(job: Job, cfg: dict) -> Optional[str]:
@@ -26,14 +35,39 @@ def classify_lane(job: Job, cfg: dict) -> Optional[str]:
     return None
 
 
+def _clip_before(text: str, start: int) -> str:
+    """Up to WINDOW chars before `start`, cut at the last sentence/clause break."""
+    chunk = text[max(0, start - WINDOW): start]
+    return re.split(r"[.;]\s", chunk)[-1]
+
+
+def _clip_after(text: str, end: int, stop: int) -> str:
+    """Up to WINDOW chars after `end` (never past `stop`), cut at the first sentence/clause break."""
+    chunk = text[end: min(end + WINDOW, stop)]
+    return re.split(r"[.;](?:\s|$)", chunk)[0]
+
+
 def min_years_required(text: str) -> Optional[int]:
-    """Smallest 'N years' figure mentioned near experience, e.g. '3-5 years' -> 3."""
-    found = [
-        int(m.group(1))
-        for m in YEARS_RE.finditer(text)
-        if "experience" in text[m.start(): m.end() + 60].lower()
-    ]
-    return min(found) if found else None
+    """Years of experience a JD requires, e.g. '6+ years total, incl. 3-4 in PM' -> 6.
+
+    Takes the largest required lower bound ('2-4 years' counts as 2) among mentions tied to
+    the word 'experience', skipping ones flagged as preferred / nice to have / bonus.
+    """
+    matches = list(YEARS_RE.finditer(text))
+    found = []
+    for i, m in enumerate(matches):
+        nxt = matches[i + 1].start() if i + 1 < len(matches) else len(text)
+        before = _clip_before(text, m.start()).lower()
+        after = _clip_after(text, m.end(), len(text)).lower()
+        if "experience" not in before + " " + after:
+            continue  # e.g. "founded 10 years ago"
+        # A trailing cue ("5+ years preferred") only belongs to this mention if no other
+        # mention sits in between; a leading cue must look like a lead-in ("Nice to have:").
+        trailing = re.split(r"[,•\n]", _clip_after(text, m.end(), min(nxt, m.end() + TRAILING_CUE_WINDOW)))[0]
+        if PREFERRED_AFTER.search(trailing) or PREFERRED_BEFORE.search(before):
+            continue
+        found.append(int(m.group(1)))
+    return max(found) if found else None
 
 
 def location_ok(job: Job, gates: dict) -> tuple[bool, str]:
