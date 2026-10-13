@@ -96,3 +96,40 @@ companies:
   - {name: "Ledger", ats: ashby, slug: ledger}
   - {name: "Tide", ats: greenhouse, slug: tide}
   - {name: "Cube", ats: ashby, slug: cube}
+
+  # --- Added 2026-10-13: Bengaluru / remote-India boards with open PM, APM, TPM, FO or growth roles ---
+  - {name: "Tekion", ats: ashby, slug: tekion}
+  - {name: "InMobi", ats: greenhouse, slug: inmobi}
+  - {name: "Toast", ats: greenhouse, slug: toast}
+  - {name: "Rubrik", ats: greenhouse, slug: rubrik}
+  - {name: "Databricks", ats: greenhouse, slug: databricks}
+  - {name: "Okta", ats: greenhouse, slug: okta}
+  - {name: "DevRev", ats: greenhouse, slug: devrev}
+  - {name: "GitLab", ats: greenhouse, slug: gitlab}
+  - {name: "Zenoti", ats: greenhouse, slug: zenoti}
+  - {name: "TrueFoundry", ats: greenhouse, slug: truefoundry}
+  - {name: "Bolna", ats: ashby, slug: bolna}
+  - {name: "Ethos", ats: greenhouse, slug: ethoslife}
+  - {name: "Glomopay", ats: ashby, slug: glomo}
+  - {name: "Simpplr", ats: greenhouse, slug: simpplr}
+  - {name: "Handshake", ats: ashby, slug: handshake}
+  - {name: "Gushwork", ats: lever, slug: gushwork}
+  - {name: "Altimate AI", ats: ashby, slug: altimate}
+  - {name: "Sprinto", ats: lever, slug: Sprinto}
+  - {name: "Arcesium", ats: greenhouse, slug: arcesiumllc}
+  - {name: "Bluevine India", ats: greenhouse, slug: bluevineindia}
+  - {name: "Emergent", ats: greenhouse, slug: emergentlabsinc}
+  - {name: "CynLr", ats: ashby, slug: cynlr}
+  - {name: "FourKites", ats: greenhouse, slug: fourkites}
+  - {name: "HighLevel", ats: lever, slug: gohighlevel}
+  - {name: "Human Archive", ats: ashby, slug: humanarchive}
+  - {name: "Libra AI", ats: ashby, slug: libra}
+  - {name: "project44", ats: greenhouse, slug: project44}
+  - {name: "Smartsheet", ats: greenhouse, slug: smartsheet}
+  - {name: "Weekday", ats: lever, slug: weekdayworks}
+  - {name: "Fictiv", ats: greenhouse, slug: fictiv}
+  - {name: "HighRadius", ats: greenhouse, slug: highradius}
+  - {name: "Josys", ats: ashby, slug: josys}
+  - {name: "Xendit", ats: greenhouse, slug: xendit}
+  - {name: "Enterpret", ats: greenhouse, slug: enterpret}
+  - {name: "Level AI", ats: ashby, slug: level-ai}

@@ -64,7 +64,7 @@ def main():
     cfg = yaml.safe_load((ROOT / "config/sheet.yaml").read_text())
     sh = client().open_by_key(os.environ.get("SHEET_ID") or cfg["spreadsheet_id"])
     openings = sh.worksheet("Openings")
-    rows = openings.get_all_records()
+    rows = openings.get_all_records(numericise_ignore=["all"])  # keep IDs like "5999548e10" as text
     tiers = fill_tiers(rows)
     if tiers:
         header = openings.row_values(1)
