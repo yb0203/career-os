@@ -18,7 +18,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import yaml
 
-from pipeline.run import OUT, ROOT
+from pipeline.run import ATS, OUT, ROOT
 
 TAB, SUMMARY_TAB = "Openings", "Summary"
 COLUMNS = ["Priority", "Score", "Company", "Role", "Status", "Notes", "Lane", "Location",
@@ -46,8 +46,13 @@ def safe(value) -> str:
     return "'" + text if text[:1] in ("=", "+", "-", "@") else text
 
 
-def merge(existing: list[dict], jobs: list[dict], today: str) -> list[dict]:
-    """Pure merge: update known IDs, add new ones, flag vanished ones. Keeps user columns."""
+def merge(existing: list[dict], jobs: list[dict], today: str, scanned: set[str] | None = None) -> list[dict]:
+    """Pure merge: update known IDs, add new ones, flag vanished ones. Keeps user columns.
+
+    `scanned` = sources that answered this run ("ats" covers every watchlist board). Rows from any
+    other source (rate-limited, disabled, or added by hand) keep their Open value instead of being
+    flagged as gone. None = old behaviour: every missing row is flagged.
+    """
     by_id = {r["ID"]: r for r in existing if r.get("ID")}
     seen = set()
     for j in jobs:
@@ -64,7 +69,9 @@ def merge(existing: list[dict], jobs: list[dict], today: str) -> list[dict]:
     cutoff = (date.fromisoformat(today) - timedelta(days=PRUNE_AFTER_DAYS)).isoformat()
     rows = []
     for rid, row in by_id.items():
-        if rid not in seen:
+        src = row.get("Source", "")
+        src = "ats" if src in ATS else src
+        if rid not in seen and (scanned is None or src in scanned):
             row["Open"] = "No"
             if row.get("Status", "New") in ("New", "") and row.get("Last seen", today) < cutoff:
                 continue
@@ -195,7 +202,9 @@ def sync(spreadsheet_id: str) -> int:
     header = COLUMNS + [h for h in header if h and h not in COLUMNS]
 
     now = datetime.now(timezone.utc).astimezone(timezone(timedelta(hours=5, minutes=30)))
-    rows = merge(existing, jobs, now.date().isoformat())
+    meta = OUT / "run_meta.json"
+    scanned = set(json.loads(meta.read_text())["scanned"]) if meta.exists() else None
+    rows = merge(existing, jobs, now.date().isoformat(), scanned)
     values = to_values(header, rows)
 
     ws.clear()

@@ -74,3 +74,15 @@ def test_ids_and_dates_written_as_text():
     values = to_values(COLUMNS, merge([], [job("12e4567890")], "2026-10-12"))
     row = dict(zip(COLUMNS, values[1]))
     assert row["ID"] == "'12e4567890" and row["First seen"] == "'2026-10-12"
+
+
+def test_rows_from_sources_that_failed_this_run_stay_open():
+    existing = [
+        {"ID": "li", "Status": "New", "Source": "linkedin", "Last seen": "2026-10-11", "Open": "Yes"},
+        {"ID": "gh", "Status": "New", "Source": "greenhouse", "Last seen": "2026-10-11", "Open": "Yes"},
+        {"ID": "manual", "Status": "Applied", "Source": "careers-page", "Last seen": "2026-10-11", "Open": "Yes"},
+    ]
+    rows = {r["ID"]: r for r in merge(existing, [job("a")], "2026-10-12", scanned={"ats", "instahyre"})}
+    assert rows["li"]["Open"] == "Yes"        # LinkedIn was rate-limited: not evidence the job is gone
+    assert rows["manual"]["Open"] == "Yes"    # hand-added rows aren't owned by any source
+    assert rows["gh"]["Open"] == "No"         # watchlist boards answered and this job wasn't there

@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import collections
 import concurrent.futures as cf
 import csv
@@ -156,6 +157,11 @@ def main(argv=None) -> list[Job]:
     live = passed if args.no_verify else verify_live(passed)
     kept = [scorer.score(j, cfg) for j in live]
     write_outputs(kept, len(jobs), counts, errors, len(passed) - len(live))
+    # Which sources actually answered this run: the sheet sync only flags rows from these as
+    # "no longer listed", so a rate-limited source (LinkedIn from CI) doesn't close its rows.
+    failed = {e.split(":")[0] for e in errors if not e.startswith("ats:")}
+    scanned = sorted((set(sources) - failed) | ({"ats"} if watchlist else set()))
+    (OUT / "run_meta.json").write_text(json.dumps({"scanned": scanned, "failed": sorted(failed)}, indent=1) + "\n")
     print(f"{len(jobs):,} postings from {len(counts)} sources -> {len(kept)} kept "
           f"({sum(j.priority == 'P0' for j in kept)} P0, {sum(j.priority == 'P1' for j in kept)} P1), "
           f"{len(passed) - len(live)} dead links dropped. See output/digest.md")
