@@ -16,6 +16,7 @@ import yaml
 
 from pipeline.run import ROOT
 from pipeline.sheets import client
+from pipeline.tiers import fill_tiers
 
 TAB = "Queue"
 HEADER = ["#", "Who", "Tier", "Company", "Role", "Location", "Apply link", "Status", "Score", "Notes", "ID"]
@@ -55,10 +56,30 @@ def build(rows: list[dict], login_companies: set[str]) -> list[list]:
     ]
 
 
+def _letter(i: int) -> str:
+    return chr(65 + i) if i < 26 else chr(64 + i // 26) + chr(65 + i % 26)
+
+
 def main():
     cfg = yaml.safe_load((ROOT / "config/sheet.yaml").read_text())
     sh = client().open_by_key(os.environ.get("SHEET_ID") or cfg["spreadsheet_id"])
-    values = build(sh.worksheet("Openings").get_all_records(), set(cfg.get("login_companies", [])))
+    openings = sh.worksheet("Openings")
+    rows = openings.get_all_records()
+    tiers = fill_tiers(rows)
+    if tiers:
+        header = openings.row_values(1)
+        if "Tier" not in header:
+            header.append("Tier")
+            openings.update_cell(1, len(header), "Tier")
+        col = _letter(header.index("Tier"))
+        updates = [{"range": f"{col}{n}", "values": [[tiers[r["ID"]]]]}
+                   for n, r in enumerate(rows, start=2) if r.get("ID") in tiers]
+        openings.batch_update(updates)
+        for r in rows:
+            if r.get("ID") in tiers:
+                r["Tier"] = tiers[r["ID"]]
+        print(f"Auto-tiered {len(tiers)} new openings")
+    values = build(rows, set(cfg.get("login_companies", [])))
     try:
         ws = sh.worksheet(TAB)
         ws.clear()
