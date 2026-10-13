@@ -1,6 +1,6 @@
 # Daily job digest — 2026-10-13
 
-Scanned **13,631** live postings from **12** sources → **222** passed every gate (23 P0, 175 P1, 24 P2). 3 dead links removed.
+Scanned **18,456** live postings from **13** sources → **227** passed every gate (23 P0, 176 P1, 28 P2). 6 dead links removed.
 
 | Pri | Score | Lane | Company | Role | Location | Posted | Source |
 |---|---|---|---|---|---|---|---|
@@ -15,15 +15,15 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P0 | 84 | growth_strategy | Stripe | [Strategy and Analytics Business Partner](https://stripe.com/jobs/search?gh_jid=8245230) | Bangalore | 2026-10-13 | greenhouse |
 | P0 | 84 | growth_strategy | Tines | [GTM Systems Specialist](https://weworkremotely.com/remote-jobs/tines-gtm-systems-specialist) | Anywhere in the World | 2026-10-10 | weworkremotely |
 | P0 | 84 | growth_strategy | Sprinto | [Organic Growth Manager](https://jobs.lever.co/Sprinto/7759bc05-738b-4022-97c8-a91f9190d365) | Bengaluru | 2026-10-08 | lever |
-| P0 | 83 | ai_pm | CareStack | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-carestack%E2%84%A2-dental-practice-management-4477589033) | Thiruvananthapuram, Kerala, India | 2026-10-12 | getro |
-| P0 | 83 | ai_pm | Google | [Product Manager II, Google Workspace](https://www.google.com/about/careers/applications/jobs/results/86178789968487110-product-manager-ii-google-workspace?page=50) | Bengaluru, Karnataka, India / New York, NY, USA | 2026-10-12 | getro |
+| P0 | 83 | ai_pm | Swiftkey | [Technical Program Manager 2](https://apply.careers.microsoft.com/careers/job/1970393557026669) | Bengaluru, Karnataka, India | 2026-10-13 | getro |
+| P0 | 83 | growth_strategy | Ethos Life | [Strategy & Operations Manager](https://job-boards.greenhouse.io/ethoslife/jobs/8883076002) | Bangalore, India | 2026-10-12 | consider |
 | P0 | 83 | growth_strategy | Credgenics | [Founder's Office](https://in.linkedin.com/jobs/view/founder-s-office-at-credgenics-4478392814) | Noida, Uttar Pradesh, India | 2026-10-12 | getro |
+| P0 | 83 | growth_strategy | Khatabook | [Program Manager - Central Business Operations](https://khatabook.turbohire.co/job/publicjobs/DFyGyRItfY_gKocTPLGsl4jXFt2tMa6U3muhk0bP4qm%2F5zltllma39ND056w__Mm) | Bengaluru, Karnataka, India | 2026-10-12 | consider |
 | P0 | 83 | ai_pm | Expel | [Product Manager, Detection Pipeline](https://weworkremotely.com/remote-jobs/expel-product-manager-detection-pipeline) | Anywhere in the World | 2026-10-07 | weworkremotely |
 | P0 | 83 | ai_pm | Level AI | [Forward Deployed Engineer - Agents(Remote)](https://jobs.ashbyhq.com/level-ai/a71f73a6-5964-4420-a789-107dd6b3d66a) | India, Remote | 2026-10-05 | ashby |
 | P0 | 83 | growth_strategy | GitLab | [Associate Revenue Operations Manager, India](https://job-boards.greenhouse.io/gitlab/jobs/8859694002) | Remote, India | 2026-10-01 | greenhouse |
 | P0 | 82 | ai_pm | Handshake | [Forward Deployed Engineer I](https://jobs.ashbyhq.com/handshake/607e1d72-e7e8-4476-938f-b74dbe7ac9ef) | India | 2026-10-09 | ashby |
 | P0 | 81 | growth_strategy | HighLevel | [Senior Product Strategy & Growth Manager](https://jobs.lever.co/gohighlevel/89bfd2b3-c394-4098-a38a-f001e1ae1a56) | India | 2026-10-12 | lever |
-| P0 | 81 | ai_pm | PostHog | [Product Manager (ex-founder or ex-product engineer)](https://jobs.ashbyhq.com/posthog/3c592b84-8b34-4ae4-ae23-cadce8f2212d) | Remote | 2026-10-06 | ashby |
 | P0 | 81 | growth_strategy | Paytm | [Growth Management - Merchant Lending (GM/DGM)](https://jobs.lever.co/paytm/c2fc6a36-bbb3-44bb-88ca-e41f4ffc7119) | Bangalore, Karnataka | 2026-10-06 | lever |
 | P0 | 80 | fractional | Current | [Producer, Client Experience & Growth (Contract)](https://weworkremotely.com/remote-jobs/current-producer-client-experience-growth-contract) | Anywhere in the World | 2026-10-07 | weworkremotely |
 | P0 | 80 | ai_pm | Supabase | [Product Manager - Auth](https://jobs.ashbyhq.com/supabase/9a4c9984-07c7-4b47-982f-371de3f6ff50) | Remote, Global | 2026-10-07 | ashby |
@@ -46,12 +46,13 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 79 | ai_pm | Clairvolex | [Technical Product Manager](https://www.instahyre.com/job-443793-technical-product-manager-at-clairvolex-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 79 | ai_pm | Meraki Labs | [Technical Product Manager](https://www.instahyre.com/job-436363-technical-product-manager-at-meraki-labs-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 79 | ai_pm | Bright Money | [Product Manager - Frontend](https://www.instahyre.com/job-440886-product-manager-frontend-at-bright-money-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 78 | ai_pm | Google | [Technical Program Manager, AI Products, ISM Product Operations](https://www.google.com/about/careers/applications/jobs/results/85550744416985798-technical-program-manager-ai-products-ism-product-operations?page=107) | Bengaluru, Karnataka, India | 2026-10-09 | getro |
+| P1 | 78 | growth_strategy | Purplle | [Growth Manager - Content ](https://purplle.turbohire.co/job/publicjobs/BlidjRMZ4zQxyAaYiA97EK1GpTxn8GG1TJg6FgLpuW1RwJ%2FzY6pwQPVpcrSPg7vm) | Bengaluru, Karnataka, India | 2026-10-13 | consider |
+| P1 | 78 | growth_strategy | Purplle | [Growth Manager - Analytics](https://purplle.turbohire.co/job/publicjobs/wjukDuHl5hlRWGuY0JjbgSP9V74EKRAi4SVaQyf59v2Wz9waQiy6GdSlZiuBpxjF) | Bengaluru, Karnataka, India | 2026-10-13 | consider |
+| P1 | 78 | ai_pm | Google | [Technical Program Manager, AI Products, ISM Product Operations](https://www.google.com/about/careers/applications/jobs/results/85550744416985798-technical-program-manager-ai-products-ism-product-operations?page=112) | Bengaluru, Karnataka, India | 2026-10-09 | getro |
 | P1 | 78 | ai_pm | Supabase | [Product Manager - Realtime](https://jobs.ashbyhq.com/supabase/bd5ce178-84c9-469e-89f4-493c21b50622) | Remote, Global | 2026-10-07 | ashby |
 | P1 | 78 | ai_pm | InMobi | [Product Manager - Programmatic Monetization](https://job-boards.greenhouse.io/inmobi/jobs/8232722) | Bangalore | 2026-10-07 | greenhouse |
 | P1 | 77 | growth_strategy | Talkspace | [Business Development & Growth Associate, Pharma](https://weworkremotely.com/remote-jobs/talkspace-business-development-growth-associate-pharma) | Anywhere in the World | 2026-10-03 | weworkremotely |
 | P1 | 77 | growth_strategy | Calm.com | [Growth Product Manager](https://weworkremotely.com/remote-jobs/calm-com-growth-product-manager) | Anywhere in the World | 2026-10-01 | weworkremotely |
-| P1 | 77 | ai_pm | Fictiv | [Associate Solutions Engineer- (Manufacturing) - Night Shift](https://job-boards.greenhouse.io/fictiv/jobs/8842183002) | Bengaluru, India Office | 2026-09-29 | greenhouse |
 | P1 | 77 | ai_pm | AbleCredit | [Product Manager](https://cutshort.io/job/Product-Manager-Bengaluru-Bangalore-AbleCredit-Qt6zC4g4) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 77 | ai_pm | ConverzAI | [AI Product Manager](https://www.instahyre.com/job-439180-ai-product-manager-at-converzai-bangalore-gurgaon-work-from-home/) | Bangalore,Gurgaon,Work From Home | ? | instahyre |
 | P1 | 77 | ai_pm | Karta | [Product Manager - Voice AI](https://www.instahyre.com/job-446768-product-manager-voice-ai-at-karta-bangalore/) | Bangalore | ? | instahyre |
@@ -65,6 +66,7 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 77 | ai_pm | Meraki Labs | [Product Manager](https://www.instahyre.com/job-446685-product-manager-at-meraki-labs-bangalore-gurgaon-work-from-home/) | Bangalore,Gurgaon,Work From Home | ? | instahyre |
 | P1 | 77 | ai_pm | MagTapp Technologies | [Associate Product Manager](https://www.instahyre.com/job-436488-associate-product-manager-at-magtapp-technologies-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 77 | ai_pm | Sahi | [Product Manager](https://www.instahyre.com/job-445620-product-manager-at-sahi-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 76 | ai_pm | PostHog | [Product Manager (ex-founder or ex-product engineer)](https://jobs.ashbyhq.com/posthog/3c592b84-8b34-4ae4-ae23-cadce8f2212d) | Remote | 2026-10-06 | ashby |
 | P1 | 76 | ai_pm | Impact Analytics | [Associate Product Manager](https://cutshort.io/job/Associate-Product-Manager-Bengaluru-Bangalore-Impact-Analytics-ejpSDbkK) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 76 | ai_pm | Transact Bridge | [Product Manager](https://cutshort.io/job/Product-Manager-Bengaluru-Bangalore-Noida-Transact-Bridge-wBrzMtSw) | Bengaluru (Bangalore) / Noida | ? | cutshort |
 | P1 | 76 | growth_strategy | Frequencycx | [Revenue Operations Specialist](https://cutshort.io/job/Revenue-Operations-Specialist-Bengaluru-Bangalore-Frequencycx-CdGKwOdI) | Bengaluru (Bangalore) | ? | cutshort |
@@ -104,13 +106,13 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 75 | ai_pm | Cimba.ai | [Product Manager](https://www.instahyre.com/job-422199-product-manager-at-cimba-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Pibit.ai | [Product Manager](https://www.instahyre.com/job-440454-product-manager-at-pibit-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Increff | [Technical Product Manager](https://www.instahyre.com/job-431170-technical-product-manager-at-increff-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 75 | ai_pm | Stable Money | [Associate Product Manager](https://www.instahyre.com/job-445868-associate-product-manager-at-stable-money-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | CapsLock | [Associate Product Manager](https://www.instahyre.com/job-443997-associate-product-manager-at-capslock-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Playsimple Games | [Product Manager](https://www.instahyre.com/job-435682-product-manager-at-playsimple-games-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | GeoIQ | [Product Manager](https://www.instahyre.com/job-443506-product-manager-at-geoiq-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Ultraviolette Automotive | [Technical Program Manager](https://www.instahyre.com/job-444573-technical-program-manager-at-ultraviolette-automotive-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | AppsForBharat | [Product Manager](https://www.instahyre.com/job-439772-product-manager-at-appsforbharat-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Digii | [Product Manager](https://www.instahyre.com/job-446303-product-manager-at-digii-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 75 | ai_pm | Karta | [Product Manager](https://www.instahyre.com/job-446776-product-manager-at-karta-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Hyperface | [Associate Product Manager](https://www.instahyre.com/job-442264-associate-product-manager-at-hyperface-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | PagarBook | [Product Manager 1](https://www.instahyre.com/job-444233-product-manager-1-at-pagarbook-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 75 | ai_pm | Wooqer | [Product Manager](https://www.instahyre.com/job-442434-product-manager-at-wooqer-2-bangalore/) | Bangalore | ? | instahyre |
@@ -132,13 +134,12 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 74 | ai_pm | Habuild | [Product Manager 2 (GenAI)](https://cutshort.io/job/Product-Manager-2-GenAI-Bengaluru-Bangalore-habuild-frZwcMtR) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 74 | ai_pm | TalentXO | [Forward Deployed Product Manager](https://cutshort.io/job/Forward-Deployed-Product-Manager-Gurugram-Bengaluru-Bangalore-TalentXO-Iex5kp8m) | Gurugram / Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 74 | ai_pm | ShortLoop | [Forward Deployed Engineer](https://www.instahyre.com/job-443498-forward-deployed-engineer-at-shortloop-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 73 | ai_pm | Spindle Ai (spindle.ai) | [Product Manager / Sr. Product Manager - Mulesoft](https://www.salesforce.com/company/careers/jobs/JR321301/product-manager-sr-product-manager-mulesoft/) | Bengaluru, Karnataka, India / Hyderabad, Telangana, India | 2026-10-12 | getro |
 | P1 | 73 | ai_pm | Plume | [Sr Technical Program Manager](https://boards.greenhouse.io/plume/jobs/8870373002) | Hyderabad, Telangana, India | 2026-10-12 | getro |
-| P1 | 73 | ai_pm | Swiftkey | [Senior Technical Program Manager - FDE](https://apply.careers.microsoft.com/careers/job/1970393556939563) | United States / Colorado, USA / Maryland, USA / Californi… | 2026-10-10 | getro |
+| P1 | 73 | growth_strategy | Rippling | [Analyst, Sales Strategy](https://ats.rippling.com/rippling/jobs/00714a47-6195-4c5c-b218-97a89fd1a405) | Bangalore, India | 2026-10-09 | consider |
+| P1 | 73 | ai_pm | Stable Money | [Associate Product Manager](https://www.instahyre.com/job-445868-associate-product-manager-at-stable-money-bangalore/) | Bangalore | 2026-10-06 | consider |
+| P1 | 73 | ai_pm | Aspire | [Product Manager (Expense Management)](https://revolutpeople.com/aspire/public/careers/position/32f0fce0-7106-4eb9-911e-b445daa7abab/) | IN (Gurgaon), India | 2026-10-05 | consider |
+| P1 | 73 | ai_pm | Infoblox | [Product Manager](https://efpv.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/8052/) | Bangalore, Karnataka, India / Infoblox Technical Support … | 2026-10-05 | consider |
 | P1 | 73 | ai_pm | Databricks | [Sr. Manager, AI Forward Deployed Engineering](https://databricks.com/company/careers/open-positions/job?gh_jid=8630019002) | Bengaluru, India | 2026-09-30 | greenhouse |
-| P1 | 73 | growth_strategy | Loop Health | [Founder's Office, Growth](https://loop.keka.com/careers/jobdetails/163387) | Bengaluru, Karnataka, India | 2026-09-29 | getro |
-| P1 | 73 | ai_pm | Glomo | [Associate Product Manager / Product Manager](https://jobs.ashbyhq.com/glomo/cd9dd2e4-47f7-4b9c-85f0-e985d62128c1) | Bengaluru, Karnataka, India | 2026-09-29 | getro |
-| P1 | 72 | growth_strategy | Toast | [Customer Success Manager II, SMB -Account Strategy](https://careers.toasttab.com/jobs?gh_jid=8265595) | Remote  | 2026-10-09 | greenhouse |
 | P1 | 72 | ai_pm | RockED | [Product Manager](https://cutshort.io/job/Product-Manager-Bengaluru-Bangalore-RockED-47LCtO1w) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 72 | ai_pm | Incred Finance | [Product Manager](https://cutshort.io/job/Product-Manager-Bengaluru-Bangalore-Incred-Finance-fkFplcpF) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 72 | ai_pm | learners point.org | [Enterprise Product Manager B2B- ED Tech](https://cutshort.io/job/Enterprise-Product-Manager-B2B-ED-Tech-Bengaluru-Bangalore-learners-point-org-CPz6P1Fj) | Bengaluru (Bangalore) | ? | cutshort |
@@ -155,10 +156,9 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 69 | ai_pm | Keka HR | [Senior Product Manager - AI Service](https://www.instahyre.com/job-402799-senior-product-manager-ai-service-at-keka-hr-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 69 | ai_pm | ZAGENO | [Senior Product Manager](https://www.instahyre.com/job-426567-senior-product-manager-at-zageno-bangalore-delhi-noida/) | Bangalore,Delhi,Noida | ? | instahyre |
 | P1 | 69 | ai_pm | SciSpace | [Senior AI Product Manager](https://www.instahyre.com/job-440871-senior-ai-product-manager-at-scispace-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 68 | growth_strategy | Fibr | [Lead Growth, Agent Experience](https://wellfound.com/company/getfibr/jobs/4824625-lead-growth-agent-experience) | Bengaluru, Karnataka, India | 2026-10-12 | getro |
-| P1 | 68 | growth_strategy | Google | [Strategy and Operations Lead](https://www.google.com/about/careers/applications/jobs/results/113229162939851462-strategy-and-operations-lead?page=154) | Gurugram, Haryana, India | 2026-10-09 | getro |
+| P1 | 68 | growth_strategy | Google | [Strategy and Operations Lead](https://www.google.com/about/careers/applications/jobs/results/113229162939851462-strategy-and-operations-lead?page=161) | Gurugram, Haryana, India | 2026-10-09 | getro |
 | P1 | 68 | ai_pm | Everstage | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-everstage-4476541734) | Chennai, Tamil Nadu, India | 2026-10-07 | getro |
-| P1 | 68 | ai_pm | Bolna | [AI Solutions Engineer](https://jobs.ashbyhq.com/bolna/131e206f-3fd9-4905-9f4c-c3fdc4c32cc9) | Bengaluru, Karnataka, India / Delhi, India | 2026-09-30 | getro |
+| P1 | 68 | ai_pm | Razorpay | [Forward Deployed Engineer](https://job-boards.greenhouse.io/razorpaysoftwareprivatelimited/jobs/4739199005) | Bengaluru | 2026-10-01 | consider |
 | P1 | 68 | ai_pm | JK Technosoft Ltd | [Product Manager - AI/GenAI](https://cutshort.io/job/Product-Manager-AI-GenAI-Bengaluru-Bangalore-JK-Technosoft-Ltd-nt1hEXBD) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 68 | ai_pm | LeadSquared | [Senior Product Manager](https://cutshort.io/job/Senior-Product-Manager-Bengaluru-Bangalore-Right-Hire-B8SgxlJU) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 68 | ai_pm | Staffnixcom | [Ex-Sprinklr Forward Deployed Product Manager | Product Manager |](https://cutshort.io/job/Ex-Sprinklr-Forward-Deployed-Product-Manager-Product-Manager-Gurugram-Bengaluru-Bangalore-Staffnixcom-fRggkQTG) | Gurugram / Bengaluru (Bangalore) | ? | cutshort |
@@ -171,6 +171,7 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 66 | ai_pm | LeoLabs | [Radar Product Manager](https://boards.greenhouse.io/leolabsinc/jobs/4444479009) | Remote | 2026-10-10 | getro |
 | P1 | 66 | ai_pm | LeoLabs | [Software Product Manager](https://boards.greenhouse.io/leolabsinc/jobs/4444423009) | Remote | 2026-10-10 | getro |
 | P1 | 66 | ai_pm | Anduril | [Mission Operations Product Manager, Group 5 Mission Autonomy](https://boards.greenhouse.io/andurilindustries/jobs/5244604007) | Remote | 2026-10-08 | getro |
+| P1 | 66 | ai_pm | Anduril Industries | [Mission Operations Product Manager, Group 5 Mission Autonomy](https://boards.greenhouse.io/andurilindustries/jobs/5244604007?gh_jid=5244604007) | Remote | 2026-10-07 | consider |
 | P1 | 66 | ai_pm | Tekion | [Senior Product Manager](https://jobs.ashbyhq.com/tekion/26a5e946-46c0-448c-90dc-3a909d49d340) | Bangalore HQ | 2026-10-07 | ashby |
 | P1 | 66 | growth_strategy | Smartsheet | [Manager, Revenue Operations Analytics / Revops (Hybrid- Bangalore)](https://job-boards.greenhouse.io/smartsheet/jobs/8250897) | Bangalore, INDIA | 2026-10-03 | greenhouse |
 | P1 | 66 | ai_pm | TalentXO | [Senior Product Manager (Forward Deployed, Product company)](https://cutshort.io/job/Senior-Product-Manager-Forward-Deployed-Product-company-Bengaluru-Bangalore-TalentXO-LOAuXK6U) | Bengaluru (Bangalore) | ? | cutshort |
@@ -198,8 +199,8 @@ Scanned **13,631** live postings from **12** sources → **222** passed every ga
 | P1 | 65 | ai_pm | Aditya Birla Group | [Senior Product Manager](https://www.instahyre.com/job-443493-senior-product-manager-at-aditya-birla-group-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 65 | ai_pm | Axi | [Senior Product Manager](https://www.instahyre.com/job-445940-senior-product-manager-at-axi-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 65 | ai_pm | Gameberry Labs | [Lead Product Manager](https://www.instahyre.com/job-443075-lead-product-manager-at-gameberry-labs-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 65 | ai_pm | Axi | [Lead Product Manager](https://www.instahyre.com/job-446001-lead-product-manager-at-axi-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 65 | ai_pm | PayU | [Senior Product Manager](https://www.instahyre.com/job-416438-senior-product-manager-at-payu-bangalore-gurgaon/) | Bangalore,Gurgaon | ? | instahyre |
+| P1 | 65 | ai_pm | Axi | [Lead Product Manager](https://www.instahyre.com/job-446001-lead-product-manager-at-axi-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 65 | ai_pm | Rippling | [Lead Product Manager](https://www.instahyre.com/job-438796-lead-product-manager-at-rippling-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 65 | ai_pm | UnifyApps | [Senior Product Manager](https://www.instahyre.com/job-443362-senior-product-manager-at-unifyapps-bangalore-mumbai-pune/) | Bangalore,Mumbai,Pune | ? | instahyre |
 
@@ -209,14 +210,15 @@ P2 roles are in [`jobs.csv`](jobs.csv).
 
 | Source | Scanned | Kept |
 |---|---|---|
-| ats | 11,429 | 29 |
-| getro | 597 | 20 |
+| ats | 11,399 | 27 |
+| consider | 4,880 | 15 |
+| getro | 559 | 12 |
 | instahyre | 350 | 122 |
-| hn_whoishiring | 234 | 0 |
-| weworkremotely | 224 | 11 |
-| jobicy | 212 | 0 |
+| hn_whoishiring | 236 | 0 |
+| weworkremotely | 228 | 11 |
+| jobicy | 218 | 0 |
 | yc | 163 | 1 |
-| himalayas | 156 | 1 |
+| himalayas | 157 | 1 |
 | cutshort | 100 | 38 |
 | remoteok | 99 | 0 |
 | workingnomads | 51 | 0 |
@@ -224,9 +226,8 @@ P2 roles are in [`jobs.csv`](jobs.csv).
 
 </details>
 
-<details><summary>2 source errors</summary>
+<details><summary>1 source errors</summary>
 
 - linkedin: rate-limited by LinkedIn; try again in a few hours
-- consider: HTTPSConnectionPool(host='jobs.lsvp.com', port=443): Read timed out. (read timeout=30)
 
 </details>
