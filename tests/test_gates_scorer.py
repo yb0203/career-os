@@ -57,7 +57,8 @@ def test_region_block_in_description():
 
 def test_stale_and_overleveled_jobs_dropped():
     assert gates.apply(job(days=30), CFG) is False
-    assert gates.apply(job(desc="8+ years of product management experience"), CFG) is False
+    assert gates.apply(job(desc="12+ years of product management experience"), CFG) is False
+    assert gates.apply(job(desc="8+ years of product management experience"), CFG) is True  # stretch, kept
     assert gates.apply(job(desc="2-4 years of experience in product"), CFG) is True
 
 
@@ -81,8 +82,15 @@ def test_min_years_required(text, years):
 
 
 def test_total_experience_beats_smaller_sub_requirement_at_gate():
-    desc = "6+ years of total experience, including 3–4 years in product management"
+    desc = "11+ years of total experience, including 3–4 years in product management"
     assert gates.apply(job(desc=desc), CFG) is False
+
+
+def test_stretch_roles_kept_but_ranked_below_fit():
+    stretch = scorer.score(job(desc="6+ years of total experience, including 3–4 years in PM"), CFG)
+    fit = scorer.score(job(desc="2-3 years of experience"), CFG)
+    assert gates.apply(job(desc="6+ years of total experience"), CFG) is True
+    assert stretch.score < fit.score
 
 
 def test_undated_job_never_p0():

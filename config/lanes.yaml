@@ -76,7 +76,7 @@ exclude_titles:
 
 gates:
   max_age_days: 14
-  max_years_experience: 5
+  max_years_experience: 10  # Yashvi 2026-10-13: apply to stretch roles too; scorer still ranks them lower
   # Accept if location text matches any of these
   location_allow:
     - bangalore
