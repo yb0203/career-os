@@ -1,2 +1,5 @@
 # Google Sheet the daily run syncs into (private sheet; the ID alone grants no access).
 spreadsheet_id: 1iiB4yfORxaoMmcv1IKKwqlW0knPvt7LcmpBzBd9w3K4
+
+# Companies whose application sites need an account/sign-in (Queue tab routes these to Yashvi).
+login_companies: [Baker Tilly, Skai Lama, GoSats, Biome Sustainability Ventures, Sprinto, athenahealth, JPMorganChase, Cisco, GE Vernova]
