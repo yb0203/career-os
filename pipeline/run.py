@@ -90,7 +90,7 @@ def write_outputs(kept: list[Job], scanned: int, counts: collections.Counter,
     OUT.mkdir(exist_ok=True)
     kept.sort(key=lambda j: (-j.score, j.age_days if j.age_days is not None else 99))
     fields = ["id", "priority", "score", "lane", "company", "title", "location", "posted_at",
-              "source", "url", "employment_type", "remote", "reasons"]
+              "source", "apply_via", "url", "employment_type", "remote", "reasons"]
     with (OUT / "jobs.csv").open("w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=fields, extrasaction="ignore")
         w.writeheader()

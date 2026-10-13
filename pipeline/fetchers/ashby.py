@@ -21,6 +21,7 @@ def fetch(company: str, slug: str) -> list[Job]:
                 title=j.get("title", ""),
                 url=j.get("jobUrl", ""),
                 source="ashby",
+                apply_via="ashby",
                 location=" / ".join(filter(None, locations)),
                 remote=j.get("isRemote"),
                 posted_at=f.parse_iso(j.get("publishedAt")),

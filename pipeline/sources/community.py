@@ -33,7 +33,7 @@ def hn_whoishiring(params, terms):
                 w in p.lower() for w in ("remote", "onsite", "hybrid", "india", "bangalore", ","))), "")
             jobs.append(Job(
                 company=parts[0][:80], title=" | ".join(parts[1:3])[:160],
-                url=f"https://news.ycombinator.com/item?id={c['objectID']}", source="hn_whoishiring",
+                url=f"https://news.ycombinator.com/item?id={c['objectID']}", source="hn_whoishiring", apply_via="hackernews",
                 location=location, remote="remote" in first.lower() or None,
                 posted_at=parse_iso(c.get("created_at")), description=strip_html(text),
             ))

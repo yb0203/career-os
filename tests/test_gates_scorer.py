@@ -110,3 +110,22 @@ def test_score_bands():
                                     desc="5 years of experience"), CFG)
     assert stale_remote.score < fresh_blr.score
     assert stale_remote.priority == "P2"
+
+
+@pytest.mark.parametrize("url,source,via", [
+    ("https://jobs.lever.co/acme/1", "getro:jobs.accel.com", "lever"),
+    ("https://jobs.ashbyhq.com/acme/1", "consider:jobs.sequoiacap.com", "ashby"),
+    ("https://www.linkedin.com/jobs/view/123", "linkedin", "linkedin"),
+    ("https://cutshort.io/job/x", "cutshort", "cutshort"),
+    ("https://www.instahyre.com/job-1-pm", "instahyre", "instahyre"),
+    ("https://weworkremotely.com/remote-jobs/x", "weworkremotely", "weworkremotely"),
+    ("https://careers.acme.co.in/pm", "getro:jobs.accel.com", "acme"),
+    ("", "getro:jobs.accel.com", "getro"),
+])
+def test_apply_via_derived_from_posting_url(url, source, via):
+    assert Job(company="A", title="PM", url=url, source=source).apply_via == via
+
+
+def test_apply_via_explicit_value_wins_and_lands_in_csv_row():
+    j = Job(company="A", title="PM", url="https://jobs.lever.co/a/1", source="lever", apply_via="lever")
+    assert j.to_row()["apply_via"] == "lever"

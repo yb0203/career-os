@@ -22,7 +22,7 @@ from pipeline.run import OUT, ROOT
 
 TAB, SUMMARY_TAB = "Openings", "Summary"
 COLUMNS = ["Priority", "Score", "Company", "Role", "Status", "Notes", "Lane", "Location",
-           "Posted", "Source", "Why", "Open", "First seen", "Last seen", "URL", "ID"]
+           "Posted", "Source", "Apply via", "Why", "Open", "First seen", "Last seen", "URL", "ID"]
 TEXT_COLUMNS = {"ID", "Posted", "First seen", "Last seen"}
 STATUSES = ["New", "Shortlisted", "Applied", "Interviewing", "Offer", "Rejected", "Skip"]
 LANES = {"growth_strategy": "Growth & Strategy", "ai_pm": "AI PM / TPM", "fractional": "Fractional"}
@@ -55,7 +55,8 @@ def merge(existing: list[dict], jobs: list[dict], today: str) -> list[dict]:
         row.update({
             "ID": j["id"], "Priority": j["priority"], "Score": j["score"], "Company": j["company"],
             "Role": j["title"], "Lane": LANES.get(j["lane"], j["lane"]), "Location": j["location"],
-            "Posted": j["posted_at"] or "?", "Source": j["source"].split(":")[0], "Why": j["reasons"],
+            "Posted": j["posted_at"] or "?", "Source": j["source"].split(":")[0],
+            "Apply via": j.get("apply_via") or "", "Why": j["reasons"],
             "URL": j["url"], "Open": "Yes", "Last seen": today,
         })
         seen.add(j["id"])
@@ -99,6 +100,27 @@ def to_values(header: list[str], rows: list[dict]) -> list[list]:
     return out
 
 
+def migration_requests(sheet_id: int, old_header: list[str]) -> list[dict]:
+    """Insert real sheet columns for managed fields this sheet doesn't have yet.
+
+    Inserting (rather than just rewriting values one column over) lets Google Sheets shift the
+    existing filter, conditional formats, widths and the user's own columns along with the data.
+    """
+    if not any(old_header):
+        return []  # empty sheet: the first-run setup lays everything out
+    cur, reqs = list(old_header), []
+    for i, name in enumerate(COLUMNS):
+        if name in cur:
+            continue
+        prev = COLUMNS[i - 1] if i else None
+        pos = cur.index(prev) + 1 if prev in cur else len(cur)
+        reqs.append({"insertDimension": {"range": {"sheetId": sheet_id, "dimension": "COLUMNS",
+                                                   "startIndex": pos, "endIndex": pos + 1},
+                                         "inheritFromBefore": pos > 0}})
+        cur.insert(pos, name)
+    return reqs
+
+
 def format_requests(sheet_id: int, n_rows: int, header: list[str], first_run: bool) -> list[dict]:
     col = header.index
     rng = lambda c, start=1: {"sheetId": sheet_id, "startRowIndex": start, "endRowIndex": max(n_rows, 2),
@@ -132,7 +154,7 @@ def format_requests(sheet_id: int, n_rows: int, header: list[str], first_run: bo
         "booleanRule": {"condition": {"type": "CUSTOM_FORMULA", "values": [{"userEnteredValue": f'=${open_letter}2="No"'}]},
                         "format": {"textFormat": {"foregroundColor": color(0.6, 0.6, 0.6)}}}}}})
     widths = {"Priority": 60, "Score": 55, "Company": 170, "Role": 320, "Status": 110, "Notes": 220,
-              "Lane": 130, "Location": 200, "Why": 260, "URL": 120, "ID": 90}
+              "Lane": 130, "Location": 200, "Apply via": 110, "Why": 260, "URL": 120, "ID": 90}
     for name, px in widths.items():
         if name in header:
             reqs.append({"updateDimensionProperties": {
@@ -162,7 +184,11 @@ def sync(spreadsheet_id: str) -> int:
     sh = client().open_by_key(spreadsheet_id)
     ws = sh.worksheet(TAB)
     header, existing = read_rows(ws)
-    meta = sh.fetch_sheet_metadata({"fields": "sheets(properties.sheetId,conditionalFormats)"})
+    migrate = migration_requests(ws.id, header)
+    if migrate:
+        sh.batch_update({"requests": migrate})
+        ws = sh.worksheet(TAB)  # refresh cached column count before any resize
+    meta =sh.fetch_sheet_metadata({"fields": "sheets(properties.sheetId,conditionalFormats)"})
     first_run = not any(s.get("conditionalFormats") for s in meta["sheets"]
                         if s["properties"]["sheetId"] == ws.id)
     # Keep any column the user added, after the managed ones

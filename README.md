@@ -54,7 +54,7 @@ watchlist.yaml + config/sources.yaml ──► 14 sources in parallel
 
 `python -m pipeline.sheets` upserts every kept role into a private Google Sheet, keyed by a stable job ID (company + title).
 
-- **The sync owns** Priority, Score, Company, Role (linked), Lane, Location, Posted, Source, Why, Open, First/Last seen.
+- **The sync owns** Priority, Score, Company, Role (linked), Lane, Location, Posted, Source, Apply via (Lever / Greenhouse / Ashby, or the posting site), Why, Open, First/Last seen.
 - **I own** `Status` (New → Shortlisted → Applied → Interviewing → Offer / Rejected / Skip), `Notes`, and any column I add. These are read back and preserved on every run.
 - Roles that drop out of the feed stay with `Open = No`, never deleted, unless untouched (`New`) for 30 days.
 - Scraped text is escaped so it can never run as a sheet formula.

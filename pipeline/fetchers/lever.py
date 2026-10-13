@@ -18,6 +18,7 @@ def fetch(company: str, slug: str) -> list[Job]:
                 title=j.get("text", ""),
                 url=j.get("hostedUrl", ""),
                 source="lever",
+                apply_via="lever",
                 location=" / ".join(filter(None, locations)),
                 remote=True if workplace == "remote" else (False if workplace else None),
                 posted_at=f.parse_epoch_ms(j.get("createdAt")),

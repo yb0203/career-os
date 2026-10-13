@@ -17,6 +17,7 @@ def fetch(company: str, slug: str) -> list[Job]:
                 title=j.get("title", ""),
                 url=j.get("absolute_url", ""),
                 source="greenhouse",
+                apply_via="greenhouse",
                 location=location,
                 remote="remote" in location.lower() or None,
                 # first_published is the original post date; updated_at moves on every edit
