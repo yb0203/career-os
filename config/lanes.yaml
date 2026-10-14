@@ -18,6 +18,13 @@ lanes:
       - revenue operations
       - deployment strategist
       - deployment lead
+      - growth product
+      - product growth
+      - business analyst
+      - product analyst
+      - operations manager
+      - implementation manager
+      - business development  # sales-adjacent, Exploratory only
   ai_pm:
     label: AI PM / TPM
     titles:
@@ -25,6 +32,7 @@ lanes:
       - product lead
       - product owner
       - technical program manager
+      - program manager
       - ai pm
       - product operations
       - solutions engineer
@@ -59,7 +67,6 @@ exclude_titles:
   - engineer,
   - software engineer
   - designer
-  - intern
   - recruiter
   - account executive
   - sales development
@@ -120,3 +127,8 @@ scoring:
     - automation
     - early-stage
     - seed
+    - fresher
+    - freshers
+    - entry level
+    - entry-level
+    - open to freshers

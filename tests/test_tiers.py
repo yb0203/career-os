@@ -21,3 +21,16 @@ def test_fill_tiers_only_touches_untiered_new_rows():
             {"ID": "b", "Status": "New", "Tier": "Medium", "Role": "Product Manager", "Location": "Bengaluru"},
             {"ID": "c", "Status": "Applied", "Tier": "", "Role": "Product Manager", "Location": "Bengaluru"}]
     assert fill_tiers(rows) == {"a": "Strong"}
+
+
+def test_scope_rules_ncr_other_cities_flex_and_hard_nos():
+    assert classify("Product Manager", "Gurugram, Haryana") == "Medium"           # NCR is in scope, below Bengaluru
+    assert classify("Product Manager", "Mumbai") == "Skip"                         # not in scope
+    assert classify("Product Manager", "Hyderabad, Telangana, India") == "Skip"
+    assert classify("Product Manager", "Mumbai / Remote") == "Strong"              # a remote option keeps it in scope
+    assert classify("Associate Product Manager", "Bengaluru / Pune") == "Strong"
+    assert classify("Product Manager (Contract)", "Remote") == "Exploratory"       # contract/fractional = exploratory
+    assert classify("Growth Product Manager - Internship", "Remote, India") == "Exploratory"
+    assert classify("Software Engineer", "Bengaluru") == "Skip"                    # hard-no function
+    assert classify("Content Marketing Manager", "Bengaluru") == "Skip"
+    assert classify("Technical Recruiter", "Bengaluru") == "Skip"

@@ -71,14 +71,21 @@ def main():
         if "Tier" not in header:
             header.append("Tier")
             openings.update_cell(1, len(header), "Tier")
-        col = _letter(header.index("Tier"))
-        updates = [{"range": f"{col}{n}", "values": [[tiers[r["ID"]]]]}
-                   for n, r in enumerate(rows, start=2) if r.get("ID") in tiers]
+        col = {c: _letter(header.index(c)) for c in ("Tier", "Status", "Notes")}
+        updates = []
+        for n, r in enumerate(rows, start=2):
+            tier = tiers.get(r.get("ID"))
+            if not tier:
+                continue
+            if tier == "Skip":  # outside the role scope: out-of-scope city or a hard-no function
+                updates += [{"range": f"{col['Status']}{n}", "values": [["Skip"]]},
+                            {"range": f"{col['Notes']}{n}", "values": [[f"Skip (auto): outside role scope, {r.get('Location', '')}"]]}]
+                r["Status"] = "Skip"
+            else:
+                updates.append({"range": f"{col['Tier']}{n}", "values": [[tier]]})
+                r["Tier"] = tier
         openings.batch_update(updates)
-        for r in rows:
-            if r.get("ID") in tiers:
-                r["Tier"] = tiers[r["ID"]]
-        print(f"Auto-tiered {len(tiers)} new openings")
+        print(f"Auto-tiered {len(tiers)} new openings ({sum(t == 'Skip' for t in tiers.values())} skipped as out of scope)")
     values = build(rows, set(cfg.get("login_companies", [])))
     try:
         ws = sh.worksheet(TAB)
