@@ -70,7 +70,7 @@ sources:
   # --- Scope-driven additions (2026-10-14): fresher/internship, India startup, remote-global ---
   unstop: {enabled: true}          # public JSON API: jobs + internships, India-wide (fresher friendly)
   internshala: {enabled: true}     # server-rendered listing pages: internships + fresher jobs
-  wellfound: {enabled: true}       # public role pages (server-rendered): India + Gurgaon/Delhi/Noida, no login
+  wellfound: {enabled: false}       # OFF: Wellfound terms discourage scraping. Check wellfound.com by hand weekly (India + Gurgaon/Delhi/Noida)
   weekday: {enabled: true, max_pages: 150}   # Weekday sitemaps + JobPosting JSON-LD
   remoterocketship: {enabled: true}          # India + worldwide remote, links to the company's own ATS
   hasjob: {enabled: false}         # Atom feed, ~16 mixed postings; 0 survived the gates on 2026-10-14

@@ -31,6 +31,9 @@ lanes:
       - product manager
       - product lead
       - product owner
+      - product management
+      - product intern
+      - apm
       - technical program manager
       - program manager
       - ai pm
@@ -88,6 +91,10 @@ gates:
   location_allow:
     - bangalore
     - bengaluru
+    - gurgaon
+    - gurugram
+    - delhi
+    - noida
     - india
     - anywhere
     - worldwide
