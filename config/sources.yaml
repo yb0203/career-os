@@ -48,7 +48,9 @@ sources:
     pages: [role/product-manager, role/operations, role/sales, location/india, location/remote]
   getro:  # VC boards on Getro; collection id is read from each board page
     enabled: true
-    boards: [jobs.accel.com, jobs.blume.vc, jobs.3one4capital.com, careers.antler.co, jobs.generalcatalyst.com, jobs.insightpartners.com, jobs.thrivecap.com]
+    boards: [jobs.accel.com, jobs.blume.vc, jobs.3one4capital.com, careers.antler.co, jobs.generalcatalyst.com, jobs.insightpartners.com, jobs.thrivecap.com,
+             jobs.khoslaventures.com, jobs.sapphireventures.com, jobs.8vc.com, jobs.techstars.com,
+             jobs.firstmark.com, jobs.dcvc.com, jobs.bonfirevc.com, jobs.greycroft.com]
   consider:  # VC boards on Consider: host -> board id
     enabled: true
     boards:
@@ -59,3 +61,16 @@ sources:
       jobs.firstround.com: first-round-capital
       jobs.gv.com: gv
       jobs.bvp.com: bessemer-ventures
+      careers.chiratae.com: chiratae  # Chiratae Ventures (India)
+      jobs.battery.com: battery-ventures
+      jobs.felicis.com: felicis
+      jobs.initialized.com: initialized
+      jobs.usv.com: union-square-ventures
+
+  # --- Scope-driven additions (2026-10-14): fresher/internship, India startup, remote-global ---
+  unstop: {enabled: true}          # public JSON API: jobs + internships, India-wide (fresher friendly)
+  internshala: {enabled: true}     # server-rendered listing pages: internships + fresher jobs
+  wellfound: {enabled: true}       # public role pages (server-rendered): India + Gurgaon/Delhi/Noida, no login
+  weekday: {enabled: true, max_pages: 150}   # Weekday sitemaps + JobPosting JSON-LD
+  remoterocketship: {enabled: true}          # India + worldwide remote, links to the company's own ATS
+  hasjob: {enabled: false}         # Atom feed, ~16 mixed postings; 0 survived the gates on 2026-10-14

@@ -46,7 +46,7 @@ def find_list(obj, key: str):
     return None
 
 
-from pipeline.sources import community, india, remote_boards, startup_boards  # noqa: E402
+from pipeline.sources import community, india, remote_boards, scope_boards, startup_boards  # noqa: E402
 
 SOURCES: dict[str, Callable[[dict, list], list[Job]]] = {
     "remotive": remote_boards.remotive,
@@ -63,4 +63,10 @@ SOURCES: dict[str, Callable[[dict, list], list[Job]]] = {
     "yc": startup_boards.yc,
     "getro": startup_boards.getro,
     "consider": startup_boards.consider,
+    "unstop": scope_boards.unstop,
+    "internshala": scope_boards.internshala,
+    "wellfound": scope_boards.wellfound,
+    "weekday": scope_boards.weekday,
+    "remoterocketship": scope_boards.remoterocketship,
+    "hasjob": scope_boards.hasjob,
 }
