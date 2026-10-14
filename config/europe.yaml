@@ -1,0 +1,290 @@
+# Europe search: any tech-line role Yashvi's profile fits, in the Nordics and the rest of Europe,
+# that she can realistically apply to from India. Read by pipeline/europe.py. Edit freely.
+#
+# A role qualifies ONLY if (a) the posting offers visa sponsorship / relocation support / Blue Card,
+# or (b) it is fully remote and open to India or worldwide ("EU/EMEA remote" = remote-check).
+
+# Matched (case-insensitive, word-bounded) against the job's location text. `nordic: true` rows are
+# highlighted and score higher. Cities are listed so "Stockholm" alone resolves to Sweden.
+countries:
+  Sweden:      {code: SE, nordic: true,  aliases: [Sweden, Sverige, Stockholm, Gothenburg, Göteborg, Goteborg, Malmö, Malmo, Uppsala, Lund, Linköping, Linkoping, Västerås, Örebro, Umeå, Borlänge, Gävle, Boden, Bromma, Distans]}
+  Norway:      {code: "NO", nordic: true,  aliases: [Norway, Norge, Oslo, Bergen, Trondheim, Stavanger, Kristiansand, Tromsø]}
+  Denmark:      {code: DK, nordic: true,  aliases: [Denmark, Danmark, Copenhagen, København, Kobenhavn, Aarhus, Århus, Odense, Aalborg, Vejle, Glostrup, Brabrand, Esbjerg, Kolding]}
+  Finland:     {code: FI, nordic: true,  aliases: [Finland, Suomi, Helsinki, Espoo, Tampere, Turku, Oulu, Vantaa, Jyväskylä]}
+  Iceland:     {code: IS, nordic: true,  aliases: [Iceland, Reykjavik, Reykjavík, Kópavogur]}
+  Netherlands: {code: NL, nordic: false, aliases: [Netherlands, Nederland, Holland, Amsterdam, Rotterdam, Utrecht, Eindhoven, The Hague, Den Haag, Delft, Groningen, Haarlem, Leiden]}
+  Germany:     {code: DE, nordic: false, aliases: [Germany, Deutschland, Berlin, Munich, München, Hamburg, Frankfurt, Cologne, Köln, Stuttgart, Düsseldorf, Dusseldorf, Leipzig, Dresden, Heidelberg, Hannover, Nuremberg, Nürnberg, Karlsruhe, Bonn]}
+  Ireland:     {code: IE, nordic: false, aliases: [Ireland, Dublin, Cork, Galway, Limerick]}
+  United Kingdom: {code: GB, nordic: false, aliases: [UK, U.K., United Kingdom, Great Britain, England, Scotland, Wales, London, Manchester, Edinburgh, Glasgow, Bristol, Leeds, Birmingham, Belfast, Cardiff, Newcastle, Oxford, Reading, Brighton]}
+  France:      {code: FR, nordic: false, aliases: [France, Paris, Lyon, Marseille, Toulouse, Bordeaux, Nantes, Lille, Montpellier, Annecy, Aix-en-Provence, Sophia Antipolis]}
+  Spain:       {code: ES, nordic: false, aliases: [Spain, España, Madrid, Barcelona, Valencia, Málaga, Malaga, Seville, Sevilla, Bilbao]}
+  Portugal:    {code: PT, nordic: false, aliases: [Portugal, Lisbon, Lisboa, Porto, Braga]}
+  Italy:       {code: IT, nordic: false, aliases: [Italy, Italia, Milan, Milano, Rome, Roma, Turin, Torino, Bologna, Florence, Ferrara, Bergamo, Padova, Naples]}
+  Switzerland: {code: CH, nordic: false, aliases: [Switzerland, Schweiz, Suisse, Zurich, Zürich, Geneva, Genève, Basel, Lausanne, Bern, Zug, Lugano]}
+  Austria:     {code: AT, nordic: false, aliases: [Austria, Österreich, Vienna, Wien, Graz, Linz, Salzburg, Innsbruck]}
+  Belgium:     {code: BE, nordic: false, aliases: [Belgium, Belgique, België, Brussels, Bruxelles, Antwerp, Ghent, Leuven]}
+  Luxembourg:  {code: LU, nordic: false, aliases: [Luxembourg]}
+  Poland:      {code: PL, nordic: false, aliases: [Poland, Polska, Warsaw, Warszawa, Krakow, Kraków, Wroclaw, Wrocław, Gdansk, Gdańsk, Poznan, Poznań]}
+  Czechia:     {code: CZ, nordic: false, aliases: [Czechia, Czech Republic, Prague, Praha, Brno]}
+  Estonia:     {code: EE, nordic: false, aliases: [Estonia, Tallinn, Tartu]}
+  Latvia:      {code: LV, nordic: false, aliases: [Latvia, Riga]}
+  Lithuania:   {code: LT, nordic: false, aliases: [Lithuania, Vilnius, Kaunas]}
+  Romania:     {code: RO, nordic: false, aliases: [Romania, Bucharest, București, Cluj, Timisoara, Iasi]}
+  Hungary:     {code: HU, nordic: false, aliases: [Hungary, Budapest]}
+  Greece:      {code: GR, nordic: false, aliases: [Greece, Athens, Thessaloniki]}
+  Bulgaria:    {code: BG, nordic: false, aliases: [Bulgaria, Sofia]}
+  Croatia:     {code: HR, nordic: false, aliases: [Croatia, Zagreb]}
+  Serbia:      {code: RS, nordic: false, aliases: [Serbia, Belgrade]}
+  Slovakia:    {code: SK, nordic: false, aliases: [Slovakia, Bratislava]}
+  Slovenia:    {code: SI, nordic: false, aliases: [Slovenia, Ljubljana]}
+  Malta:       {code: MT, nordic: false, aliases: [Malta]}
+  Cyprus:      {code: CY, nordic: false, aliases: [Cyprus, Nicosia, Limassol]}
+
+# ---- Titles: a role needs a match in one family and none of the excludes.
+titles:
+  engineering:
+    - '\b(ai|ml|llm|genai|gen ai|machine learning|applied ai|generative ai|nlp|agentic)\b.{0,25}\b(engineer|developer|scientist)\b'
+    - '\b(engineer|developer)\b.{0,15}\b(ai|ml|llm|genai|machine learning|agents?)\b'
+    - '\bforward[- ]deployed\b'
+    - '\b(software|backend|back-end|full[- ]?stack|java|python|typescript|node(\.js)?|platform|api|integration|solutions?|product|developer experience|devex|developer productivity)\s+(engineer|developer|engineering)\b'
+    - '\bmember of technical staff\b'
+    - '\b(ai|ml)\s+(safety|evals?|evaluation)\b'
+    - '\bevals?\s+engineer\b'
+    - '\bagent(s|ic)?\s+(platform|infrastructure|engineer)'
+    - '\bdeveloper advocate\b'
+    - '\bsoftware (development )?engineer\b'
+    - '\bsde\b'
+  product:
+    - '\b(technical|ai|ml|associate|junior)\s+(product|program)\s+(manager|owner)\b'
+    - '\bproduct (manager|owner)\b'
+    - '\bproduct management\b'
+    - '\btechnical program(me)? manager\b'
+    - '\btpm\b'
+    - '\bapm\b'
+    - '\bproduct lead\b'
+  # Dropped even when an include matches: wrong discipline.
+  exclude:
+    - '\b(ios|android|embedded|firmware|mechanical|electrical|hardware|manufacturing|civil|chemical|network engineer|field engineer|support engineer|customer support|technical support|sales engineer|qa|quality assurance|sdet|test engineer|test automation|data centre|data center|site reliability|devops engineer|security engineer|cyber|salesforce|sap|abap|dynamics|servicenow|wordpress|shopify|unity developer|game developer|graphics|rendering|web designer|product designer|product marketing|product design|product operations|product analyst|marketing|recruit|sales|account (executive|manager)|legal|counsel|finance|accountant|payroll|hr |people partner|copywriter|designer|intern(ship)?|working student|werkstudent|praktikum|trainee|apprentice|ausbildung|thesis)\b'
+  # Senior-and-above: she has ~3 years, so drop these.
+  seniority_exclude:
+    - '\b(senior|sr\.?|staff|principal|lead|head of|director|vp|vice president|chief|distinguished|fellow|architect|expert|group product|engineering manager|manager of|team lead|tech lead|iii|iv|level 3|level 4|l[4-9])\b'
+  junior_boost:
+    - '\b(junior|associate|graduate|entry[- ]level|new grad|early career|apm|(software|engineer|developer|manager)\s+(i|1|ii|2))\b'
+  ai_title: '\b(ai|a\.i\.|ml|llm|llms|genai|gen ai|machine learning|deep learning|generative|nlp|agent|agents|agentic|rag|copilot|applied scientist|mlops|evals?)\b'
+
+# Years of experience asked above this => drop (about 0-5 years requested).
+max_years_required: 5
+# Postings older than this are skipped (when a posting date is known).
+max_age_days: 120
+
+# ---- Visa / relocation / remote signal phrases (regex, case-insensitive).
+sponsorship:
+  # Hard negatives: reject outright.
+  negative_strong:
+    - 'no (visa )?sponsorship'
+    - '\b(unable|not able|cannot|can ?not|can''t|won''t|will not|do not|don''t|does not|doesn''t|not)\b[^.\n]{0,40}\bsponsor'
+    - 'sponsorship\b[^.\n]{0,25}\b(not (available|offered|provided)|unavailable)'
+    - '\b(not|no)\b[^.\n]{0,20}\b(offer|provide|available)\b[^.\n]{0,20}\b(visa|relocation|work permit)'
+    - 'without (requiring|needing|the need for)[^.\n]{0,20}sponsorship'
+    - '\b(eu|eea|european) (citizens?|nationals?|passport) only'
+    - '\bonly (open|available) to (eu|eea|european)'
+    - '\b(us|u\.s\.|united states|canada) (only|residents only|based only)\b'
+    - 'must (be located|reside|be based|live)[^.\n]{0,25}\b(us|u\.s\.|united states|canada)\b'
+    - 'no relocation'
+    - 'relocation[^.\n]{0,25}\bnot (available|offered|provided|supported)'
+  # Soft negatives: reject unless the same posting offers sponsorship explicitly.
+  negative_soft:
+    - 'right to work (in|within)'
+    - '(eligible|authori[sz]ed|permitted|entitled|legally (able|allowed)|allowed) to work (in|within)'
+    - 'work (permit|authori[sz]ation|visa) (is |are )?(already )?required'
+    - 'must (already )?(have|hold|possess)[^.\n]{0,40}\b(right|permit|authori[sz]ation|visa|citizenship)'
+    - '\b(valid|existing) (eu |uk )?(work )?(permit|visa|residence)'
+  positive:
+    - 'visa sponsorship'
+    - 'sponsor(?:s|ing|ed)?\b[^.\n]{0,25}\b(visa|work[- ]permit|immigration|blue card|your (visa|permit))'
+    - '\b(visa|work[- ]permit|immigration|blue card|work authori[sz]ation)\b[^.\n]{0,60}\b(sponsor|support|assist|provid|offer|help|cover|handle|arrang)'
+    - '\b(sponsor\w*|support\w*|assist\w*|provid\w*|offer\w*|help\w*|cover\w*|arrang\w*)\b[^.\n]{0,40}\b(visa|work[- ]permit|immigration|blue card|relocation)'
+    - 'relocation (support|assistance|package|bonus|budget|allowance|benefit|help|services|stipend|offered)'
+    - 'relocat\w+ (is |are )?(offered|provided|available|supported|covered|possible)'
+    - 'we (can |will )?help you (to )?relocate'
+    - 'blue card'
+    - 'visa (support|assistance)'
+  # Words in the matched sentence that mean the signal is about visas rather than just moving.
+  visa_words: 'visa|work[- ]permit|immigration|blue card|sponsor|work authori[sz]ation'
+  negation_words: '\b(no|not|never|unable|cannot|can''t|don''t|doesn''t|unfortunately|without|isn''t|aren''t|won''t)\b'
+
+remote:
+  # Location text or description meaning "open to India / anywhere".
+  worldwide:
+    - '\bworldwide\b'
+    - '\banywhere\b'
+    - '\bglobal(ly)?\b'
+    - '\bwork from anywhere\b'
+    - '\bany (country|location)\b'
+    - 'open to candidates (from|in) (any|all)'
+  # EU/EMEA remote: needs a manual check of the working-rights wording.
+  europe: ['\bemea\b', '\beu\b', '\beea\b', '\beurope(an)?\b', '\bcet\b', '\bcest\b', '\bgmt\b']
+  # Not open to her: remote restricted to these.
+  excluded: ['\bus\b', '\busa\b', '\bunited states\b', '\bamericas?\b', '\bcanada\b', '\blatam\b', '\bnorth america\b', '\buk only\b', '\bcitizens? only\b']
+
+# ---- Apply method from the link's host.
+apply_hosts:
+  direct: [greenhouse.io, lever.co, ashbyhq.com, workable.com, smartrecruiters.com, personio.de, personio.com,
+           teamtailor.com, recruitee.com, join.com, comeet.com, breezy.hr, homerun.co, pinpointhq.com,
+           jobs.gem.com, rippling.com, bamboohr.com, workablehq.com, careers-page.com, hire.lever.co]
+  account: [myworkdayjobs.com, workday.com, oraclecloud.com, icims.com, taleo.net, successfactors.com,
+            brassring.com, ultipro.com, jobvite.com, peopleclick.com, avature.net, cornerstoneondemand.com]
+  aggregator: [arbeitnow.com, arbeitnow.co.uk, relocate.me, berlinstartupjobs.com, remotive.com, remotive.io,
+               remoteok.com, himalayas.app, weworkremotely.com, jobicy.com, workingnomads.com,
+               landing.jobs, wearedevelopers.com, eu-startups.com]
+
+# ---- Remote boards reused for Europe: only worldwide / EU-open postings are kept.
+remote_boards: [remotive, remoteok, himalayas, jobicy, weworkremotely, workingnomads]
+
+# ---- Company watchlist: European and Nordic tech employers on public ATS boards.
+# Each slug below answered with open jobs when added; `python -m pipeline.europe --check` re-checks them.
+watchlist:
+  "Spotify": {lever: spotify}
+  "Wolt": {greenhouse: wolt}
+  "Supercell": {ashby: supercell}
+  "Einride": {personio: einride}
+  "Epidemic Sound": {ashby: epidemic-sound}
+  "Tibber": {teamtailor: tibber}
+  "Vipps MobilePay": {teamtailor: vipps}
+  "Kahoot": {workable: kahoot}
+  "Pleo": {ashby: pleo}
+  "Lunar": {teamtailor: lunar}
+  "Trustly": {ashby: trustly}
+  "Legora": {ashby: legora}
+  "Lovable": {ashby: lovable}
+  "Neo4j": {greenhouse: neo4j}
+  "Truecaller": {greenhouse: truecaller}
+  "Bambuser": {teamtailor: bambuser}
+  "Storytel": {teamtailor: storytel}
+  "Mentimeter": {greenhouse: mentimeter}
+  "Hedvig": {teamtailor: hedvig}
+  "Anyfin": {teamtailor: anyfin}
+  "Stegra": {teamtailor: stegra}
+  "Funnel": {teamtailor: funnel}
+  "Cint": {smartrecruiters: cint}
+  "Instabee": {teamtailor: instabee}
+  "Pipedrive": {lever: pipedrive}
+  "Wise": {smartrecruiters: wise}
+  "Veriff": {greenhouse: veriff}
+  "Playtech": {smartrecruiters: playtech}
+  "Starship Technologies": {teamtailor: starship}
+  "Nord Security": {ashby: nord-security}
+  "Oura": {greenhouse: oura}
+  "Relex Solutions": {greenhouse: relex}
+  "IQM": {teamtailor: iqm}
+  "Reaktor": {ashby: reaktor}
+  "Solita": {greenhouse: solita}
+  "Holvi": {teamtailor: holvi}
+  "Meltwater": {recruitee: meltwater}
+  "Cognite": {greenhouse: cognite}
+  "Schibsted": {teamtailor: schibsted}
+  "Templafy": {teamtailor: templafy}
+  "Trustpilot": {greenhouse: trustpilot}
+  "Vivino": {teamtailor: vivino}
+  "Too Good To Go": {ashby: toogoodtogo}
+  "Podimo": {teamtailor: podimo}
+  "Corti": {ashby: corti}
+  "Veo Technologies": {lever: veo}
+  "Controlant": {workable: controlant}
+  "Delivery Hero": {smartrecruiters: deliveryhero}
+  "Adyen": {greenhouse: adyen}
+  "Mollie": {ashby: mollie}
+  "Bunq": {recruitee: bunq}
+  "Typeform": {greenhouse: typeform}
+  "N26": {greenhouse: n26}
+  "Celonis": {greenhouse: celonis}
+  "DeepL": {ashby: deepl}
+  "Aleph Alpha": {ashby: alephalpha}
+  "Synthesia": {ashby: synthesia}
+  "ElevenLabs": {ashby: elevenlabs}
+  "Elastic": {greenhouse: elastic}
+  "GitLab": {greenhouse: gitlab}
+  "Canonical": {greenhouse: canonical}
+  "Cloudflare": {greenhouse: cloudflare}
+  "Datadog": {greenhouse: datadog}
+  "Stripe": {greenhouse: stripe}
+  "Databricks": {greenhouse: databricks}
+  "Monzo": {greenhouse: monzo}
+  "GoCardless": {greenhouse: gocardless}
+  "Faculty": {ashby: faculty}
+  "Anthropic": {greenhouse: anthropic}
+  "OpenAI": {ashby: openai}
+  "Cohere": {ashby: cohere}
+  "Photoroom": {ashby: photoroom}
+  "Qonto": {ashby: qonto}
+  "Contentsquare": {lever: contentsquare}
+  "Ledger": {ashby: ledger}
+  "Doctolib": {ashby: doctolib}
+  "BlaBlaCar": {lever: blablacar}
+  "Mirakl": {greenhouse: mirakl}
+  "Algolia": {greenhouse: algolia}
+  "Dataiku": {greenhouse: dataiku}
+  "Back Market": {ashby: backmarket}
+  "Pennylane": {ashby: pennylane}
+  "Pigment": {lever: pigment}
+  "Payfit": {teamtailor: payfit}
+  "Aircall": {lever: aircall}
+  "Sorare": {ashby: sorare}
+  "H Company": {ashby: hcompany}
+  "Poolside": {ashby: poolside}
+  "Black Forest Labs": {ashby: black-forest-labs}
+  "Helsing": {ashby: helsing}
+  "Parloa": {greenhouse: parloa}
+  "Langdock": {ashby: langdock}
+  "n8n": {ashby: n8n}
+  "Raisin": {greenhouse: raisin}
+  "Forto": {ashby: forto}
+  "Flix": {greenhouse: flix}
+  "HelloFresh": {greenhouse: hellofresh}
+  "Contentful": {greenhouse: contentful}
+  "Staffbase": {greenhouse: staffbase}
+  "GetYourGuide": {greenhouse: getyourguide}
+  "Auto1": {smartrecruiters: auto1}
+  "Moonfare": {greenhouse: moonfare}
+  "Babbel": {ashby: babbel}
+  "Omio": {smartrecruiters: omio}
+  "SumUp": {greenhouse: sumup}
+  "JetBrains": {greenhouse: jetbrains}
+  "Bitvavo": {ashby: bitvavo}
+  "Miro": {ashby: miro}
+  "Catawiki": {greenhouse: catawiki}
+  "Coolblue": {smartrecruiters: coolblue}
+  "Bynder": {ashby: bynder}
+  "Sendcloud": {teamtailor: sendcloud}
+  "Mendix": {lever: mendix}
+  "Intercom": {greenhouse: intercom}
+  "Tines": {greenhouse: tines}
+  "Workhuman": {ashby: workhuman}
+  "Flipdish": {greenhouse: flipdish}
+  "Wayflyer": {ashby: wayflyer}
+  "Wayve": {ashby: wayve}
+  "Improbable": {ashby: improbable}
+  "Multiverse": {ashby: multiverse}
+  "Tractable": {ashby: tractable}
+  "Thought Machine": {ashby: thought-machine}
+  "ComplyAdvantage": {greenhouse: complyadvantage}
+  "Snyk": {ashby: snyk}
+  "Deliveroo": {greenhouse: deliveroo}
+  "Quantexa": {ashby: quantexa}
+  "Marshmallow": {ashby: marshmallow}
+  "Zopa": {lever: zopa}
+  "Moneybox": {ashby: moneybox}
+  "Perk": {ashby: perk}
+  "SeQura": {recruitee: sequra}
+  "Feedzai": {greenhouse: feedzai}
+  "Farfetch": {lever: farfetch}
+  "Sword Health": {greenhouse: swordhealth}
+  "Satispay": {ashby: satispay}
+  "Musixmatch": {lever: musixmatch}
+  "Allegro": {smartrecruiters: allegro}
+  "Docplanner": {ashby: docplanner}
+  "Scandit": {greenhouse: scandit}
+  "Nexthink": {smartrecruiters: nexthink}
+  "Proton": {greenhouse: proton}
+  "Climeworks": {recruitee: climeworks}
+  "Personio": {personio: personio}
