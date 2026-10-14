@@ -8,13 +8,12 @@
   "hn_whoishiring",
   "instahyre",
   "jobicy",
+  "linkedin",
   "remoteok",
   "remotive",
   "weworkremotely",
   "workingnomads",
   "yc"
  ],
- "failed": [
-  "linkedin"
- ]
+ "failed": []
 }
