@@ -2,8 +2,8 @@ name: daily-job-digest
 
 on:
   schedule:
-    - cron: "30 1 * * *"   # 07:00 IST
-    - cron: "30 13 * * *"  # 19:00 IST
+    - cron: "17 1 * * *"   # ~06:47 IST (off the hour: GitHub delays or drops busy top-of-hour schedules)
+    - cron: "17 13 * * *"  # ~18:47 IST
   workflow_dispatch:
 
 permissions:
