@@ -1,19 +1,25 @@
 {
  "scanned": [
   "ats",
-  "consider",
   "cutshort",
   "getro",
   "himalayas",
   "hn_whoishiring",
   "instahyre",
+  "internshala",
   "jobicy",
   "linkedin",
   "remoteok",
+  "remoterocketship",
   "remotive",
+  "themuse",
+  "unstop",
+  "weekday",
   "weworkremotely",
   "workingnomads",
   "yc"
  ],
- "failed": []
+ "failed": [
+  "consider"
+ ]
 }
