@@ -104,3 +104,37 @@ def workingnomads(params, terms):
         )
         for j in data
     ]
+
+
+MUSE_API = "https://www.themuse.com/api/public/jobs"
+MUSE_CATEGORY = "Product Management"
+MUSE_LOCATIONS = ["Flexible / Remote", "Bangalore, India"]
+
+
+def _muse_job(j: dict) -> Job:
+    """Map one The Muse API posting to a Job."""
+    names = [l.get("name", "") for l in j.get("locations") or [] if l.get("name")]
+    return Job(
+        company=(j.get("company") or {}).get("name", ""), title=j.get("name", ""),
+        url=(j.get("refs") or {}).get("landing_page", ""), source="themuse",
+        location=" / ".join(names), remote="Flexible / Remote" in names,
+        posted_at=parse_iso(j.get("publication_date")),
+        description=strip_html(j.get("contents", "") or ""),
+    )
+
+
+def themuse(params, terms):
+    s, jobs, seen = session(), [], set()
+    for location in params.get("locations", MUSE_LOCATIONS):
+        page, page_count = 0, 1
+        while page < page_count and page < 20:
+            data = s.get(MUSE_API, params={"category": params.get("category", MUSE_CATEGORY),
+                                           "location": location, "page": page}, timeout=30).json()
+            page_count = data.get("page_count", 1)
+            for j in data.get("results", []):
+                if j.get("id") in seen:
+                    continue
+                seen.add(j.get("id"))
+                jobs.append(_muse_job(j))
+            page += 1
+    return jobs

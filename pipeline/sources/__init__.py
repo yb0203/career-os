@@ -55,6 +55,7 @@ SOURCES: dict[str, Callable[[dict, list], list[Job]]] = {
     "jobicy": remote_boards.jobicy,
     "weworkremotely": remote_boards.weworkremotely,
     "workingnomads": remote_boards.workingnomads,
+    "themuse": remote_boards.themuse,
     "hn_whoishiring": community.hn_whoishiring,
     "linkedin": india.linkedin,
     "instahyre": india.instahyre,

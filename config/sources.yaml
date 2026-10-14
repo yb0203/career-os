@@ -22,6 +22,7 @@ sources:
     enabled: true
     feeds: [remote-product-jobs, remote-management-and-finance-jobs, remote-sales-and-marketing-jobs, all-other-remote-jobs]
   workingnomads: {enabled: true}
+  themuse: {enabled: true, category: Product Management, locations: [Flexible / Remote, "Bangalore, India"]}
 
   # --- Community ---
   hn_whoishiring: {enabled: true}  # latest monthly "Ask HN: Who is hiring?" thread
