@@ -8,7 +8,6 @@
   "instahyre",
   "internshala",
   "jobicy",
-  "linkedin",
   "remoteok",
   "remoterocketship",
   "remotive",
@@ -20,6 +19,7 @@
   "yc"
  ],
  "failed": [
-  "consider"
+  "consider",
+  "linkedin"
  ]
 }
