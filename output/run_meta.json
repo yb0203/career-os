@@ -3,7 +3,6 @@
   "ats",
   "cutshort",
   "getro",
-  "himalayas",
   "hn_whoishiring",
   "instahyre",
   "internshala",
@@ -20,6 +19,7 @@
   "yc"
  ],
  "failed": [
-  "consider"
+  "consider",
+  "himalayas"
  ]
 }
