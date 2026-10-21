@@ -2,7 +2,10 @@
  "scanned": [
   "ats",
   "cutshort",
+  "getro",
+  "himalayas",
   "hn_whoishiring",
+  "instahyre",
   "internshala",
   "jobicy",
   "linkedin",
@@ -17,9 +20,6 @@
   "yc"
  ],
  "failed": [
-  "consider",
-  "getro",
-  "himalayas",
-  "instahyre"
+  "consider"
  ]
 }
