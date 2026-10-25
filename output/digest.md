@@ -1,12 +1,11 @@
-# Daily job digest — 2026-10-24
+# Daily job digest — 2026-10-25
 
-Scanned **23,010** live postings from **19** sources → **566** passed every gate (133 P0, 347 P1, 86 P2). 12 dead links removed.
+Scanned **23,026** live postings from **19** sources → **581** passed every gate (131 P0, 366 P1, 84 P2). 5 dead links removed.
 
 | Pri | Score | Lane | Company | Role | Location | Posted | Source |
 |---|---|---|---|---|---|---|---|
 | P0 | 100 | ai_pm | Zycus | [AI-Native Product Manager Graduate Trainee](https://unstop.com/jobs/ai-native-product-manager-graduate-trainee-zycus-1773555) | Bangalore | 2026-10-23 | unstop |
 | P0 | 98 | ai_pm | Smartsheet | [Technical Program Manager II - AI Platforms](https://job-boards.greenhouse.io/smartsheet/jobs/8318842) | Bangalore, INDIA | 2026-10-23 | greenhouse |
-| P0 | 94 | growth_strategy | Weekday | [Founder's Office (Growth & GTM)](https://himalayas.app/companies/weekday/jobs/founder-s-office-growth-gtm?utm_source=api) | India | 2026-10-21 | himalayas |
 | P0 | 93 | growth_strategy | BrightChamps | [Business Development Associate](https://unstop.com/jobs/business-development-associate-brightchamps-1773430) | Bangalore | 2026-10-22 | unstop |
 | P0 | 93 | ai_pm | Branch International | [Associate Product Manager](https://jobs.weekday.works/associate-product-manager-at-branch-international-wkdyme5sw7) | India | 2026-10-19 | weekday |
 | P0 | 91 | growth_strategy | Pioneers Global Associates | [Business Development Officer (BDO)](https://unstop.com/jobs/business-development-officer-bdo-pioneers-global-associates-1774753) | Remote, India | 2026-10-24 | unstop |
@@ -21,8 +20,10 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P0 | 89 | growth_strategy | Elvator | [Business Development Executive (BDE)](https://unstop.com/jobs/business-development-executive-bde-elvator-1774938) | Remote, India | 2026-10-24 | unstop |
 | P0 | 89 | growth_strategy | Blynk Homes | [Business Development Internship](https://unstop.com/internships/business-development-internship-blynk-homes-1774709) | Remote, India | 2026-10-24 | unstop |
 | P0 | 89 | growth_strategy | Weskill Edutech Private Limited | [Business Development Internship](https://unstop.com/internships/business-development-internship-weskillorg-1773318) | Remote, India | 2026-10-22 | unstop |
+| P0 | 89 | growth_strategy | Weekday | [Founder's Office (Growth & GTM)](https://himalayas.app/companies/weekday/jobs/founder-s-office-growth-gtm?utm_source=api) | India | 2026-10-21 | himalayas |
 | P0 | 89 | growth_strategy | Arrowhead | [Founder's Office](https://jobs.weekday.works/founder-s-office-at-arrowhead-wkdyfng2go) | Bengaluru, Karnataka | 2026-10-19 | weekday |
 | P0 | 88 | ai_pm | HighLevel | [Sr. Product Manager - Reputation Management](https://jobs.lever.co/gohighlevel/de899a79-e7e0-4650-8356-08a5d95b4198) | India | 2026-10-22 | lever |
+| P0 | 87 | growth_strategy | Skilory | [Business Development Internship](https://unstop.com/internships/business-development-intern-skilory-1775304) | Remote, India | 2026-10-25 | unstop |
 | P0 | 87 | growth_strategy | Budhana Tech LLP | [Business Development Internship](https://unstop.com/internships/business-development-internship-budhana-tech-llp-1774832) | Remote, India | 2026-10-24 | unstop |
 | P0 | 87 | growth_strategy | Next Art Creations | [Business Development Internship](https://unstop.com/internships/business-development-internship-next-art-creations-1773881) | Remote, India | 2026-10-24 | unstop |
 | P0 | 87 | growth_strategy | Airkrit India Pvt. Ltd. | [Campus Outreach & Growth Internship](https://unstop.com/internships/campus-outreach-growth-internship-airkrit-india-pvt-ltd-1773953) | Remote, India | 2026-10-24 | unstop |
@@ -37,14 +38,11 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P0 | 86 | ai_pm | Pocket FM | [Associate Program Manager](https://jobs.weekday.works/associate-program-manager-at-pocket-fm-wkdy6h0cdc) | Bengaluru, Karnataka | 2026-10-20 | weekday |
 | P0 | 86 | growth_strategy | Greenway Health | [Business Analyst, PMO](https://jobs.weekday.works/business-analyst-pmo-at-greenway-health-wkdy038rtn) | Bengaluru, Karnataka | 2026-10-19 | weekday |
 | P0 | 85 | ai_pm | Canonical | [Engineering Manager - Solutions Engineering](https://jobicy.com/jobs/149556-engineering-manager-solutions-engineering) | Anywhere | 2026-10-24 | jobicy |
-| P0 | 85 | growth_strategy | Salestarget.ai | [GTM](https://internshala.com/internship/detail/gtm-internship-in-bangalore-at-salestargetai1792749447) | Bangalore | 2026-10-23 | internshala |
-| P0 | 85 | growth_strategy | Dronevex Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/business-development-sales-internship-in-bangalore-at-dronevex-private-limited1792666143) | Bangalore | 2026-10-22 | internshala |
-| P0 | 85 | growth_strategy | LI-MAT SOFT SOLUTIONS PRIVATE LIMITED | [International Business Development](https://internshala.com/internship/detail/international-business-development-internship-in-bangalore-at-li-mat-soft-solutions-private-limited1792661161) | Bangalore | 2026-10-22 | internshala |
-| P0 | 85 | growth_strategy | SkillOrbit | [Education Sales & Business Development](https://internshala.com/internship/detail/education-sales-business-development-internship-in-bangalore-at-skillorbit1792653856) | Bangalore | 2026-10-22 | internshala |
-| P0 | 85 | growth_strategy | Buzdealz Ventures Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/work-from-home-business-development-sales-internship-at-buzdealz-ventures-private-limited1792665359) | Remote, India | 2026-10-22 | internshala |
-| P0 | 85 | growth_strategy | Pirgal Consulting Private Limited | [Real Estate Business Development](https://internshala.com/internship/detail/real-estate-business-development-internship-in-bangalore-at-pirgal-consulting-private-limited1792667388) | Bangalore | 2026-10-22 | internshala |
+| P0 | 85 | growth_strategy | LI-MAT SOFT SOLUTIONS PRIVATE LIMITED | [International Business Development](https://internshala.com/internship/detail/international-business-development-internship-in-bangalore-at-li-mat-soft-solutions-private-limited1792661161) | Bangalore | 2026-10-23 | internshala |
+| P0 | 85 | growth_strategy | Dronevex Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/business-development-sales-internship-in-bangalore-at-dronevex-private-limited1792666143) | Bangalore | 2026-10-23 | internshala |
+| P0 | 85 | growth_strategy | SkillOrbit | [Education Sales & Business Development](https://internshala.com/internship/detail/education-sales-business-development-internship-in-bangalore-at-skillorbit1792653856) | Bangalore | 2026-10-23 | internshala |
+| P0 | 85 | growth_strategy | Buzdealz Ventures Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/work-from-home-business-development-sales-internship-at-buzdealz-ventures-private-limited1792665359) | Remote, India | 2026-10-23 | internshala |
 | P0 | 85 | growth_strategy | Attain | [CAD, Polylining, Space Business Analyst](https://jobs.smartrecruiters.com/attain1/744000157044909-cad-polylining-and-space-business-analyst) | India | 2026-10-22 | remoterocketship |
-| P0 | 85 | growth_strategy | Attain | [Business Analyst, CAD, Polylining, Space](https://jobs.smartrecruiters.com/attain1/744000156821529-cad-polylining-and-space-business-analyst) | India | 2026-10-21 | remoterocketship |
 | P0 | 85 | growth_strategy | NA | [Founders Office Intern Internship in Bangalore](https://jobs.weekday.works/founders-office-intern-internship-in-bangalore-at-na-wkdyvhbuz7) | Bengaluru, Karnataka | 2026-10-21 | weekday |
 | P0 | 85 | ai_pm | First American (India) | [Product Manager II](https://firstam.wd1.myworkdayjobs.com/faicareers/job/ind-karnataka-bangalore/product-manager-ii_r059215) | India | 2026-10-20 | remoterocketship |
 | P0 | 85 | ai_pm | in-tech Automotive Engineering, LLC | [Technical Program Manager - Android Device Testing](https://jobs.weekday.works/technical-program-manager-android-device-testing-at-in-tech-gmbh-wkdy9q4hi4) | Bengaluru, Karnataka | 2026-10-20 | weekday |
@@ -57,11 +55,17 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P0 | 84 | growth_strategy | Tailwebs Technology | [Business Development Executive](https://unstop.com/jobs/business-development-executive-tailwebs-technology-1772612) | Bangalore | 2026-10-20 | unstop |
 | P0 | 84 | growth_strategy | DynamaxTerra | [Business Analyst](https://jobs.weekday.works/business-analyst-at-dynamaxterra-wkdy1zkanf) | India | 2026-10-20 | weekday |
 | P0 | 84 | growth_strategy | Oncodefend | [Business Development Internship](https://unstop.com/internships/business-development-internship-oncodefend-1772483) | Remote, India | 2026-10-19 | unstop |
-| P0 | 84 | growth_strategy | SRs Adyapan Private Limited | [Campus Engagement & Growth Executive Internship](https://unstop.com/internships/campus-engagement-growth-executive-internship-srs-adyapan-private-limited-1771817) | Remote, India | 2026-10-18 | unstop |
+| P0 | 84 | growth_strategy | SRs Adyapan Edutech Private Limited (Adyapan School) | [Campus Engagement & Growth Executive Internship](https://unstop.com/internships/campus-engagement-growth-executive-internship-srs-adyapan-private-limited-1771817) | Remote, India | 2026-10-18 | unstop |
 | P0 | 84 | ai_pm | Turing | [Product Manager](https://job-boards.greenhouse.io/turing/jobs/6227621004) | India - Remote | 2026-10-16 | greenhouse |
 | P0 | 84 | ai_pm | Google | [Technical Program Manager](https://unstop.com/jobs/technical-program-manager-google-1770516) | Bangalore | 2026-10-15 | unstop |
 | P0 | 84 | growth_strategy | Biome Sustainability Ventures | [Founders Office Associate](https://himalayas.app/companies/biome-sustainability-ventures/jobs/founders-office-associate?utm_source=api) | India | 2026-10-12 | himalayas |
-| P0 | 83 | growth_strategy | Flexiple | [Business Operations Manager](https://in.linkedin.com/jobs/view/business-operations-manager-at-flexiple-4483318424) | India | 2026-10-24 | linkedin |
+| P0 | 83 | growth_strategy | Rupeek | [Product Manager - Consumer Growth](https://in.linkedin.com/jobs/view/product-manager-consumer-growth-at-rupeek-4481363207) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
+| P0 | 83 | ai_pm | Rupeek | [Product Manager - Consumer Platform](https://in.linkedin.com/jobs/view/product-manager-consumer-platform-at-rupeek-4481360367) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
+| P0 | 83 | growth_strategy | Houseeazy | [Founders Office Associate](https://in.linkedin.com/jobs/view/founders-office-associate-at-houseeazy-4481310962) | Noida, Uttar Pradesh, India | 2026-10-24 | getro |
+| P0 | 83 | ai_pm | Hpe Simplivity | [Technical Program Manager - Firmware and Security](https://careers.hpe.com/us/en/job/1213679) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
+| P0 | 83 | ai_pm | Hpe Simplivity | [Technical Program Manager - AI & Machine Learning Programs](https://careers.hpe.com/us/en/job/1216270) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
+| P0 | 83 | ai_pm | Hpe Simplivity | [Technical Program Manager - Software Compliance and Program Budgeting](https://careers.hpe.com/us/en/job/1216278) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
+| P0 | 83 | growth_strategy | Flexiple | [Strategy and Operations Manager](https://in.linkedin.com/jobs/view/strategy-and-operations-manager-at-flexiple-4483361197) | India | 2026-10-24 | linkedin |
 | P0 | 83 | ai_pm | Kobie | [Technical Program Manager](https://in.linkedin.com/jobs/view/technical-program-manager-at-kobie-4456086717) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
 | P0 | 83 | growth_strategy | ElevenLabs | [GTM Enablement - Partner Program](https://jobs.ashbyhq.com/elevenlabs/820e5023-c637-4b36-91a9-f732f235998e) | Remote | 2026-10-23 | ashby |
 | P0 | 83 | growth_strategy | Dodo Payments | [Founder's Office (Deal Desk)](https://jobs.pyjamahr.com/dodo-payments/founder-s-office-deal-desk) | Bengaluru, Karnataka, India | 2026-10-23 | getro |
@@ -85,14 +89,8 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P0 | 83 | ai_pm | Hewlett Packard Enterprise | [Technical Program Manager – AI & Machine Learning Programs](https://in.linkedin.com/jobs/view/technical-program-manager-%E2%80%93-ai-machine-learning-programs-at-hewlett-packard-enterprise-4482871066) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P0 | 83 | growth_strategy | Anduril | [2027 Early Career Business Operations Associate](https://boards.greenhouse.io/andurilindustries/jobs/5271811007) | Costa Mesa, CA, USA / Colombia / Pune, Maharashtra, India… | 2026-10-22 | getro |
 | P0 | 83 | ai_pm | Pramaana Labs | [Product Manager](https://jobs.ashbyhq.com/pramaana-labs/22da3a15-a52e-4efd-b890-bdb523e223a9) | Palo Alto, CA, USA / Bengaluru, Karnataka, India | 2026-10-22 | getro |
-| P0 | 83 | ai_pm | Meesho | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-meesho-4482470377) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P0 | 83 | ai_pm | Cvent | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-cvent-4440660649) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P0 | 83 | ai_pm | Priceline | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-priceline-4463853506) | Mumbai, Maharashtra, India | 2026-10-22 | linkedin |
-| P0 | 83 | growth_strategy | Cube | [Founder's Office Associate](https://in.linkedin.com/jobs/view/founder-s-office-associate-at-cube-4481605119) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P0 | 83 | growth_strategy | Lenovo | [Manager, Commercial Business Operations](https://in.linkedin.com/jobs/view/manager-commercial-business-operations-at-lenovo-4481303335) | Bangalore Urban, Karnataka, India | 2026-10-22 | linkedin |
-| P0 | 83 | growth_strategy | ZorSpeaker | [Founder's Office Associate](https://in.linkedin.com/jobs/view/founder-s-office-associate-at-zorspeaker-4481374941) | Jaipur, Rajasthan, India | 2026-10-22 | linkedin |
-| P0 | 83 | growth_strategy | IPLIX Media | [Founders Office - AI Systems & Operations](https://in.linkedin.com/jobs/view/founders-office-ai-systems-operations-at-iplix-media-4480026855) | Saket, Delhi, India | 2026-10-22 | linkedin |
-| P0 | 83 | growth_strategy | OneMetric | [Founder's Office- Program Management](https://in.linkedin.com/jobs/view/founder-s-office-program-management-at-onemetric-4482463509) | Gurugram, Haryana, India | 2026-10-22 | linkedin |
+| P0 | 83 | ai_pm | Purplle | [Associate Product Manager - Supply Chain (Logistics B2B)](https://purplle.turbohire.co/job/publicjobs/ofg8pmbsOMJVDrMltwnytv_Rl%2Fv5ci4CgWtrxOiZD9NvpWqILxEZQP1E14BCaCyu) | Vikhroli, Mumbai, Maharashtra, India | 2026-10-22 | consider |
+| P0 | 83 | ai_pm | Purplle | [Associate Product Manager - Supply Chain (WMS)](https://purplle.turbohire.co/job/publicjobs/2hXsSj_5dBEf5eDVahduNE%2F01380WfH5rpg5LxdtjR1bqajeUQhicLF8xWyGOXd0) | Vikhroli, Mumbai, Maharashtra, India | 2026-10-22 | consider |
 | P0 | 83 | growth_strategy | Clinogenisis Research Institute | [Business Development Executive (BDE)](https://unstop.com/jobs/business-development-executive-bde-clinogenisis-research-institute-1770112) | Bangalore | 2026-10-14 | unstop |
 | P0 | 83 | growth_strategy | BTOW Pvt. Ltd. | [Sales & Business Development Associate](https://unstop.com/jobs/sales-business-development-btow-pvt-ltd-1770026) | Remote, India | 2026-10-14 | unstop |
 | P0 | 82 | growth_strategy | ITC WORLDWIDE | [Business Process Operations Analyst (GTM)](https://himalayas.app/companies/itc-worldwide/jobs/business-process-operations-analyst-gtm-8399465625?utm_source=api) | India | 2026-10-22 | himalayas |
@@ -118,15 +116,15 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P0 | 81 | growth_strategy | Shivay technologies | [Business Development Manager](https://unstop.com/jobs/business-development-manager-shivay-technologies-1771103) | Bangalore | 2026-10-16 | unstop |
 | P0 | 81 | growth_strategy | UrbanScholar Innovations | [Campus Growth Associate Internship](https://unstop.com/internships/campus-growth-associate-internship-urbanscholar-innovations-1770093) | Remote, India | 2026-10-14 | unstop |
 | P0 | 81 | growth_strategy | Utilized | [Business Development Internship](https://unstop.com/internships/business-development-internship-utilized-1769186) | Remote, India | 2026-10-12 | unstop |
-| P0 | 81 | growth_strategy | Growth India | [Business Development Internship (Client Acquisition)](https://unstop.com/internships/business-development-internship-client-acquisition-growth-india-1769119) | Bangalore, Delhi, Mumbai | 2026-10-12 | unstop |
 | P0 | 80 | ai_pm | HighLevel | [Senior Product Manager – Reputation Management](https://jobs.lever.co/gohighlevel/de899a79-e7e0-4650-8356-08a5d95b4198) | India | 2026-10-22 | remoterocketship |
-| P0 | 80 | growth_strategy | SkillOrbit | [Sales Growth](https://internshala.com/internship/detail/sales-growth-internship-in-bangalore-at-skillorbit1792557180) | Bangalore | 2026-10-21 | internshala |
-| P0 | 80 | growth_strategy | Digital Media 81 | [Social Media & Digital Growth](https://internshala.com/internship/detail/work-from-home-social-media-digital-growth-internship-at-digital-media-811792560137) | Remote, India | 2026-10-21 | internshala |
-| P0 | 80 | growth_strategy | Agile Vortex Private Limited | [Business Strategy](https://internshala.com/internship/detail/work-from-home-business-strategy-internship-at-agile-vortex-private-limited1792590666) | Remote, India | 2026-10-21 | internshala |
-| P0 | 80 | growth_strategy | Off-Look Innovations LLP | [Business Development & Expansion (Sales)](https://internshala.com/internship/detail/business-development-expansion-sales-internship-in-bangalore-at-off-look-innovations-llp1792569690) | Bangalore | 2026-10-21 | internshala |
-| P0 | 80 | growth_strategy | Gradfilter | [Business Development & GTM](https://internshala.com/internship/detail/business-development-gtm-internship-in-bangalore-at-gradfilter1792586475) | Bangalore (Hybrid) | 2026-10-21 | internshala |
+| P0 | 80 | growth_strategy | Digital Media 81 | [Social Media & Digital Growth](https://internshala.com/internship/detail/work-from-home-social-media-digital-growth-internship-at-digital-media-811792560137) | Remote, India | 2026-10-22 | internshala |
+| P0 | 80 | growth_strategy | Agile Vortex Private Limited | [Business Strategy](https://internshala.com/internship/detail/work-from-home-business-strategy-internship-at-agile-vortex-private-limited1792590666) | Remote, India | 2026-10-22 | internshala |
+| P0 | 80 | growth_strategy | Off-Look Innovations LLP | [Business Development & Expansion (Sales)](https://internshala.com/internship/detail/business-development-expansion-sales-internship-in-bangalore-at-off-look-innovations-llp1792569690) | Bangalore | 2026-10-22 | internshala |
+| P0 | 80 | growth_strategy | Gradfilter | [Business Development & GTM](https://internshala.com/internship/detail/business-development-gtm-internship-in-bangalore-at-gradfilter1792586475) | Bangalore (Hybrid) | 2026-10-22 | internshala |
+| P0 | 80 | growth_strategy | Attain | [Business Analyst, CAD, Polylining, Space](https://jobs.smartrecruiters.com/attain1/744000156821529-cad-polylining-and-space-business-analyst) | India | 2026-10-21 | remoterocketship |
 | P0 | 80 | ai_pm | AHEAD | [Network Specialist Solutions Engineer](https://jobs.lever.co/thinkahead/e1c94ae2-7e38-4a60-a0a8-e90d90c7b018) | India | 2026-10-21 | remoterocketship |
 | P0 | 80 | growth_strategy | OKX | [Affiliate Business Development Manager, Northeast Asia](https://weworkremotely.com/remote-jobs/okx-affiliate-business-development-manager-northeast-asia) | Anywhere in the World | 2026-10-21 | weworkremotely |
+| P0 | 80 | growth_strategy | SkillOrbit | [Sales Growth](https://internshala.com/internship/detail/sales-growth-internship-in-bangalore-at-skillorbit1792557180) | Bangalore | 2026-10-21 | internshala |
 | P0 | 80 | growth_strategy | Attain | [CAD, Polylining, Business Analyst](https://jobs.smartrecruiters.com/attain1/744000156524519-cad-polylining-and-space-business-analyst) | India | 2026-10-21 | remoterocketship |
 | P0 | 80 | growth_strategy | HIGHTABLE | [Founder’s Office Intern: Business Development & Event Marketing](https://jobs.weekday.works/founder%25E2%2580%2599s-office-intern-business-development-event-marketing-at-hightable-wkdy2t7g7c) | Bengaluru South, Karnataka | 2026-10-20 | weekday |
 | P0 | 80 | growth_strategy | Attain Solutions | [CAD, Polylining and Space Business Analyst](https://jobs.weekday.works/cad-polylining-and-space-business-analyst-at-attain-wkdykg2slw) | Bengaluru, Karnataka | 2026-10-20 | weekday |
@@ -161,19 +159,24 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 79 | ai_pm | Supernova | [AI Product Manager](https://www.instahyre.com/job-444806-ai-product-manager-at-supernova-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 79 | ai_pm | Kotak811 | [Technical Product Manager](https://www.instahyre.com/job-445680-technical-product-manager-at-kotak811-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 79 | ai_pm | Bluno | [Product Manager](https://www.instahyre.com/job-447756-product-manager-at-bluno-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 79 | ai_pm | HelloCounsel.ai | [Product Manager](https://www.instahyre.com/job-447457-product-manager-at-hellocounsel-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 79 | ai_pm | Bridgetown Research | [Product Manager - AI Agents](https://www.instahyre.com/job-441247-product-manager-ai-agents-at-bridgetown-research-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 79 | ai_pm | HelloCounsel.ai | [Product Manager](https://www.instahyre.com/job-447965-product-manager-at-hellocounsel-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 79 | ai_pm | Meraki Labs | [Technical Product Manager](https://www.instahyre.com/job-436363-technical-product-manager-at-meraki-labs-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 78 | growth_strategy | r3 Consultant | [Manager Strategy Operations](https://in.linkedin.com/jobs/view/manager-strategy-operations-at-r3-consultant-4483363729) | Hyderabad, Telangana, India | 2026-10-25 | linkedin |
 | P1 | 78 | growth_strategy | Craving for Gaming | [Business Operations Internship](https://unstop.com/internships/business-operations-internship-ghar-ke-paas-career-ke-saath-winter-internships-in-delhi-craving-for-gaming-1774711) | Central Delhi, Delhi, East Delhi, Ghaziabad, Gurgaon, New… | 2026-10-24 | unstop |
 | P1 | 78 | growth_strategy | PwC India | [Strategy Consulting - Operations Strategy - Manager - PS - G](https://in.linkedin.com/jobs/view/strategy-consulting-operations-strategy-manager-ps-g-at-pwc-india-4478539081) | Gurugram, Haryana, India | 2026-10-24 | linkedin |
+| P1 | 78 | growth_strategy | PwC Acceleration Center India | [Business Strategy & Ops-Associate-Bangalore](https://in.linkedin.com/jobs/view/business-strategy-ops-associate-bangalore-at-pwc-acceleration-center-india-4454121444) | Bengaluru East, Karnataka, India | 2026-10-24 | linkedin |
+| P1 | 78 | growth_strategy | Stripe | [Operations Manager, Stripe Delivery Centre](https://in.linkedin.com/jobs/view/operations-manager-stripe-delivery-centre-at-stripe-4468868703) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
 | P1 | 78 | growth_strategy | Oracle | [Business Analyst 3-Ops](https://in.linkedin.com/jobs/view/business-analyst-3-ops-at-oracle-4481049190) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
 | P1 | 78 | growth_strategy | Creatvise | [Growth Specialist](https://in.linkedin.com/jobs/view/growth-specialist-at-creatvise-4413810307) | New Delhi, Delhi, India | 2026-10-24 | linkedin |
 | P1 | 78 | growth_strategy | Helios Spectra | [Product Growth Specialist](https://in.linkedin.com/jobs/view/product-growth-specialist-at-helios-spectra-4481674889) | Tiruchirappalli, Tamil Nadu, India | 2026-10-24 | linkedin |
 | P1 | 78 | ai_pm | Flexiple | [Solutions Engineer](https://in.linkedin.com/jobs/view/solutions-engineer-at-flexiple-4483325977) | India | 2026-10-24 | linkedin |
+| P1 | 78 | ai_pm | Trida Labs | [Forward deployed Engineer](https://in.linkedin.com/jobs/view/forward-deployed-engineer-at-trida-labs-4482645670) | Hyderabad, Telangana, India | 2026-10-24 | linkedin |
 | P1 | 78 | growth_strategy | SolarSquare Energy | [Business Development Manager](https://solarsquare.keka.com/careers/jobdetails/145447) | Bareilly, Uttar Pradesh, India | 2026-10-23 | consider |
 | P1 | 78 | ai_pm | AEREO | [Intern- Product Management (UAS) (QC08743)](https://hire.aereonauts.aereo.io/company_career/f7UrDFEWhFRig7LzWpBpgy1fP3ZIPLwWyB4bA6PAt-Q=) | Bengaluru, Karnataka, India | 2026-10-23 | getro |
 | P1 | 78 | growth_strategy | Chainguard | [Business Development Representative, India](https://job-boards.greenhouse.io/chainguard/jobs/4723659006) | India - Remote | 2026-10-23 | consider |
 | P1 | 78 | growth_strategy | Ethos Life | [Partner Operations Manager](https://job-boards.greenhouse.io/ethoslife/jobs/8910605002) | Bangalore, India | 2026-10-23 | consider |
+| P1 | 78 | growth_strategy | Khatabook | [Business Analyst](https://khatabook.turbohire.co/job/publicjobs/5hKb8u_4VSGxfKj9ywx82cdRZcrupZtttEuLyl8XOJl6tARukyTVpnjhFajMcsfb) | Bengaluru, Karnataka, India | 2026-10-23 | consider |
 | P1 | 78 | growth_strategy | apna | [Business Analyst - Revenue & Operations](https://apply.workable.com/j/24BCEF5E64) | Bengaluru, Karnataka, India | 2026-10-23 | consider |
 | P1 | 78 | growth_strategy | SailPoint | [Business Analyst (Context Layer and Semantic Layer)](https://sailpoint.wd1.myworkdayjobs.com/SailPoint/job/Pune-India/Business-Analyst--Context-Layer-and-Semantic-Layer-_R014318) | Pune, India / India | 2026-10-23 | consider |
 | P1 | 78 | ai_pm | Blitzy | [Forward Deployed Engineer](https://jobs.ashbyhq.com/blitzy/fed53b6a-c54b-4da0-804d-d621e048a8bb?utm_source=jobs.battery.com) | Kirtane Baugh, Magarpatta, Hadapsar, Pune, Maharashtra, I… | 2026-10-23 | consider |
@@ -181,12 +184,16 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 78 | growth_strategy | Foodsta Kitchens | [Area Operations Manager](https://in.linkedin.com/jobs/view/area-operations-manager-at-foodsta-kitchens-4481189663) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 78 | growth_strategy | Bik.ai | [Growth & Customer Marketing](https://in.linkedin.com/jobs/view/growth-customer-marketing-at-bik-ai-4482846455) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | Cisco | [Solutions Engineer – Public Sector | Splunk Security](https://in.linkedin.com/jobs/view/solutions-engineer%C2%A0%E2%80%93-public-sector-splunk-security-at-cisco-4483108413) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 78 | growth_strategy | Krayr Solutions | [Manager – Strategy, Project Management & NPD JIS151887](https://in.linkedin.com/jobs/view/manager-%E2%80%93-strategy-project-management-npd%C2%A0jis151887-at-krayr-solutions-4480367284) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 78 | growth_strategy | Porter | [Manager- User growth](https://in.linkedin.com/jobs/view/manager-user-growth-at-porter-4479496880) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 78 | growth_strategy | Mesa School of Business | [Growth Manager - Admissions](https://in.linkedin.com/jobs/view/growth-manager-admissions-at-mesa-school-of-business-4482485655) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 78 | ai_pm | Cargill | [AI Program Manager](https://in.linkedin.com/jobs/view/ai-program-manager-at-cargill-4479463470) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 78 | ai_pm | Cisco | [Solutions Engineer (Bangalore)](https://in.linkedin.com/jobs/view/solutions-engineer-bangalore-at-cisco-4474125073) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 78 | ai_pm | Nemetschek Group | [Solutions Consultant](https://in.linkedin.com/jobs/view/solutions-consultant-at-nemetschek-group-4482461890) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 78 | ai_pm | Purplle | [APM/PM - FMCG Supply & Demand Planning](https://purplle.turbohire.co/job/publicjobs/QeMgtGMYOHVkqdaOa8g4xVlF07n%2F8RoZtYBIvnATvW2C%2FHPS3oc%2Fkco4HaZSxXZo) | Vikhroli, Mumbai, Maharashtra, India | 2026-10-22 | consider |
+| P1 | 78 | ai_pm | Meesho | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-meesho-4482470377) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 78 | ai_pm | Cvent | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-cvent-4440660649) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 78 | ai_pm | Priceline | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-priceline-4463853506) | Mumbai, Maharashtra, India | 2026-10-22 | linkedin |
+| P1 | 78 | growth_strategy | Cube | [Founder's Office Associate](https://in.linkedin.com/jobs/view/founder-s-office-associate-at-cube-4481605119) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 78 | growth_strategy | Lenovo | [Manager, Commercial Business Operations](https://in.linkedin.com/jobs/view/manager-commercial-business-operations-at-lenovo-4481303335) | Bangalore Urban, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 78 | growth_strategy | Pixeldust Technologies | [Founder's Office](https://in.linkedin.com/jobs/view/founder-s-office-at-pixeldust-technologies-4479497698) | Mumbai, Maharashtra, India | 2026-10-22 | linkedin |
+| P1 | 78 | growth_strategy | IPLIX Media | [Founders Office - AI Systems & Operations](https://in.linkedin.com/jobs/view/founders-office-ai-systems-operations-at-iplix-media-4480026855) | Saket, Delhi, India | 2026-10-22 | linkedin |
+| P1 | 78 | growth_strategy | OneMetric | [Founder's Office- Program Management](https://in.linkedin.com/jobs/view/founder-s-office-program-management-at-onemetric-4482463509) | Gurugram, Haryana, India | 2026-10-22 | linkedin |
+| P1 | 78 | ai_pm | Namma Yatri | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-namma-yatri-4479981010) | Bangalore Urban, Karnataka, India | 2026-10-21 | getro |
 | P1 | 78 | growth_strategy | Airbound | [Strategy & Operations Associate](https://jobs.ashbyhq.com/airbound/38c55140-3d62-4a69-94f3-e14a69148fd1?utm_source=jobs.lsvp.com) | Hoskote, Bangalore, Karnataka , India / Bangalore | 2026-10-21 | consider |
 | P1 | 78 | ai_pm | Broadcom | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-broadcom-4454462984) | Bengaluru, Karnataka, India | 2026-10-21 | linkedin |
 | P1 | 78 | ai_pm | Sustainiam | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-sustainiam-4481116466) | Noida, Uttar Pradesh, India | 2026-10-21 | linkedin |
@@ -197,12 +204,10 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 78 | ai_pm | NVIDIA | [Technical Program Manager, Infrastructure](https://in.linkedin.com/jobs/view/technical-program-manager-infrastructure-at-nvidia-4471983110) | Bengaluru, Karnataka, India | 2026-10-21 | linkedin |
 | P1 | 78 | growth_strategy | BlueOptima | [Senior Revenue Operations Manager](https://jobs.weekday.works/senior-revenue-operations-manager-at-blueoptima-wkdyqdmha5) | Bengaluru, Karnataka | 2026-10-20 | weekday |
 | P1 | 78 | ai_pm | Cimpress India | [Product Manager- Remote](https://in.linkedin.com/jobs/view/product-manager-remote-at-cimpress-india-4465735895) | Bengaluru, Karnataka, India | 2026-10-20 | linkedin |
+| P1 | 78 | ai_pm | YouTrip | [Technical Program Manager](https://in.linkedin.com/jobs/view/technical-program-manager-at-youtrip-4473064425) | Bengaluru, Karnataka, India | 2026-10-20 | linkedin |
 | P1 | 78 | ai_pm | Jupiter | [Product Manager- Unsecured Lending](https://in.linkedin.com/jobs/view/product-manager-unsecured-lending-at-jupiter-4467354946) | Bengaluru, Karnataka, India | 2026-10-19 | linkedin |
-| P1 | 78 | ai_pm | Namma Yatri | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-namma-yatri-4479981010) | Bangalore Urban, Karnataka, India | 2026-10-19 | linkedin |
 | P1 | 78 | ai_pm | Unicommerce | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-unicommerce-4478256269) | Gurugram, Haryana, India | 2026-10-19 | linkedin |
 | P1 | 78 | growth_strategy | Weekday (YC W21) | [Founder's Office](https://in.linkedin.com/jobs/view/founder-s-office-at-weekday-yc-w21-4461851420) | Bengaluru, Karnataka, India | 2026-10-19 | linkedin |
-| P1 | 78 | growth_strategy | Deconstruct | [Management Trainee - Founder's Office (Innovation & Product Strategy)](https://in.linkedin.com/jobs/view/management-trainee-founder-s-office-innovation-product-strategy-at-deconstruct-4480990443) | Greater Bengaluru Area | 2026-10-19 | linkedin |
-| P1 | 78 | growth_strategy | Databricks | [Manager, Strategy & Operations](https://in.linkedin.com/jobs/view/manager-strategy-operations-at-databricks-4478613261) | Bengaluru, Karnataka, India | 2026-10-19 | linkedin |
 | P1 | 78 | growth_strategy | Bilvantis Technologies | [Manager – Founder's Office (Growth) (5+ Yrs to 10 Yrs)](https://in.linkedin.com/jobs/view/manager-%E2%80%93-founder-s-office-growth-5%2B-yrs-to-10-yrs-at-bilvantis-technologies-4480234031) | Hyderabad, Telangana, India | 2026-10-19 | linkedin |
 | P1 | 78 | ai_pm | Google | [Technical Program Manager, Google Enterprise Networks Workspace Delivery](https://in.linkedin.com/jobs/view/technical-program-manager-google-enterprise-networks-workspace-delivery-at-google-4479983124) | Hyderabad, Telangana, India | 2026-10-19 | linkedin |
 | P1 | 78 | fractional | HeyMilo AI | [Product Manager – Voice and Video Contributor](https://jobs.ashbyhq.com/heymilo/fb657b28-ec46-439f-a2c5-bb2f7f948525) | Worldwide | 2026-10-17 | remoterocketship |
@@ -235,17 +240,18 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 76 | ai_pm | Transact Bridge | [Product Manager](https://cutshort.io/job/Product-Manager-Bengaluru-Bangalore-Noida-Transact-Bridge-wBrzMtSw) | Bengaluru (Bangalore) / Noida | ? | cutshort |
 | P1 | 76 | growth_strategy | Frequencycx | [Revenue Operations Specialist](https://cutshort.io/job/Revenue-Operations-Specialist-Bengaluru-Bangalore-Frequencycx-CdGKwOdI) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 76 | growth_strategy | Digit Insurance | [AI Business Analyst](https://www.instahyre.com/job-446464-ai-business-analyst-at-digit-insurance-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 75 | growth_strategy | Stareye Media & Entertainment Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/business-development-sales-internship-in-noida-at-stareye-media-entertainment-private-limited1792848465) | Noida | 2026-10-25 | internshala |
 | P1 | 75 | ai_pm | Committee for Children | [Senior Product Manager - Edtech Innovation](https://weworkremotely.com/remote-jobs/committee-for-children-senior-product-manager-edtech-innovation) | Anywhere in the World | 2026-10-23 | weworkremotely |
 | P1 | 75 | growth_strategy | PeakPals | [Founder's Office (Brand & Growth) Intern](https://jobs.weekday.works/founder-s-office-brand-growth-intern-at-peakpals-wkdyfunxxj) | Noida, Uttar Pradesh | 2026-10-20 | weekday |
 | P1 | 75 | growth_strategy | Freshworks STS Software Academy | [Corporate Strategy Manager (Consulting & Strategy)](https://jobs.weekday.works/corporate-strategy-manager-consulting-strategy-at-freshworks-wkdyki30xr) | Bengaluru, Karnataka | 2026-10-20 | weekday |
 | P1 | 75 | ai_pm | First American (India) | [Senior Product Manager](https://firstam.wd1.myworkdayjobs.com/faicareers/job/ind-karnataka-bangalore/senior-product-manager_r059212) | India | 2026-10-20 | remoterocketship |
 | P1 | 75 | growth_strategy | Project Annapoorna | [Founder's Office - Operations](https://jobs.weekday.works/founder-s-office-operations-at-project-annapoorna-wkdyuc2bqi) | Gurugram, Haryana | 2026-10-19 | weekday |
 | P1 | 75 | ai_pm | Seventh Triangle | [Product Manager - Shopify Apps Portfolio](https://jobs.weekday.works/product-manager-shopify-apps-portfolio-at-seventh-triangle-wkdym8x2ka) | Noida, Uttar Pradesh | 2026-10-19 | weekday |
-| P1 | 75 | growth_strategy | ByAndLarge: Bal Corporate Services Private Limited | [Business Strategy](https://internshala.com/internship/detail/business-strategy-internship-in-bangalore-at-byandlarge-bal-corporate-services-private-limited1791785368) | Bangalore | 2026-10-17 | internshala |
-| P1 | 75 | growth_strategy | Yurme | [Business Strategy](https://internshala.com/internship/detail/business-strategy-internship-in-bangalore-at-yurme1791966795) | Bangalore | 2026-10-17 | internshala |
-| P1 | 75 | ai_pm | Echotalk | [Product Management](https://internshala.com/internship/detail/work-from-home-product-management-internship-at-echotalk1791960703) | Remote, India | 2026-10-17 | internshala |
-| P1 | 75 | growth_strategy | JobPaglu | [Product & Growth](https://internshala.com/internship/detail/work-from-home-part-time-product-growth-internship-at-jobpaglu1792046266) | Remote, India | 2026-10-17 | internshala |
-| P1 | 75 | ai_pm | Unessa Foundation | [Product Management](https://internshala.com/internship/detail/work-from-home-part-time-product-management-internship-at-unessa-foundation1792236965) | Remote, India | 2026-10-17 | internshala |
+| P1 | 75 | growth_strategy | ByAndLarge: Bal Corporate Services Private Limited | [Business Strategy](https://internshala.com/internship/detail/business-strategy-internship-in-bangalore-at-byandlarge-bal-corporate-services-private-limited1791785368) | Bangalore | 2026-10-18 | internshala |
+| P1 | 75 | growth_strategy | Yurme | [Business Strategy](https://internshala.com/internship/detail/business-strategy-internship-in-bangalore-at-yurme1791966795) | Bangalore | 2026-10-18 | internshala |
+| P1 | 75 | ai_pm | Echotalk | [Product Management](https://internshala.com/internship/detail/work-from-home-product-management-internship-at-echotalk1791960703) | Remote, India | 2026-10-18 | internshala |
+| P1 | 75 | growth_strategy | JobPaglu | [Product & Growth](https://internshala.com/internship/detail/work-from-home-part-time-product-growth-internship-at-jobpaglu1792046266) | Remote, India | 2026-10-18 | internshala |
+| P1 | 75 | ai_pm | Unessa Foundation | [Product Management](https://internshala.com/internship/detail/work-from-home-part-time-product-management-internship-at-unessa-foundation1792236965) | Remote, India | 2026-10-18 | internshala |
 | P1 | 75 | growth_strategy | UCM Practice Growth Systems | [70-100K Potential for Practice Growth Advisor Sales Position  (Central or Eastern Time Zone)](https://weworkremotely.com/remote-jobs/ucm-practice-growth-systems-70-100k-potential-for-practice-growth-advisor-sales-position-central-or-eastern) | Anywhere in the World | 2026-10-17 | weworkremotely |
 | P1 | 75 | ai_pm | GP Strategies Corporation | [Learning Program Manager](https://eetz.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2600689) | India | 2026-10-15 | remoterocketship |
 | P1 | 75 | growth_strategy | CollegeGyan | [Business development internship](https://unstop.com/internships/bd-pre-sales-other-collegegyan-1770254) | Remote, India | 2026-10-14 | unstop |
@@ -317,16 +323,16 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 74 | ai_pm | Johnson & Johnson | [IMFT Technical Product Manager](https://jobs.weekday.works/imft-technical-product-manager-at-johnson-johnson-innovative-medicine-wkdyxqfwws) | Bengaluru, Karnataka | 2026-10-19 | weekday |
 | P1 | 74 | growth_strategy | Chauffit | [Founder's Office Internship](https://unstop.com/internships/founders-office-internship-chauffit-1770959) | West Delhi | 2026-10-15 | unstop |
 | P1 | 74 | growth_strategy | Stripe | [Strategy and Analytics Business Partner](https://stripe.com/jobs/search?gh_jid=8245230) | Bangalore | 2026-10-13 | greenhouse |
-| P1 | 74 | growth_strategy | Sprinto | [Organic Growth Manager](https://himalayas.app/companies/sprinto/jobs/organic-growth-manager?utm_source=api) | India | 2026-10-10 | himalayas |
 | P1 | 74 | ai_pm | Habuild | [Product Manager 2 (GenAI)](https://cutshort.io/job/Product-Manager-2-GenAI-Bengaluru-Bangalore-habuild-frZwcMtR) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 74 | ai_pm | TalentXO | [Forward Deployed Product Manager](https://cutshort.io/job/Forward-Deployed-Product-Manager-Gurugram-Bengaluru-Bangalore-TalentXO-Iex5kp8m) | Gurugram / Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 74 | growth_strategy | Misha | [Operations Manager](https://cutshort.io/job/Operations-Manager-Bengaluru-Bangalore-NCR-Delhi-Gurgaon-Noida-Misha-rBP7EYTh) | Bengaluru (Bangalore) / NCR (Delhi | Gurgaon | Noida) | ? | cutshort |
 | P1 | 74 | ai_pm | ShortLoop | [Forward Deployed Engineer](https://www.instahyre.com/job-443498-forward-deployed-engineer-at-shortloop-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 73 | ai_pm | Verta | [Senior Product Manager - Cloudera Manager](https://cloudera.wd5.myworkdayjobs.com/External_Career/job/India-Bangalore/Senior-Product-Manager---Cloudera-Manager_261501) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
 | P1 | 73 | ai_pm | RevenueCat | [Senior Product Manager, Ad Monetization](https://jobicy.com/jobs/156738-senior-product-manager-ad-monetization) | APAC,  EMEA,  LATAM,  Canada,  USA | 2026-10-24 | jobicy |
+| P1 | 73 | growth_strategy | Bablons Educational Consultants Private Limited | [Business & Growth](https://internshala.com/internship/detail/business-growth-internship-in-delhi-at-bablons-educational-consultants-private-limited1792759504) | Delhi | 2026-10-24 | internshala |
 | P1 | 73 | ai_pm | Arctic Wolf | [Senior Product Manager - Exposure Management](https://in.linkedin.com/jobs/view/senior-product-manager-exposure-management-at-arctic-wolf-4464879109) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
 | P1 | 73 | ai_pm | Citi | [Lead Technical Program Manager Fraud Technology](https://in.linkedin.com/jobs/view/lead-technical-program-manager-fraud-technology-at-citi-4482618735) | Chennai, Tamil Nadu, India | 2026-10-24 | linkedin |
 | P1 | 73 | growth_strategy | Elevate X Solutions | [Business Development (Sales)](https://internshala.com/internship/detail/business-development-sales-internship-in-multiple-locations-at-elevate-x-solutions1792728045) | Faridabad, Delhi, Ghaziabad, Gurgaon, Greater Noida, Neem… | 2026-10-23 | internshala |
-| P1 | 73 | growth_strategy | Bablons Educational Consultants Private Limited | [Business & Growth](https://internshala.com/internship/detail/business-growth-internship-in-delhi-at-bablons-educational-consultants-private-limited1792759504) | Delhi | 2026-10-23 | internshala |
 | P1 | 73 | ai_pm | Wells Fargo | [Senior Digital Product Manager - Platform Product Management](https://in.linkedin.com/jobs/view/senior-digital-product-manager-platform-product-management-at-wells-fargo-4483116092) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | Amazon | [Senior Product Manager, Amazon Now](https://in.linkedin.com/jobs/view/senior-product-manager-amazon-now-at-amazon-4455913458) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | Pidge | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-pidge-4482833834) | Gurugram, Haryana, India | 2026-10-23 | linkedin |
@@ -334,11 +340,13 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 73 | growth_strategy | Shooting Stars Foundation | [Founders Office Senior Associate](https://in.linkedin.com/jobs/view/founders-office-senior-associate-at-shooting-stars-foundation-4481953833) | India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | Amazon | [Sr. Technical Program Manager, Trust CX Innovations](https://in.linkedin.com/jobs/view/sr-technical-program-manager-trust-cx-innovations-at-amazon-4474544831) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | NVIDIA | [Senior Technical Program Manager](https://in.linkedin.com/jobs/view/senior-technical-program-manager-at-nvidia-4481612996) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 73 | ai_pm | Amazon | [Sr. Product Manager - Tech, Alexa Smart Properties](https://in.linkedin.com/jobs/view/sr-product-manager-tech-alexa-smart-properties-at-amazon-4455777878) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 73 | ai_pm | eBay | [Sr. Product Manager, Digital Services AI](https://in.linkedin.com/jobs/view/sr-product-manager-digital-services-ai-at-ebay-4472695766) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 73 | ai_pm | Delhivery | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-delhivery-4480070063) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 73 | ai_pm | eBay | [Senior Product Manager II](https://in.linkedin.com/jobs/view/senior-product-manager-ii-at-ebay-4452251899) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 73 | ai_pm | Amazon Music | [Senior Technical Program Manager, Amazon Music](https://in.linkedin.com/jobs/view/senior-technical-program-manager-amazon-music-at-amazon-music-4455796035) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 73 | ai_pm | Cohere Health | [Lead Technical Program Manager](https://in.linkedin.com/jobs/view/lead-technical-program-manager-at-cohere-health-4465072058) | Hyderabad, Telangana, India | 2026-10-23 | linkedin |
+| P1 | 73 | growth_strategy | Krayr Solutions | [Manager – Strategy, Project Management & NPD JIS151887](https://in.linkedin.com/jobs/view/manager-%E2%80%93-strategy-project-management-npd%C2%A0jis151887-at-krayr-solutions-4480367284) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 73 | growth_strategy | Porter | [Manager- User growth](https://in.linkedin.com/jobs/view/manager-user-growth-at-porter-4479496880) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 73 | growth_strategy | Mesa School of Business | [Growth Manager - Admissions](https://in.linkedin.com/jobs/view/growth-manager-admissions-at-mesa-school-of-business-4482485655) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 73 | ai_pm | Cargill | [AI Program Manager](https://in.linkedin.com/jobs/view/ai-program-manager-at-cargill-4479463470) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 73 | ai_pm | Cisco | [Solutions Engineer (Bangalore)](https://in.linkedin.com/jobs/view/solutions-engineer-bangalore-at-cisco-4474125073) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 73 | ai_pm | Nemetschek Group | [Solutions Consultant](https://in.linkedin.com/jobs/view/solutions-consultant-at-nemetschek-group-4482461890) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
 | P1 | 73 | ai_pm | SentinelOne | [Solutions Engineer](https://boards.greenhouse.io/sentinellabs/jobs/8033286003) | India | 2026-10-21 | getro |
 | P1 | 73 | growth_strategy | Amazon | [Operations Manager , Amazon Now](https://in.linkedin.com/jobs/view/operations-manager-amazon-now-at-amazon-4473511334) | Bengaluru, Karnataka, India | 2026-10-21 | linkedin |
 | P1 | 73 | growth_strategy | What's Up Wellness | [D2C Growth Manager](https://in.linkedin.com/jobs/view/d2c-growth-manager-at-what-s-up-wellness-4480786409) | Gurugram, Haryana, India | 2026-10-21 | linkedin |
@@ -349,8 +357,9 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 73 | ai_pm | AMD | [ASIC/SoC Program Manager](https://in.linkedin.com/jobs/view/asic-soc-program-manager-at-amd-4471283795) | Bengaluru, Karnataka, India | 2026-10-20 | linkedin |
 | P1 | 73 | ai_pm | KIMARU Talent | [Senior Product Manager](https://jobs.ashbyhq.com/kimarutalent/10d498c2-16e6-4398-9182-80d831fbd0db) | Worldwide | 2026-10-19 | remoterocketship |
 | P1 | 73 | growth_strategy | Unicommerce | [Strategy Associate (Founder’s Office)](https://in.linkedin.com/jobs/view/strategy-associate-founder%E2%80%99s-office-at-unicommerce-4478258343) | Gurugram, Haryana, India | 2026-10-19 | linkedin |
+| P1 | 73 | growth_strategy | Databricks | [Partner Enablement Operations Manager](https://in.linkedin.com/jobs/view/partner-enablement-operations-manager-at-databricks-4478612292) | Bengaluru, Karnataka, India | 2026-10-19 | linkedin |
 | P1 | 73 | ai_pm | AMD | [Program Manager - CPU Team](https://in.linkedin.com/jobs/view/program-manager-cpu-team-at-amd-4478257659) | Bengaluru, Karnataka, India | 2026-10-19 | linkedin |
-| P1 | 73 | ai_pm | Cisco | [Solutions Engineer (Security, GSSO) - Mumbai](https://in.linkedin.com/jobs/view/solutions-engineer-security-gsso-mumbai-at-cisco-4404062892) | Mumbai, Maharashtra, India | 2026-10-18 | linkedin |
+| P1 | 73 | ai_pm | Purplle | [Product Manager - Storefront](https://purplle.turbohire.co/job/publicjobs/TsvZabHvjH4YS1m43AfmthDQmszXw5l4Z3yK0qnOCYpyQM2up9K9I2AtQdWSGhMh) | Mumbai, Maharashtra, India | 2026-10-16 | consider |
 | P1 | 73 | ai_pm | Lokal | [Product Manager II](https://apply.workable.com/lokal-app/j/5EA45F8D16) | Bengaluru, Karnataka, India | 2026-10-16 | getro |
 | P1 | 73 | growth_strategy | Meolaa | [Founder's Office](https://in.linkedin.com/jobs/view/founder-s-office-at-meolaa-4477586028) | Bengaluru, Karnataka, India | 2026-10-15 | getro |
 | P1 | 73 | growth_strategy | ARRISE | [Product Analyst](https://jobs.jobvite.com/pragmaticplay/job/oW43zfwm) | Worldwide | 2026-10-15 | remoterocketship |
@@ -358,6 +367,7 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 73 | ai_pm | Unbox Robotics | [New Product Development Manager (Technical Product Manager)](https://unboxrobotics.keka.com/careers/jobdetails/144248) | Pune, Maharashtra, India | 2026-10-13 | getro |
 | P1 | 73 | growth_strategy | Ethos Life | [Strategy & Operations Manager](https://job-boards.greenhouse.io/ethoslife/jobs/8883076002) | Bangalore, India | 2026-10-12 | consider |
 | P1 | 73 | growth_strategy | Credgenics | [Founder's Office](https://in.linkedin.com/jobs/view/founder-s-office-at-credgenics-4478392814) | Noida, Uttar Pradesh, India | 2026-10-12 | getro |
+| P1 | 73 | growth_strategy | Khatabook | [Program Manager - Central Business Operations](https://khatabook.turbohire.co/job/publicjobs/DFyGyRItfY_gKocTPLGsl4jXFt2tMa6U3muhk0bP4qm%2F5zltllma39ND056w__Mm) | Bengaluru, Karnataka, India | 2026-10-12 | consider |
 | P1 | 72 | ai_pm | Smartsheet | [Sr. Product Manager I](https://job-boards.greenhouse.io/smartsheet/jobs/8305872) | Bangalore, INDIA | 2026-10-21 | greenhouse |
 | P1 | 72 | growth_strategy | Straive | [Senior Business Analyst](https://jobs.weekday.works/senior-business-analyst-at-straive-wkdyfyts13) | Bengaluru, Karnataka | 2026-10-21 | weekday |
 | P1 | 72 | growth_strategy | Swish | [Senior Business Analyst](https://jobs.weekday.works/senior-business-analyst-at-swish-wkdythuje3) | Bengaluru, Karnataka | 2026-10-19 | weekday |
@@ -375,8 +385,8 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 71 | growth_strategy | HighLevel | [Senior Product Strategy & Growth Manager](https://jobs.lever.co/gohighlevel/89bfd2b3-c394-4098-a38a-f001e1ae1a56) | India | 2026-10-12 | lever |
 | P1 | 71 | ai_pm | Rippling | [Lead Product Manager](https://www.instahyre.com/job-438796-lead-product-manager-at-rippling-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 71 | ai_pm | Arintra | [Senior Product Manager](https://www.instahyre.com/job-436450-senior-product-manager-at-arintra-bangalore/) | Bangalore | ? | instahyre |
+| P1 | 70 | ai_pm | Onebrief | [Solutions Engineer](https://remoteOK.com/remote-jobs/remote-solutions-engineer-onebrief-1137568) | Remote | 2026-10-24 | remoteok |
 | P1 | 70 | growth_strategy | Syneos Health | [Consultant - Commercial Strategy](https://jobs.weekday.works/consultant-commercial-strategy-at-syneos-health-commercial-solutions-wkdyco8bms) | Gurugram, Haryana | 2026-10-19 | weekday |
-| P1 | 70 | growth_strategy | Anantya Technologies LLC | [Growth Internship](https://unstop.com/internships/growth-internship-anantya-technologies-llc-1771763) | Delhi | 2026-10-18 | unstop |
 | P1 | 70 | growth_strategy | Rubrik Job Board | [Field Sales Operations Manager](https://weworkremotely.com/remote-jobs/rubrik-job-board-field-sales-operations-manager) | Anywhere in the World | 2026-10-12 | weworkremotely |
 | P1 | 70 | growth_strategy | YourDOST | [Product Analyst](https://cutshort.io/job/Product-Analyst-HSR-Layout-Bangalore-YourDOST-MXpt7Uij) | HSR Layout, Bangalore | ? | cutshort |
 | P1 | 70 | ai_pm | ZenteiQ.ai | [Product Owner](https://www.instahyre.com/job-447327-product-owner-at-zenteiq-bangalore/) | Bangalore | ? | instahyre |
@@ -404,28 +414,34 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 69 | ai_pm | Huru | [Technical Program Manager](https://www.instahyre.com/job-445198-technical-program-manager-at-huru-delhi-noida/) | Delhi,Noida | ? | instahyre |
 | P1 | 69 | ai_pm | SciSpace | [Senior AI Product Manager](https://www.instahyre.com/job-440871-senior-ai-product-manager-at-scispace-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 68 | ai_pm | Qualcomm | [Senior Program Manager - Multimedia IP](https://in.linkedin.com/jobs/view/senior-program-manager-multimedia-ip-at-qualcomm-4464885226) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
-| P1 | 68 | ai_pm | GitHub | [Senior Solutions Engineer](https://in.linkedin.com/jobs/view/senior-solutions-engineer-at-github-4482301131) | India | 2026-10-24 | linkedin |
 | P1 | 68 | ai_pm | Rippling | [Sr. Program Manager Enablement](https://ats.rippling.com/rippling/jobs/b47a0e50-8917-475e-94a2-8387c09b2d71) | Bangalore, India | 2026-10-23 | consider |
 | P1 | 68 | ai_pm | Amazon | [Sr. Program Manager, Inventory Optimization Program](https://in.linkedin.com/jobs/view/sr-program-manager-inventory-optimization-program-at-amazon-4455796814) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | growth_strategy | Atlys | [Lead, User-Led Growth (Referrals & Affiliates)](https://in.linkedin.com/jobs/view/lead-user-led-growth-referrals-affiliates-at-atlys-4480695825) | Delhi, Delhi, India | 2026-10-23 | linkedin |
-| P1 | 68 | ai_pm | PhonePe | [Senior Solutions Engineer](https://in.linkedin.com/jobs/view/senior-solutions-engineer-at-phonepe-4479483910) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 68 | ai_pm | PubMatic | [Senior Solutions Engineer/Solutions Engineer](https://in.linkedin.com/jobs/view/senior-solutions-engineer-solutions-engineer-at-pubmatic-4456319619) | Gurugram, Haryana, India | 2026-10-22 | linkedin |
+| P1 | 68 | ai_pm | Amazon | [Sr. Product Manager - Tech, Alexa Smart Properties](https://in.linkedin.com/jobs/view/sr-product-manager-tech-alexa-smart-properties-at-amazon-4455777878) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 68 | ai_pm | eBay | [Sr. Product Manager, Digital Services AI](https://in.linkedin.com/jobs/view/sr-product-manager-digital-services-ai-at-ebay-4472695766) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 68 | ai_pm | Delhivery | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-delhivery-4480070063) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 68 | ai_pm | eBay | [Senior Product Manager II](https://in.linkedin.com/jobs/view/senior-product-manager-ii-at-ebay-4452251899) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 68 | growth_strategy | Boeing | [Senior Business Operations Specialist](https://in.linkedin.com/jobs/view/senior-business-operations-specialist-at-boeing-4480067019) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
+| P1 | 68 | ai_pm | Amazon Music | [Senior Technical Program Manager, Amazon Music](https://in.linkedin.com/jobs/view/senior-technical-program-manager-amazon-music-at-amazon-music-4455796035) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
 | P1 | 68 | growth_strategy | Beacon Indica | [Business Development Internship](https://unstop.com/internships/business-development-executive-bde-beacon-indica-1772921) | Noida | 2026-10-21 | unstop |
 | P1 | 68 | growth_strategy | crenovent | [GTM & RevOps Intern / Management Trainee](https://jobs.weekday.works/gtm-revops-intern-management-trainee-at-crenovent-wkdy21fxor) | Noida, Uttar Pradesh | 2026-10-21 | weekday |
 | P1 | 68 | ai_pm | Zuper | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-zuper-4482058242) | Chennai, Tamil Nadu, India | 2026-10-21 | linkedin |
+| P1 | 68 | growth_strategy | NavXSim Tech Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/business-development-sales-internship-in-delhi-at-navxsim-tech-private-limited1792426466) | Delhi (Hybrid) | 2026-10-20 | internshala |
 | P1 | 68 | ai_pm | PhonePe | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-phonepe-4462281973) | Bengaluru, Karnataka, India | 2026-10-20 | linkedin |
 | P1 | 68 | ai_pm | Mastercard | [Senior Technical Program Manager](https://in.linkedin.com/jobs/view/senior-technical-program-manager-at-mastercard-4462227680) | Gurugram, Haryana, India | 2026-10-20 | linkedin |
-| P1 | 68 | growth_strategy | NavXSim Tech Private Limited | [Business Development (Sales)](https://internshala.com/internship/detail/business-development-sales-internship-in-delhi-at-navxsim-tech-private-limited1792426466) | Delhi (Hybrid) | 2026-10-19 | internshala |
 | P1 | 68 | ai_pm | Everstage | [Senior Product Manager (Enterprise)](https://in.linkedin.com/jobs/view/senior-product-manager-enterprise-at-everstage-4479150429) | Chennai, Tamil Nadu, India | 2026-10-19 | getro |
 | P1 | 68 | growth_strategy | Plex Systems, Inc. | [Team Lead - Business Operations](https://rockwellautomation.wd1.myworkdayjobs.com/External_Rockwell_Automation/job/Pune-India/Team-Lead---Business-Operations_R26-7593) | Noida, Uttar Pradesh, India / Pune, Maharashtra, India | 2026-10-19 | getro |
 | P1 | 68 | ai_pm | MantriAI | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-mantriai-4480942754) | Noida, Uttar Pradesh, India | 2026-10-19 | linkedin |
-| P1 | 68 | growth_strategy | Grivaa Consultancy Services | [HR Generalist And Founders Office](https://internshala.com/internship/detail/hr-generalist-and-founders-office-internship-in-delhi-at-grivaa-consultancy-services1791880121) | Delhi (Hybrid) | 2026-10-17 | internshala |
+| P1 | 68 | growth_strategy | Grivaa Consultancy Services | [HR Generalist And Founders Office](https://internshala.com/internship/detail/hr-generalist-and-founders-office-internship-in-delhi-at-grivaa-consultancy-services1791880121) | Delhi (Hybrid) | 2026-10-18 | internshala |
+| P1 | 68 | ai_pm | Cisco | [Solutions Engineer (Security, GSSO) - Mumbai](https://in.linkedin.com/jobs/view/solutions-engineer-security-gsso-mumbai-at-cisco-4404062892) | Mumbai, Maharashtra, India | 2026-10-18 | linkedin |
 | P1 | 68 | growth_strategy | Kuku Fm | [Growth Associate](https://app.pyjamahr.com/careers?company=Kuku+FM&job_id=417829&company_uuid=8B92017E1E&utm_source=DIRECT&source=DIRECT&isHeaderVisible=undefined) | Bengaluru, Karnataka, India | 2026-10-17 | getro |
 | P1 | 68 | growth_strategy | Houseeazy | [Strategy Manager](https://in.linkedin.com/jobs/view/strategy-manager-at-houseeazy-4470309790) | Noida, Uttar Pradesh, India | 2026-10-16 | getro |
 | P1 | 68 | growth_strategy | Marlo Technologies | [Ship Operations Manager - Dry Bulk (Post-Fixture)](https://in.linkedin.com/jobs/view/ship-operations-manager-%E2%80%93-dry-bulk-post-fixture-at-marlo-4478197951) | Chennai, Tamil Nadu, India | 2026-10-16 | getro |
 | P1 | 68 | ai_pm | Chess.com | [Senior Product Manager, Gameplay](https://ats.rippling.com/chess/jobs/42a147ba-3fce-401a-8dca-7161dc2608dd) | Worldwide | 2026-10-16 | remoterocketship |
 | P1 | 68 | growth_strategy | PayJoy | [People Operations Manager](https://jobs.lever.co/payjoy/4c33ce10-9e73-40b1-bf2d-b55e989e31ec?lever-source%5B%5D=jobs.usv.com) | Bangalore | 2026-10-14 | consider |
 | P1 | 68 | ai_pm | Intel | [AI Software Solutions Engineer](https://intel.wd1.myworkdayjobs.com/External/job/India-Bangalore/AI-Software-Solutions-Engineer_JR0287966) | India, Bangalore / India | 2026-10-14 | consider |
+| P1 | 68 | growth_strategy | Purplle | [Growth Manager - Content ](https://purplle.turbohire.co/job/publicjobs/BlidjRMZ4zQxyAaYiA97EK1GpTxn8GG1TJg6FgLpuW1RwJ%2FzY6pwQPVpcrSPg7vm) | Bengaluru, Karnataka, India | 2026-10-13 | consider |
+| P1 | 68 | growth_strategy | Purplle | [Growth Manager - Analytics](https://purplle.turbohire.co/job/publicjobs/wjukDuHl5hlRWGuY0JjbgSP9V74EKRAi4SVaQyf59v2Wz9waQiy6GdSlZiuBpxjF) | Bengaluru, Karnataka, India | 2026-10-13 | consider |
 | P1 | 68 | growth_strategy | Freshworks | [Business Development Manager - NA](https://jobs.smartrecruiters.com/Freshworks/744000155166919-business-development-manager-na) | Bengaluru, IN | 2026-10-13 | consider |
 | P1 | 68 | ai_pm | JK Technosoft Ltd | [Product Manager - AI/GenAI](https://cutshort.io/job/Product-Manager-AI-GenAI-Bengaluru-Bangalore-JK-Technosoft-Ltd-nt1hEXBD) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 68 | ai_pm | LeadSquared | [Senior Product Manager](https://cutshort.io/job/Senior-Product-Manager-Bengaluru-Bangalore-Right-Hire-B8SgxlJU) | Bengaluru (Bangalore) | ? | cutshort |
@@ -452,6 +468,7 @@ Scanned **23,010** live postings from **19** sources → **566** passed every ga
 | P1 | 66 | ai_pm | TalentXO | [Senior Product Manager (Forward Deployed, Product company)](https://cutshort.io/job/Senior-Product-Manager-Forward-Deployed-Product-company-Bengaluru-Bangalore-TalentXO-LOAuXK6U) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 65 | ai_pm | Azim Premji Foundation | [Program Manager Collaboration](https://jobs.weekday.works/program-manager-collaboration-at-azim-premji-foundation-wkdyei7qam) | Bengaluru, Karnataka | 2026-10-20 | weekday |
 | P1 | 65 | growth_strategy | Landis+Gyr | [Technical Operations Manager](https://jobs.weekday.works/technical-operations-manager-at-landis%252Bgyr-wkdynk74ws) | Noida, Uttar Pradesh | 2026-10-19 | weekday |
+| P1 | 65 | growth_strategy | Anantya Technologies LLC | [Growth Internship](https://unstop.com/internships/growth-internship-anantya-technologies-llc-1771763) | Delhi | 2026-10-18 | unstop |
 | P1 | 65 | fractional | Uvation | [Product Lead – Product Owner](https://uvation.breezy.hr/p/f469086f6ab7-product-lead-product-owner) | India | 2026-10-16 | remoterocketship |
 | P1 | 65 | growth_strategy | Learning Routes Private Limited | [Business Development Executive (BDE)](https://unstop.com/jobs/business-development-executive-bde-learning-routes-private-limited-1770362) | Gurgaon, Mumbai, Noida | 2026-10-14 | unstop |
 | P1 | 65 | growth_strategy | Together Events Private Limited | [Business Development & Client Servicing Manager](https://unstop.com/jobs/business-development-client-servicing-manager-together-events-private-limited-1769630) | Noida | 2026-10-13 | unstop |
@@ -491,23 +508,23 @@ P2 roles are in [`jobs.csv`](jobs.csv).
 
 | Source | Scanned | Kept |
 |---|---|---|
-| ats | 11,538 | 26 |
-| consider | 7,318 | 24 |
-| getro | 1,229 | 23 |
-| internshala | 421 | 25 |
+| ats | 11,544 | 26 |
+| consider | 7,364 | 34 |
+| getro | 1,232 | 31 |
+| internshala | 396 | 19 |
 | instahyre | 350 | 167 |
-| weworkremotely | 256 | 13 |
-| linkedin | 249 | 98 |
+| weworkremotely | 251 | 13 |
+| linkedin | 250 | 101 |
 | hn_whoishiring | 238 | 0 |
-| remoterocketship | 223 | 21 |
-| jobicy | 205 | 2 |
-| unstop | 201 | 57 |
-| yc | 160 | 2 |
-| himalayas | 155 | 4 |
+| remoterocketship | 221 | 21 |
+| jobicy | 199 | 2 |
+| unstop | 198 | 57 |
+| yc | 159 | 2 |
+| himalayas | 156 | 3 |
 | weekday | 150 | 60 |
 | cutshort | 100 | 43 |
-| remoteok | 99 | 1 |
-| themuse | 68 | 0 |
+| remoteok | 99 | 2 |
+| themuse | 69 | 0 |
 | workingnomads | 40 | 0 |
 | remotive | 10 | 0 |
 
