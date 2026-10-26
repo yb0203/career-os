@@ -1,6 +1,7 @@
 {
  "scanned": [
   "ats",
+  "consider",
   "cutshort",
   "getro",
   "himalayas",
@@ -19,7 +20,5 @@
   "workingnomads",
   "yc"
  ],
- "failed": [
-  "consider"
- ]
+ "failed": []
 }
