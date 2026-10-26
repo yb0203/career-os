@@ -239,7 +239,7 @@ def test_status_notes_and_user_columns_survive():
 
 def test_vanished_rows_flagged_or_pruned():
     existing = [
-        {"ID": "tracked", "Status": "Shortlisted", "Last seen": "2026-09-01", "Open": "Yes", "Source": "greenhouse", "Score": "60"},
+        {"ID": "tracked", "Status": "In Progress", "Last seen": "2026-09-01", "Open": "Yes", "Source": "greenhouse", "Score": "60"},
         {"ID": "stale", "Status": "New", "Last seen": "2026-09-01", "Open": "Yes", "Source": "greenhouse", "Score": "60"},
         {"ID": "recent", "Status": "New", "Last seen": "2026-10-14", "Open": "Yes", "Source": "greenhouse", "Score": "60"},
         {"ID": "other-source", "Status": "New", "Last seen": "2026-09-01", "Open": "Yes", "Source": "relocate.me", "Score": "60"},

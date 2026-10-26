@@ -24,7 +24,7 @@ TAB, SUMMARY_TAB = "Openings", "Summary"
 COLUMNS = ["Priority", "Score", "Company", "Role", "Status", "Notes", "Lane", "Location",
            "Posted", "Source", "Apply via", "Why", "Open", "First seen", "Last seen", "URL", "ID"]
 TEXT_COLUMNS = {"ID", "Posted", "First seen", "Last seen"}
-STATUSES = ["New", "Shortlisted", "Applied", "Interviewing", "Offer", "Rejected", "Skip"]
+STATUSES = ["New", "In Progress", "Applied", "Interviewing", "Offer", "Rejected", "Skip"]
 LANES = {"growth_strategy": "Growth & Strategy", "ai_pm": "AI PM / TPM", "fractional": "Fractional"}
 PRIORITY_ORDER = {"P0": 0, "P1": 1, "P2": 2}
 PRUNE_AFTER_DAYS = 30  # untouched ("New") rows gone this long are removed

@@ -2,7 +2,7 @@
 
     python -m pipeline.queue
 
-Reads the "Openings" tab (Status New/Shortlisted), ranks by Tier (Strong > Medium >
+Reads the "Openings" tab (Status New/In Progress), ranks by Tier (Strong > Medium >
 Exploratory > untiered), then by who applies, then by score. Rows are keyed by ID, so the
 tab survives the daily re-sort of "Openings". Companies whose sites need a sign-in are listed
 under `login_companies` in config/sheet.yaml.
@@ -47,7 +47,7 @@ def who(row: dict, login_companies: set[str]) -> tuple[str, str]:
 
 
 def build(rows: list[dict], login_companies: set[str]) -> list[list]:
-    pending = [(*who(r, login_companies), r) for r in rows if r.get("Status") in ("New", "Shortlisted")]
+    pending = [(*who(r, login_companies), r) for r in rows if r.get("Status") in ("New", "In Progress")]
     pending.sort(key=lambda x: (TIER_RANK.get(x[2].get("Tier", ""), 3), WHO_RANK[x[0]], -int(x[2].get("Score") or 0)))
     return [HEADER] + [
         [i, w, r.get("Tier") or "Untiered", r["Company"], r["Role"], r.get("Location", ""), link,
