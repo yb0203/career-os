@@ -146,6 +146,14 @@ def jd_text(url: str) -> str:
                     return j.get("descriptionPlain", "")
         except Exception:
             return ""
+    m = re.search(r"https://([^/]+)\.myworkdayjobs\.com/(?:[a-z]{2}-[A-Z]{2}/)?([^/]+)(/job/.+)", url)
+    if m:
+        try:
+            tenant = m[1].split(".")[0]
+            d = json.loads(_get(f"https://{m[1]}.myworkdayjobs.com/wday/cxs/{tenant}/{m[2]}{m[3]}"))
+            return re.sub(r"<[^>]+>", " ", html.unescape(d["jobPostingInfo"].get("jobDescription", "")))
+        except Exception:
+            return ""
     m = re.search(r"apply\.workable\.com/(?:([^/]+)/)?j/([A-Za-z0-9]+)", url)
     if m and m[1]:
         try:

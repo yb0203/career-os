@@ -48,10 +48,11 @@ def parse_epoch_ms(value) -> Optional[datetime]:
     return datetime.fromtimestamp(value / 1000, tz=timezone.utc) if value else None
 
 
-from pipeline.fetchers import ashby, greenhouse, lever  # noqa: E402
+from pipeline.fetchers import ashby, greenhouse, lever, workday  # noqa: E402
 
 FETCHERS: dict[str, Callable[[str, str], list[Job]]] = {
     "greenhouse": greenhouse.fetch,
     "lever": lever.fetch,
     "ashby": ashby.fetch,
+    "workday": workday.fetch,
 }

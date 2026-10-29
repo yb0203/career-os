@@ -31,3 +31,12 @@ def test_plan_updates_marks_only_extra_copies():
             dict(ID="4", Company="B", Role="Product Manager", Status="New", Source="lever", Notes="", **{"First seen": "1"})]
     plan = plan_updates(rows)
     assert set(plan) == {"2", "3"} and plan["2"][0] == "Skip" and "Duplicate of A / Product Manager" in plan["3"][1]
+
+
+def test_workday_listing_filter():
+    from pipeline.fetchers.workday import parse_listing
+    ok = parse_listing("mastercard.wd1", "CorporateCareers", {"title": "Senior Product Manager", "locationsText": "Gurgaon, India",
+                       "externalPath": "/job/Gurgaon/PM_R-1", "postedOn": "Posted Today"})
+    assert ok and ok["url"] == "https://mastercard.wd1.myworkdayjobs.com/CorporateCareers/job/Gurgaon/PM_R-1"
+    assert parse_listing("x.wd1", "S", {"title": "Product Manager", "locationsText": "Dallas, TX", "externalPath": "/job/a"}) is None
+    assert parse_listing("x.wd1", "S", {"title": "Software Engineer", "locationsText": "Bengaluru", "externalPath": "/job/a"}) is None
