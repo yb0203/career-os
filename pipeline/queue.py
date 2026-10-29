@@ -77,15 +77,15 @@ def main():
             tier = tiers.get(r.get("ID"))
             if not tier:
                 continue
-            if tier == "Skip":  # outside the role scope: out-of-scope city or a hard-no function
+            if tier == "Skip":  # outside the role scope: a hard-no function
                 updates += [{"range": f"{col['Status']}{n}", "values": [["Skip"]]},
-                            {"range": f"{col['Notes']}{n}", "values": [[f"Skip (auto): outside role scope, {r.get('Location', '')}"]]}]
+                            {"range": f"{col['Notes']}{n}", "values": [[f"Skip (auto): hard-no function, {r.get('Location', '')}"]]}]
                 r["Status"] = "Skip"
             else:
                 updates.append({"range": f"{col['Tier']}{n}", "values": [[tier]]})
                 r["Tier"] = tier
         openings.batch_update(updates)
-        print(f"Auto-tiered {len(tiers)} new openings ({sum(t == 'Skip' for t in tiers.values())} skipped as out of scope)")
+        print(f"Auto-tiered {len(tiers)} new openings ({sum(t == 'Skip' for t in tiers.values())} skipped as hard-no functions)")
     values = build(rows, set(cfg.get("login_companies", [])))
     try:
         ws = sh.worksheet(TAB)

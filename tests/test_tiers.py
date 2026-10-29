@@ -25,8 +25,8 @@ def test_fill_tiers_only_touches_untiered_new_rows():
 
 def test_scope_rules_ncr_other_cities_flex_and_hard_nos():
     assert classify("Product Manager", "Gurugram, Haryana") == "Medium"           # NCR is in scope, below Bengaluru
-    assert classify("Product Manager", "Mumbai") == "Skip"                         # not in scope
-    assert classify("Product Manager", "Hyderabad, Telangana, India") == "Skip"
+    assert classify("Product Manager", "Mumbai") == "Medium"                       # other cities rank Medium, no longer skipped
+    assert classify("Product Manager", "Hyderabad, Telangana, India") == "Medium"
     assert classify("Product Manager", "Mumbai / Remote") == "Strong"              # a remote option keeps it in scope
     assert classify("Associate Product Manager", "Bengaluru / Pune") == "Strong"
     assert classify("Product Manager (Contract)", "Remote") == "Exploratory"       # contract/fractional = exploratory
@@ -34,3 +34,15 @@ def test_scope_rules_ncr_other_cities_flex_and_hard_nos():
     assert classify("Software Engineer", "Bengaluru") == "Skip"                    # hard-no function
     assert classify("Content Marketing Manager", "Bengaluru") == "Skip"
     assert classify("Technical Recruiter", "Bengaluru") == "Skip"
+
+
+def test_growth_product_roles_are_core_and_foreign_visa_roles_are_tiered():
+    from pipeline.tiers import classify_foreign
+    assert classify("Growth Product Manager", "Bengaluru") == "Strong"
+    assert classify("Growth Manager", "Remote, India") == "Strong"
+    assert classify_foreign("Product Manager", "Product", "sponsor", "No", "asks ~3 yrs") == "Strong"
+    assert classify_foreign("Product Manager", "Product", "remote-worldwide", "Yes") == "Strong"
+    assert classify_foreign("Product Manager", "Product", "remote-check", "Yes") == "Medium"
+    assert classify_foreign("Senior Product Manager", "Product", "sponsor", "No") == "Medium"
+    assert classify_foreign("Product Manager", "Product", "sponsor", "No", "asks 8+ yrs") == "Exploratory"
+    assert classify_foreign("Backend Engineer", "Engineering", "sponsor", "No") == "Skip"

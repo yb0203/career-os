@@ -35,6 +35,12 @@ jobs:
         if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
         continue-on-error: true  # a Europe-source hiccup must not block the digest commit
         run: python -m pipeline.europe_sheet
+      - name: Build today's batch (20-30 roles, 8+ strong, India + visa/remote abroad)
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
+        continue-on-error: true
+        run: python -m pipeline.daily_batch
       - name: Commit digest
         run: |
           git config user.name "career-os bot"
