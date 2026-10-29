@@ -20,6 +20,8 @@ sources:
   remotive: {enabled: true}
   remoteok: {enabled: true}
   himalayas: {enabled: true}
+  jobgether: {enabled: true}   # remote-worldwide, 0-5 yrs filter (added 2026-10-29)
+  arbeitnow: {enabled: true}   # DACH/NL/FR; product titles only
   jobicy: {enabled: true, tags: [product, strategy, operations, growth, management]}
   weworkremotely:
     enabled: true

@@ -138,3 +138,38 @@ def themuse(params, terms):
                 jobs.append(_muse_job(j))
             page += 1
     return jobs
+
+
+def jobgether(params, terms):
+    """Remote-worldwide product roles with a 1-5 year experience filter."""
+    s, jobs, seen = session(), [], set()
+    for term in params.get("terms") or terms[:6]:
+        data = s.get("https://jobgether.com/api/v1/jobs", timeout=30, params={
+            "keyword": term, "locations": "anywhere", "limit": 25,
+            "experience": "entry-level-graduate,junior-1-2-years,mid-level-2-5-years"}).json()
+        for j in data.get("jobs", []):
+            if j["id"] in seen:
+                continue
+            seen.add(j["id"])
+            jobs.append(Job(
+                company=j.get("company", ""), title=j.get("title", ""), url=j.get("url", ""),
+                source="jobgether", location=j.get("location") or "Anywhere", remote=True,
+                posted_at=parse_iso(j.get("postedAt")), description=j.get("experience", ""),
+                employment_type=j.get("contractType", ""),
+            ))
+    return jobs
+
+
+def arbeitnow(params, terms):
+    """Europe (DACH/NL/FR) board; visa or relocation is only visible in the description text."""
+    data = session().get("https://www.arbeitnow.com/api/job-board-api", timeout=30).json()
+    return [
+        Job(
+            company=j.get("company_name", ""), title=j.get("title", ""), url=j.get("url", ""),
+            source="arbeitnow", location=j.get("location") or "Europe", remote=bool(j.get("remote")),
+            posted_at=parse_epoch_ms(int(j["created_at"]) * 1000) if j.get("created_at") else None,
+            description=strip_html(j.get("description", "")),
+        )
+        for j in data.get("data", [])
+        if "product" in (j.get("title", "") + " ".join(j.get("tags", []))).lower()
+    ]
