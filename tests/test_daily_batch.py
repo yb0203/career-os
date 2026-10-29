@@ -46,3 +46,12 @@ def test_min_years_and_retiering_by_real_years():
               lane="", visa="", link="", score=1, id="1")]
     enrich_years(c)
     assert c[0]["tier"] == "Medium"
+
+
+def test_fit_blockers_flags_domain_and_eligibility_gaps():
+    from pipeline.daily_batch import fit_blockers
+    assert "domain: KYC/AML/compliance" in fit_blockers("Own KYC and AML controls; AML screening")
+    assert fit_blockers("Own roadmap for APIs and platform delivery") == []
+    assert "US-only" in fit_blockers("Candidates must be based in the United States")
+    assert "needs A/B experimentation" in fit_blockers("A/B testing and experimentation required")
+    assert fit_blockers("one mention of kyc only") == []

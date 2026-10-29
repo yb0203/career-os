@@ -154,6 +154,13 @@ def jd_text(url: str) -> str:
             return re.sub(r"<[^>]+>", " ", html.unescape(d["jobPostingInfo"].get("jobDescription", "")))
         except Exception:
             return ""
+    m = re.search(r"linkedin\.com/jobs/view/.*?-(\d{8,})", url)
+    if m:
+        try:
+            t = _get(f"https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/{m[1]}")
+            return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t)))
+        except Exception:
+            return ""
     m = re.search(r"apply\.workable\.com/(?:([^/]+)/)?j/([A-Za-z0-9]+)", url)
     if m and m[1]:
         try:
@@ -178,14 +185,41 @@ def min_years(text: str):
     return best
 
 
+FIT_BLOCKERS = {
+    "domain: KYC/AML/compliance": re.compile(r"\b(kyc|aml|sanctions screening|transaction monitoring)\b", re.I),
+    "domain: lending/credit": re.compile(r"\b(underwriting|credit scoring|loan origination|collections?)\b", re.I),
+    "domain: cybersecurity": re.compile(r"\b(firewall|siem|endpoint security|zero.trust)\b", re.I),
+    "needs B2C consumer ownership": re.compile(r"consumer[- ]facing|b2c|consumer (product|app|growth)", re.I),
+    "needs A/B experimentation": re.compile(r"a/b test|experimentation|split test", re.I),
+    "US-only": re.compile(r"(located in|based in|authori[sz]ed to work in) the (united states|u\.s\.|us)\b|us citizen|security clearance", re.I),
+    "contract/gig": re.compile(r"independent contractor|contract basis|fixed.term contract", re.I),
+}
+
+
+def fit_blockers(text: str) -> list[str]:
+    """Domain or eligibility gaps visible in a JD. A blocker needs >=2 mentions (or 1 for US-only/contract)."""
+    out = []
+    for name, rx in FIT_BLOCKERS.items():
+        n = len(rx.findall(text or ""))
+        if n >= (1 if name in ("US-only", "contract/gig") else 2):
+            out.append(name)
+    return out
+
+
 def enrich_years(cands: list[dict], limit: int = 60) -> None:
     """Fill 'years' from the JD for the first `limit` candidates (best tiers first) and re-tier by real years."""
     ordered = sorted(cands, key=lambda c: (TIER_RANK[c["tier"]], ROUTE_RANK.get(c["route"], 5), -c["score"]))
     for c in ordered[:limit]:
-        if c["years"] is None and c["link"]:
-            c["years"] = min_years(jd_text(c["link"]))
-        if c["years"] is not None and c["tier"] == "Strong" and c["years"] > 4:
-            c["tier"] = "Medium" if c["years"] <= 6 else "Exploratory"
+        jd = ""
+        if c["link"] and (c["years"] is None or c["tier"] == "Strong"):
+            jd = jd_text(c["link"])
+        if c["years"] is None and jd:
+            c["years"] = min_years(jd)
+        c["blockers"] = fit_blockers(jd) if jd else []
+        if c["blockers"] and c["tier"] == "Strong":
+            c["tier"] = "Medium"
+        if c["years"] is not None and c["tier"] == "Strong" and c["years"] > 5:
+            c["tier"] = "Medium" if c["years"] <= 7 else "Exploratory"
         elif c["years"] is not None and c["tier"] == "Medium" and c["years"] > 8:
             c["tier"] = "Exploratory"
 
@@ -194,6 +228,8 @@ def to_values(batch: list[dict]) -> list[list]:
     rows = [HEADER]
     for i, c in enumerate(batch, 1):
         todo = "Find a named contact; tailor resume to JD keywords" if c["tier"] == "Strong" else "Tailor resume if time allows"
+        if c.get("blockers"):
+            todo += " | Check gap: " + "; ".join(c["blockers"])
         rows.append([i, c["tier"], c["region"], c["company"], c["role"], c["location"],
                      c["years"] if c["years"] is not None else "?", c["route"], c["lane"], c["visa"], c["link"], todo, c["id"]])
     return rows
