@@ -4,13 +4,16 @@
 
 search_terms:
   - product manager
+  - associate product manager
+  - product owner
+  - growth product manager
+  - growth manager
+  - technical product manager
+  - ai product manager
+  - product lead
   - founder's office
   - chief of staff
-  - strategy and operations
-  - business operations
-  - growth
   - technical program manager
-  - solutions engineer
 
 sources:
   # --- Remote job boards (public APIs / feeds) ---
@@ -39,8 +42,6 @@ sources:
     pages:
       - product-manager-jobs-in-bangalore-bengaluru
       - product-manager-jobs-in-remote
-      - business-analyst-jobs-in-bangalore-bengaluru
-      - operations-jobs-in-bangalore-bengaluru
 
   # --- Startup / VC portfolio boards ---
   yc:
@@ -69,7 +70,7 @@ sources:
 
   # --- Scope-driven additions (2026-10-14): fresher/internship, India startup, remote-global ---
   unstop: {enabled: true}          # public JSON API: jobs + internships, India-wide (fresher friendly)
-  internshala: {enabled: true}     # server-rendered listing pages: internships + fresher jobs
+  internshala: {enabled: false}    # OFF 2026-10-29: internships/BD only, no product roles for a 3-yr PM
   wellfound: {enabled: false}       # OFF: Wellfound terms discourage scraping. Check wellfound.com by hand weekly (India + Gurgaon/Delhi/Noida)
   weekday: {enabled: true, max_pages: 150}   # Weekday sitemaps + JobPosting JSON-LD
   remoterocketship: {enabled: true}          # India + worldwide remote, links to the company's own ATS

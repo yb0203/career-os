@@ -2,8 +2,10 @@ name: daily-job-digest
 
 on:
   schedule:
-    - cron: "17 1 * * *"   # ~06:47 IST (off the hour: GitHub delays or drops busy top-of-hour schedules)
-    - cron: "17 13 * * *"  # ~18:47 IST
+    # GitHub starts scheduled runs 3-6 hours late (measured Oct 14-29: the old 06:47/18:47 IST crons landed at
+    # ~11:30 and ~22:00-00:50 IST). Scheduled early so results land before ~07:30 and ~18:00 IST.
+    - cron: "17 20 * * *"  # ~01:47 IST -> typically arrives 06:30-08:00 IST
+    - cron: "17 7 * * *"   # ~12:47 IST -> typically arrives 16:00-18:30 IST
   workflow_dispatch:
 
 permissions:

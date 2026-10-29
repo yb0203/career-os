@@ -25,7 +25,7 @@ from pipeline.pm_targets import lane, years_asked
 from pipeline.queue import who
 from pipeline.run import ROOT
 from pipeline.sheets import client
-from pipeline.tiers import classify, classify_foreign, foreign_years
+from pipeline.tiers import CORE, classify, classify_foreign, foreign_years
 
 TAB = "Today's Batch"
 HEADER = ["#", "Tier", "Region", "Company", "Role", "Location", "Years asked", "Route", "Resume lane", "Visa / remote",
@@ -56,6 +56,8 @@ def candidates(openings: list[dict], europe: list[dict], login: set[str]) -> lis
             continue
         if (norm(r["Company"]), norm(r["Role"])) in done:
             continue
+        if not CORE.search(r.get("Role", "")) or re.search(r"intern(ship)?\b|business development|\bsales\b", r.get("Role", ""), re.I):
+            continue   # the batch is product / growth / founder's-office roles only
         tier = r.get("Tier") or classify(r.get("Role", ""), str(r.get("Location", "")), str(r.get("Why", "")))
         if tier not in TIER_RANK:
             continue

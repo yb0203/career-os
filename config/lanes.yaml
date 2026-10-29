@@ -24,7 +24,6 @@ lanes:
       - product analyst
       - operations manager
       - implementation manager
-      - business development  # sales-adjacent, Exploratory only
   ai_pm:
     label: AI PM / TPM
     titles:
@@ -78,6 +77,14 @@ exclude_titles:
   - marketer
   - marketing manager
   - growth marketing
+  # 2026-10-29: product + growth focus; drop internships and sales/BD noise from Unstop/Internshala feeds
+  - internship
+  - " intern "
+  - business development
+  - " sales "
+  - telecaller
+  - field sales
+  - "bdr "
   - "manager, growth marketing"
   - sr manager
   - leader

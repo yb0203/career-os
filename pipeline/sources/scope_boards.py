@@ -264,8 +264,8 @@ def wellfound(params, terms):
 # --------------------------------------------------------------------------- Weekday
 
 WEEKDAY = "https://jobs.weekday.works"
-WEEKDAY_SITEMAPS = ["product_management-0", "program_project_management-0",
-                    "general_management_exec-0", "operations_strategy-0"]
+# Weekday dropped its per-function sitemaps (410 Gone, noticed 2026-10-29) for one combined sitemap.
+WEEKDAY_SITEMAPS = ["internal-0"]
 _WEEKDAY_SLUG = re.compile(
     r"product-(manager|owner|lead|operations|analyst|management)|associate-product|program-manager|"
     r"chief-of-staff|founder|growth|strategy|business-operations|bizops|solutions-(engineer|consultant)|"
