@@ -15,10 +15,10 @@ from __future__ import annotations
 import re
 from typing import Optional
 
-CORE = re.compile(r"product (manager|owner|lead)|\bapm\b|associate product|technical program|\btpm\b|"
-                  r"program manager|founder'?s office|chief of staff|"
+CORE = re.compile(r"product (manager|owner|lead)|\bapm\b|associate product|"
+                  r"founder'?s office|chief of staff|"
                   r"growth product|product growth|growth pm|growth manager|growth lead", re.I)
-ADJACENT = re.compile(r"growth|strateg|operations|\bops\b|solutions?|forward deployed|business analyst|"
+ADJACENT = re.compile(r"program|\btpm\b|growth|strateg|operations|\bops\b|solutions?|forward deployed|business analyst|"
                       r"revenue|implementation|analyst|producer|specialist", re.I)
 SENIOR = re.compile(r"\b(senior|sr\.?|lead|principal|staff|head|director|vp|group)\b", re.I)
 VERY_SENIOR = re.compile(r"\b(principal|staff|head|director|vp|group)\b", re.I)
@@ -72,7 +72,7 @@ def fill_tiers(rows: list[dict]) -> dict[str, str]:
 # ---- foreign roles (Europe tab): visa / relocation support, or remote-worldwide -------------------------------
 FOREIGN_YEARS = re.compile(r"asks ~?(\d{1,2})\+? yrs")
 PRODUCT_OR_GROWTH = re.compile(r"product (manager|owner)|\bapm\b|associate product|growth (product|manager|lead|pm)|"
-                               r"product growth|technical program|\btpm\b|founder'?s office|chief of staff", re.I)
+                               r"product growth|founder'?s office|chief of staff", re.I)
 STRONG_SIGNALS = {"sponsor", "relocation", "remote-worldwide"}
 
 
