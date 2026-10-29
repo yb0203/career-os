@@ -21,17 +21,29 @@ LI_CARD = re.compile(
 
 
 def linkedin(params, terms):
-    """Public guest search, posted in the past 7 days. Stops quietly if rate-limited."""
+    """Public guest search, posted in the past 7 days.
+
+    From shared cloud IPs LinkedIn answers 429 after a few requests, so each request waits a randomised moment and a
+    429 is retried after a growing pause (up to `retries` times per page) instead of ending the whole source.
+    Raises only if nothing could be fetched at all."""
+    import random
     s, jobs, seen = session(), [], set()
+    retries, pause = params.get("retries", 4), params.get("backoff_seconds", 45)
+    blocked = False
     for term in terms:
         for loc in params.get("locations", ["India"]):
             for page in range(params.get("pages", 1)):
-                r = s.get(LI_SEARCH, timeout=30, params={
-                    "keywords": term, "location": loc, "f_TPR": "r604800", "start": page * 25})
-                if r.status_code == 429:
-                    if not jobs:
-                        raise RuntimeError("rate-limited by LinkedIn; try again in a few hours")
-                    return jobs
+                r = None
+                for attempt in range(retries + 1):
+                    r = s.get(LI_SEARCH, timeout=30, params={
+                        "keywords": term, "location": loc, "f_TPR": "r604800", "start": page * 25})
+                    if r.status_code != 429:
+                        break
+                    if attempt < retries:
+                        time.sleep(pause * (attempt + 1) + random.uniform(0, 10))
+                if r.status_code == 429:   # still blocked after the retries: keep what we have
+                    blocked = True
+                    break
                 if r.status_code != 200 or not r.text.strip():
                     break
                 for m in LI_CARD.finditer(r.text):
@@ -44,7 +56,11 @@ def linkedin(params, terms):
                         remote="remote" in m["location"].lower() or None,
                         posted_at=parse_iso(m["date"]),
                     ))
-                time.sleep(1)
+                time.sleep(random.uniform(2.0, 4.5))
+            if blocked:
+                blocked = False   # try the next term/location; the block may be per-query
+    if not jobs:
+        raise RuntimeError("rate-limited by LinkedIn; try again in a few hours")
     return jobs
 
 
