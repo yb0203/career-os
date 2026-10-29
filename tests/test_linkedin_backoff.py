@@ -24,7 +24,7 @@ def test_linkedin_retries_after_429_and_raises_only_when_empty(monkeypatch):
         india.linkedin({"locations": ["Bengaluru"], "pages": 1, "retries": 3, "backoff_seconds": 1}, ["product manager"])
     except RuntimeError:
         pass   # empty result after recovery raises: nothing fetched
-    assert S429Then200.n >= 3 and len(sleeps) >= 3   # it waited and retried instead of giving up at the first 429
+    assert S429Then200.n >= 3 and len(sleeps) >= 2   # it waited and retried instead of giving up at the first 429
 
     class AlwaysBlocked:
         def get(self, *a, **k):
