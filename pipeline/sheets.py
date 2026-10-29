@@ -18,6 +18,7 @@ from datetime import date, datetime, timedelta, timezone
 
 import yaml
 
+from pipeline.dedupe import canon_key
 from pipeline.run import ATS, OUT, ROOT
 
 TAB, SUMMARY_TAB = "Openings", "Summary"
@@ -54,8 +55,15 @@ def merge(existing: list[dict], jobs: list[dict], today: str, scanned: set[str] 
     flagged as gone. None = old behaviour: every missing row is flagged.
     """
     by_id = {r["ID"]: r for r in existing if r.get("ID")}
+    by_key = {canon_key(r.get("Company", ""), r.get("Role", "")): r["ID"] for r in existing if r.get("ID")}
     seen = set()
     for j in jobs:
+        if j["id"] not in by_id:                      # same job under another spelling/source: update that row, no new row
+            twin = by_key.get(canon_key(j["company"], j["title"]))
+            if twin:
+                by_id[twin].update({"Open": "Yes", "Last seen": today})
+                seen.add(twin)
+                continue
         row = by_id.setdefault(j["id"], {"Status": "New", "Notes": "", "First seen": today})
         row.update({
             "ID": j["id"], "Priority": j["priority"], "Score": j["score"], "Company": j["company"],
@@ -65,6 +73,7 @@ def merge(existing: list[dict], jobs: list[dict], today: str, scanned: set[str] 
             "URL": j["url"], "Open": "Yes", "Last seen": today,
         })
         seen.add(j["id"])
+        by_key.setdefault(canon_key(j["company"], j["title"]), j["id"])
 
     cutoff = (date.fromisoformat(today) - timedelta(days=PRUNE_AFTER_DAYS)).isoformat()
     rows = []
