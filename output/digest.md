@@ -1,6 +1,6 @@
 # Daily job digest — 2026-10-29
 
-Scanned **15,283** live postings from **19** sources → **487** passed every gate (88 P0, 337 P1, 62 P2). 6 dead links removed.
+Scanned **15,316** live postings from **19** sources → **478** passed every gate (90 P0, 325 P1, 63 P2). 4 dead links removed.
 
 | Pri | Score | Lane | Company | Role | Location | Posted | Source |
 |---|---|---|---|---|---|---|---|
@@ -38,21 +38,25 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P0 | 83 | ai_pm | Google | [Associate Product Manager, University Graduate, 2027 Start](https://www.google.com/about/careers/applications/jobs/results/101007950268506822-associate-product-manager-university-graduate-2027-start?page=92) | Bengaluru, Karnataka, India | 2026-10-29 | getro |
 | P0 | 83 | ai_pm | Razorpay | [Product Manager II - Ads](https://in.linkedin.com/jobs/view/product-manager-ii-ads-at-razorpay-4484935644) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Meesho | [Product Manager I](https://in.linkedin.com/jobs/view/product-manager-i-at-meesho-4468203114) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
+| P0 | 83 | ai_pm | HighRadius | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-highradius-4482582953) | Hyderabad, Telangana, India | 2026-10-29 | linkedin |
+| P0 | 83 | ai_pm | Dcluttr | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-dcluttr-4483008237) | Gurugram, Haryana, India | 2026-10-29 | linkedin |
+| P0 | 83 | ai_pm | Elecbits | [Associate Product Manager](https://in.linkedin.com/jobs/view/associate-product-manager-at-elecbits-4345361536) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Zoca | [Product Manager- Booking and Payments](https://in.linkedin.com/jobs/view/product-manager-booking-and-payments-at-zoca-4484930042) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Trademo | [Associate Product Manager (SaaS)](https://in.linkedin.com/jobs/view/associate-product-manager-saas-at-trademo-4484796983) | Gurugram, Haryana, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Sovos Latinoamérica | [Associate Product Manager - AI](https://in.linkedin.com/jobs/view/associate-product-manager-ai-at-sovos-latinoam%C3%A9rica-4484775133) | Navi Mumbai, Maharashtra, India | 2026-10-29 | linkedin |
+| P0 | 83 | ai_pm | Modisoft Inc | [Product Manager, Payments](https://in.linkedin.com/jobs/view/product-manager-payments-at-modisoft-inc-4484977333) | Pune District, Maharashtra, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Google | [Product Manager, Android Maps Reach](https://in.linkedin.com/jobs/view/product-manager-android-maps-reach-at-google-4475452634) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Cisco | [Engineering Product Manager | 15+ Years](https://in.linkedin.com/jobs/view/engineering-product-manager-15%2B-years-at-cisco-4467979863) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | BOLD | [Technical Product Manager](https://in.linkedin.com/jobs/view/technical-product-manager-at-bold-4467192424) | Noida, Uttar Pradesh, India | 2026-10-29 | linkedin |
 | P0 | 83 | ai_pm | Tata Communications | [Product Manager- Unified Communications](https://in.linkedin.com/jobs/view/product-manager-unified-communications-at-tata-communications-4484935060) | Mumbai, Maharashtra, India | 2026-10-29 | linkedin |
 | P0 | 83 | growth_strategy | Dodo Payments | [Founder's Office – Process & Execution](https://in.linkedin.com/jobs/view/founder-s-office-%E2%80%93-process-execution-at-dodo-payments-4484908860) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
+| P0 | 83 | growth_strategy | Everymedia Technologies Pvt. Ltd. | [Manager- Founder's office](https://in.linkedin.com/jobs/view/manager-founder-s-office-at-everymedia-technologies-pvt-ltd-4482595824) | Mumbai, Maharashtra, India | 2026-10-29 | linkedin |
 | P0 | 83 | growth_strategy | Houseeazy | [Founders Office Associate](https://in.linkedin.com/jobs/view/founders-office-associate-at-houseeazy-4482664956) | Pune, Maharashtra, India | 2026-10-28 | getro |
 | P0 | 83 | ai_pm | Park+ | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-park%2B-4473723466) | Gurugram, Haryana, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | Avam | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-avam-4482555185) | Delhi, Delhi, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | IDFC FIRST Bank | [Product Manager - Savings](https://in.linkedin.com/jobs/view/product-manager-savings-at-idfc-first-bank-4475434588) | Mumbai, Maharashtra, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | Smart Food Safe | [B2B SaaS Product Manager](https://in.linkedin.com/jobs/view/b2b-saas-product-manager-at-smart-food-safe-4482278523) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | ShareChat | [Associate Product Manager](https://in.linkedin.com/jobs/view/associate-product-manager-at-sharechat-4484432283) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
-| P0 | 83 | ai_pm | Wabtec Corporation | [Product Manager -   Power & Industrial Products](https://in.linkedin.com/jobs/view/product-manager-power-industrial-products-at-wabtec-corporation-4484407889) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | Northern Trust | [Associate Product Manager](https://in.linkedin.com/jobs/view/associate-product-manager-at-northern-trust-4473662052) | Pune Division, Maharashtra, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | Neo | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-neo-4483836837) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P0 | 83 | ai_pm | Google | [Product Manager, Google Play App Safety Platform](https://in.linkedin.com/jobs/view/product-manager-google-play-app-safety-platform-at-google-4474949718) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
@@ -68,7 +72,6 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P0 | 83 | ai_pm | Copeland | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-copeland-4436615040) | Bengaluru East, Karnataka, India | 2026-10-27 | linkedin |
 | P0 | 83 | ai_pm | Umanist NA | [Associate Product Manager – B2B SaaS / AI & Automation](https://in.linkedin.com/jobs/view/associate-product-manager-%E2%80%93-b2b-saas-ai-automation-at-umanist-na-4483654171) | Gurugram, Haryana, India | 2026-10-27 | linkedin |
 | P0 | 83 | ai_pm | iRage | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-irage-4483613380) | Mumbai, Maharashtra, India | 2026-10-27 | linkedin |
-| P0 | 83 | ai_pm | Cvent | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-cvent-4483621058) | Gurugram, Haryana, India | 2026-10-27 | linkedin |
 | P0 | 83 | ai_pm | Revantage, A Blackstone Portfolio Company | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-revantage-a-blackstone-portfolio-company-4467718243) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P0 | 83 | ai_pm | Allstate India | [Digital Product Manager Expert - Finance Technology](https://in.linkedin.com/jobs/view/digital-product-manager-expert-finance-technology-at-allstate-india-4483639128) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P0 | 83 | growth_strategy | Pocketful | [CEO’s Office – Strategy & Business Operations](https://in.linkedin.com/jobs/view/ceo%E2%80%99s-office-%E2%80%93-strategy-business-operations-at-pocketful-4483677936) | New Delhi, Delhi, India | 2026-10-27 | linkedin |
@@ -84,7 +87,6 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P0 | 82 | ai_pm | Wing Assistant | [Product Manager – AI](https://jobs.lever.co/getwingapp/9d79c468-5413-4451-8020-8531588f29a1) | India | 2026-10-17 | remoterocketship |
 | P0 | 82 | ai_pm | Product Space | [Product Manager](https://unstop.com/jobs/product-manager-product-space-1771429) | Bangalore | 2026-10-17 | unstop |
 | P0 | 82 | ai_pm | MyNaksh, | [Associate Product Manager](https://jobs.weekday.works/mynaksh%2C-associate-product-manager) | Bengaluru, Karnataka | 2026-10-16 | weekday |
-| P0 | 80 | ai_pm | CertifyOS | [Senior Product Manager, Forward Deployed](https://jobs.ashbyhq.com/certifyos/a359c3ca-2937-427c-b9a3-f083c3bb04e6) | India | 2026-10-29 | remoterocketship |
 | P0 | 80 | ai_pm | Jigsaw | [Product Manager](https://jobs.weekday.works/jigsaw-product-manager-f3bn) | Gurgaon, New Delhi, Delhi | 2026-10-28 | weekday |
 | P0 | 80 | ai_pm | First Advantage | [Program Manager](https://firstadvantage.wd5.myworkdayjobs.com/firstadvantage/job/in_bangalore_virtual/program-manager_r10430) | India | 2026-10-26 | remoterocketship |
 | P0 | 80 | ai_pm | GitLab Inc. | [Technical Program Manager](https://unstop.com/jobs/technical-program-manager-gitlab-inc-1771777) | Remote, India | 2026-10-22 | unstop |
@@ -112,11 +114,13 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 78 | ai_pm | AEREO | [Intern- Product Management (UAS) (QC08743)](https://hire.aereonauts.aereo.io/company_career/xNRMATxFoH6_RWOsQJRBAQN1bG-ENjEK-CutdjJ1IYo=) | Bengaluru, Karnataka, India | 2026-10-29 | getro |
 | P1 | 78 | ai_pm | ServiceChannel | [Technical Product Owner](https://fortive.eightfold.ai/careers/job/893398398063) | Bengaluru, Karnataka, India | 2026-10-29 | getro |
 | P1 | 78 | growth_strategy | HighLevel | [Sr. Product Analyst – Lead Generation](https://jobs.lever.co/gohighlevel/1a1bbff3-3cbd-4e9d-9c5d-8fce01be5e3d) | India | 2026-10-29 | lever |
+| P1 | 78 | growth_strategy | YourDOST | [Product Analyst](https://in.linkedin.com/jobs/view/product-analyst-at-yourdost-4484902545) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 78 | ai_pm | TIAA | [Associate Product Owner](https://in.linkedin.com/jobs/view/associate-product-owner-at-tiaa-4475901139) | Pune Division, Maharashtra, India | 2026-10-29 | linkedin |
 | P1 | 78 | ai_pm | Infineon Technologies | [Product Owner Digital Product Experience](https://in.linkedin.com/jobs/view/product-owner-digital-product-experience-at-infineon-technologies-4462814845) | Bengaluru East, Karnataka, India | 2026-10-29 | linkedin |
+| P1 | 78 | growth_strategy | Vedantu | [Growth Manager](https://in.linkedin.com/jobs/view/growth-manager-at-vedantu-4483005409) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 78 | growth_strategy | Sprinto | [Organic Growth Manager](https://in.linkedin.com/jobs/view/organic-growth-manager-at-sprinto-4475981282) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 78 | growth_strategy | Happy Nature | [Growth Marketeer – Performance Marketing & E-commerce Manager](https://in.linkedin.com/jobs/view/growth-marketeer-%E2%80%93-performance-marketing-e-commerce-manager-at-happy-nature-4484513541) | Gurgaon, Haryana, India | 2026-10-29 | linkedin |
-| P1 | 78 | growth_strategy | Haleon | [Product Analyst - Commercial Excellence](https://in.linkedin.com/jobs/view/product-analyst-commercial-excellence-at-haleon-4475104183) | Greater Bengaluru Area | 2026-10-28 | linkedin |
+| P1 | 78 | growth_strategy | TheraYog | [Digital Marketing & Growth Managers](https://in.linkedin.com/jobs/view/digital-marketing-growth-managers-at-therayog-4482588735) | Noida, Uttar Pradesh, India | 2026-10-29 | linkedin |
 | P1 | 78 | ai_pm | Johnson & Johnson | [ServiceNow Solutions Technical Product Owner](https://in.linkedin.com/jobs/view/servicenow-solutions-technical-product-owner-at-johnson-johnson-4484442876) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 78 | ai_pm | Insight | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-insight-4484455094) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 78 | ai_pm | Synechron | [Product Owner – Agile Delivery, Product Vision & Cross-Functional Stakeholder Management](https://in.linkedin.com/jobs/view/product-owner-%E2%80%93-agile-delivery-product-vision-cross-functional-stakeholder-management-at-synechron-4476556710) | Chennai, Tamil Nadu, India | 2026-10-28 | linkedin |
@@ -125,12 +129,12 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 78 | ai_pm | Infineon Technologies | [Product Owner – Web Application Development](https://in.linkedin.com/jobs/view/product-owner-%E2%80%93-web-application-development-at-infineon-technologies-4484050176) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 78 | ai_pm | HealthEdge | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-healthedge-4483605516) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 78 | growth_strategy | Infosys | [Business Analyst - Banking Domain-BNPR-Q3](https://in.linkedin.com/jobs/view/business-analyst-banking-domain-bnpr-q3-at-infosys-4474274669) | Bengaluru East, Karnataka, India | 2026-10-27 | linkedin |
-| P1 | 78 | ai_pm | ABB | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-abb-4479501550) | Bengaluru East, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 78 | ai_pm | PFI Innovation Centre India | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-pfi-innovation-centre-india-4484237981) | Gurgaon, Haryana, India | 2026-10-27 | linkedin |
 | P1 | 78 | ai_pm | Accelya | [Specialist - Product Owner](https://in.linkedin.com/jobs/view/specialist-product-owner-at-accelya-4481879002) | Pune District, Maharashtra, India | 2026-10-27 | linkedin |
 | P1 | 78 | growth_strategy | Bambinos.live - Future School | [Growth Manager](https://in.linkedin.com/jobs/view/growth-manager-at-bambinos-live-future-school-4483628069) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 78 | ai_pm | Spotnana Technology | [Product Manager II](https://www.spotnana.com/careers/careers-listing/careers-listing-detail?gem_jid=am9icG9zdDouDaZc1ZjnZW6YBdzQ0FAO) | Bengaluru, Karnataka, India | 2026-10-26 | getro |
 | P1 | 78 | ai_pm | RecRoots | [Product Manager](https://jobs.weekday.works/recroots-product-manager-wdya) | Bangalore | 2026-10-26 | weekday |
+| P1 | 78 | ai_pm | Cvent | [Product Manager II](https://in.linkedin.com/jobs/view/product-manager-ii-at-cvent-4440660649) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 78 | ai_pm | Google | [Product Manager, Google Cloud Business Platform](https://in.linkedin.com/jobs/view/product-manager-google-cloud-business-platform-at-google-4482933642) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 78 | ai_pm | Reo.Dev | [Product Manager -  Generalist](https://in.linkedin.com/jobs/view/product-manager-generalist-at-reo-dev-4483544404) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 78 | ai_pm | ClickPost | [Product Manager - AI](https://in.linkedin.com/jobs/view/product-manager-ai-at-clickpost-4481452537) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
@@ -142,11 +146,9 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 78 | ai_pm | Delta Technology Hub | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-delta-technology-hub-4482933913) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 78 | growth_strategy | EngageReel | [Growth Product Manager (Founding Team)](https://in.linkedin.com/jobs/view/growth-product-manager-founding-team-at-engagereel-4483551679) | Gurugram, Haryana, India | 2026-10-26 | linkedin |
 | P1 | 78 | ai_pm | Infosys | [Product Manager-AI Platform](https://in.linkedin.com/jobs/view/product-manager-ai-platform-at-infosys-4483211875) | Bengaluru East, Karnataka, India | 2026-10-26 | linkedin |
-| P1 | 78 | ai_pm | LearnRush LMS | [Product Manager – AI & Learning Technology](https://in.linkedin.com/jobs/view/product-manager-%E2%80%93-ai-learning-technology-at-learnrush-lms-4482957247) | Gurugram, Haryana, India | 2026-10-26 | linkedin |
 | P1 | 78 | growth_strategy | indē wild | [Junior Associate Founder's Office](https://in.linkedin.com/jobs/view/junior-associate-founder-s-office-at-ind%C4%93-wild-4482932518) | Mumbai, Maharashtra, India | 2026-10-26 | linkedin |
 | P1 | 78 | ai_pm | Ema | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-ema-4454658110) | Bengaluru, Karnataka, India | 2026-10-25 | linkedin |
 | P1 | 78 | growth_strategy | Rupeek | [Product Manager - Consumer Growth](https://in.linkedin.com/jobs/view/product-manager-consumer-growth-at-rupeek-4481363207) | Bengaluru, Karnataka, India | 2026-10-24 | getro |
-| P1 | 78 | ai_pm | India's Future Investors - Money Entertainment Reality Show | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-india-s-future-investors-money-entertainment-reality-show-4482615810) | India | 2026-10-24 | linkedin |
 | P1 | 78 | growth_strategy | ZorSpeaker | [Founder's Office Associate](https://in.linkedin.com/jobs/view/founder-s-office-associate-at-zorspeaker-4482370684) | Jaipur, Rajasthan, India | 2026-10-24 | linkedin |
 | P1 | 78 | growth_strategy | ElevenLabs | [GTM Enablement - Partner Program](https://jobs.ashbyhq.com/elevenlabs/820e5023-c637-4b36-91a9-f732f235998e) | Remote | 2026-10-23 | ashby |
 | P1 | 78 | growth_strategy | Dodo Payments | [Founder's Office (Deal Desk)](https://jobs.pyjamahr.com/dodo-payments/founder-s-office-deal-desk) | Bengaluru, Karnataka, India | 2026-10-23 | getro |
@@ -154,15 +156,13 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 78 | ai_pm | nearshorefriends GmbH | [German Speaking Product Owner](https://jobgether.com/offer/6adac74322c2644c03e07617-german-speaking-product-owner) | Anywhere | 2026-10-23 | jobgether |
 | P1 | 78 | ai_pm | Digitale Leute School | [Junior Product Owner (m/w/d)](https://jobgether.com/offer/6adac71822c2644c03e06a81-junior-product-owner-m-w-d) | Anywhere | 2026-10-23 | jobgether |
 | P1 | 78 | growth_strategy | Digistore24 USA | [Growth Key Account Manager - 100% Remote (m/f/d)](https://jobgether.com/offer/6adac70c22c2644c03e066f1-growth-key-account-manager---100-remote-m-f-d) | Anywhere | 2026-10-23 | jobgether |
-| P1 | 78 | ai_pm | Warner Music Group | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-warner-music-group-4445278054) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
+| P1 | 78 | ai_pm | smallcase | [Product Manager - AI Pod](https://in.linkedin.com/jobs/view/product-manager-ai-pod-at-smallcase-4482859539) | Greater Bengaluru Area | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | InCred Financial Services | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-incred-financial-services-4481660379) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | Amazon | [Product Manager-Tech III, Finance Automation](https://in.linkedin.com/jobs/view/product-manager-tech-iii-finance-automation-at-amazon-4455921401) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | McAfee | [Product Manager - Payments](https://in.linkedin.com/jobs/view/product-manager-payments-at-mcafee-4464508899) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | SAP | [Product Manager Application AI](https://in.linkedin.com/jobs/view/product-manager-application-ai-at-sap-4481914112) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 78 | ai_pm | smallcase | [Product Manager - AI Pod](https://in.linkedin.com/jobs/view/product-manager-ai-pod-at-smallcase-4482859539) | Greater Bengaluru Area | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | Strategy | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-strategy-4470141377) | Chennai, Tamil Nadu, India | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | Wipro | [Associate Product Manager - AI-Powered Core Banking Bolt-ons & Adjacencies](https://in.linkedin.com/jobs/view/associate-product-manager-ai-powered-core-banking-bolt-ons-adjacencies-at-wipro-4482871664) | Chennai, Tamil Nadu, India | 2026-10-23 | linkedin |
-| P1 | 78 | growth_strategy | WD | [India Site [  Strategy & Operations Program Manager  ]  MBA, 8+ Years Experience](https://in.linkedin.com/jobs/view/india-site-strategy-operations-program-manager-mba-8%2B-years-experience-at-wd-4480678257) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 78 | ai_pm | HighLevel | [Sr. Product Manager - Reputation Management](https://jobs.lever.co/gohighlevel/de899a79-e7e0-4650-8356-08a5d95b4198) | India | 2026-10-22 | lever |
 | P1 | 78 | ai_pm | Anchor Bridge Consulting | [Product Manager](https://jobgether.com/offer/6ad76ceca8fae18ba2d226a2-product-manager) | Anywhere, South America, Latin America, Peru | 2026-10-20 | jobgether |
 | P1 | 78 | fractional | HeyMilo AI | [Product Manager – Voice and Video Contributor](https://jobs.ashbyhq.com/heymilo/fb657b28-ec46-439f-a2c5-bb2f7f948525) | Worldwide | 2026-10-17 | remoterocketship |
@@ -198,7 +198,6 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 75 | growth_strategy | podcasthub  | [Podcast Distribution & Growth Manager](https://weworkremotely.com/remote-jobs/podcasthub-podcast-distribution-growth-manager) | Anywhere in the World | 2026-10-19 | weworkremotely |
 | P1 | 75 | growth_strategy | Paytm | [Business Operations - General Manager - CST Travel](https://jobs.lever.co/paytm/cd3a4d7e-931d-4b02-86e0-3b6678cfb37e) | Bengaluru, Karnataka | 2026-10-19 | lever |
 | P1 | 75 | ai_pm | Coralogix | [Solutions Engineer](https://www.comeet.com/jobs/coralogix/06.004/solutions-engineer/8B.942) | India | 2026-10-19 | remoterocketship |
-| P1 | 75 | ai_pm | GP Strategies Corporation | [Learning Program Manager](https://eetz.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/2600689) | India | 2026-10-15 | remoterocketship |
 | P1 | 75 | ai_pm | Bharat Intelligence | [Product Manager](https://cutshort.io/job/Product-Manager-Bengaluru-Bangalore-Mumbai-Bharat-Intelligence-kRcdwPng) | Bengaluru (Bangalore) / Mumbai | ? | cutshort |
 | P1 | 75 | ai_pm | Bharat Intelligence | [Associate Product Manager](https://cutshort.io/job/Associate-Product-Manager-Bengaluru-Bangalore-Bharat-Intelligence-YjcOBQWB) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 75 | ai_pm | Staffnixcom | [Associate Product Manager Top 7 IIT only](https://cutshort.io/job/Associate-Product-Manager-Top-7-IIT-only-Bengaluru-Bangalore-Staffnixcom-SFr6m1dh) | Bengaluru (Bangalore) | ? | cutshort |
@@ -264,10 +263,11 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 74 | ai_pm | TalentXO | [Forward Deployed Product Manager](https://cutshort.io/job/Forward-Deployed-Product-Manager-Gurugram-Bengaluru-Bangalore-TalentXO-Iex5kp8m) | Gurugram / Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 74 | ai_pm | ShortLoop | [Forward Deployed Engineer](https://www.instahyre.com/job-443498-forward-deployed-engineer-at-shortloop-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 74 | growth_strategy | Digit Insurance | [AI Business Analyst](https://www.instahyre.com/job-446464-ai-business-analyst-at-digit-insurance-bangalore/) | Bangalore | ? | instahyre |
-| P1 | 73 | ai_pm | Swiftkey | [Senior Product Manager](https://apply.careers.microsoft.com/careers/job/1970393557040071) | Hyderabad, Telangana, India | 2026-10-29 | getro |
+| P1 | 73 | ai_pm | Venmo | [Lead Product Manager](https://paypal.eightfold.ai/careers/job/274922819061) | Bengaluru, Karnataka, India | 2026-10-29 | getro |
 | P1 | 73 | ai_pm | Sabre | [Senior Product Manager - Digital Experience](https://in.linkedin.com/jobs/view/senior-product-manager-digital-experience-at-sabre-4457901651) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 73 | ai_pm | U.S. Bank | [Senior Digital Product Manager](https://in.linkedin.com/jobs/view/senior-digital-product-manager-at-u-s-bank-4484983589) | Chennai, Tamil Nadu, India | 2026-10-29 | linkedin |
 | P1 | 73 | ai_pm | Nielsen | [Senior Product Manager II](https://in.linkedin.com/jobs/view/senior-product-manager-ii-at-nielsen-4457761288) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
+| P1 | 73 | ai_pm | Arctic Wolf | [Senior Product Manager - Managed Security Services](https://in.linkedin.com/jobs/view/senior-product-manager-managed-security-services-at-arctic-wolf-4484138831) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 73 | ai_pm | Amazon | [Sr Product Manager, Listings, EM SX](https://in.linkedin.com/jobs/view/sr-product-manager-listings-em-sx-at-amazon-4484450779) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 73 | ai_pm | Neo | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-neo-4483848224) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 73 | ai_pm | Expedia Group | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-expedia-group-4456021993) | Gurgaon, Haryana, India | 2026-10-28 | linkedin |
@@ -277,17 +277,14 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 73 | ai_pm | GSK | [Senior Product Manager - Engineering, EHS & Sustainability](https://in.linkedin.com/jobs/view/senior-product-manager-engineering-ehs-sustainability-at-gsk-4482557820) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 73 | ai_pm | Microsoft | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-microsoft-4476724182) | Hyderabad, Telangana, India | 2026-10-28 | linkedin |
 | P1 | 73 | ai_pm | Salesforce | [Product Manager Senior Specialist](https://in.linkedin.com/jobs/view/product-manager-senior-specialist-at-salesforce-4484428812) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
-| P1 | 73 | ai_pm | Wells Fargo | [Lead Digital Product Manager - Agentic Operations](https://in.linkedin.com/jobs/view/lead-digital-product-manager-agentic-operations-at-wells-fargo-4484752585) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
 | P1 | 73 | growth_strategy | thinkbridge | [Strategy & Operations Lead](https://in.linkedin.com/jobs/view/strategy-operations-lead-at-thinkbridge-4484425175) | India | 2026-10-28 | linkedin |
 | P1 | 73 | ai_pm | Google | [Senior Product Manager, Geo Local Data Next Billion Users](https://in.linkedin.com/jobs/view/senior-product-manager-geo-local-data-next-billion-users-at-google-4474612649) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
-| P1 | 73 | ai_pm | Allegis Global Solutions | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-allegis-global-solutions-4483622967) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 73 | ai_pm | Ubiqedge | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-ubiqedge-4483619462) | Mumbai, Maharashtra, India | 2026-10-27 | linkedin |
 | P1 | 73 | ai_pm | Wrike | [Senior Product Manager (Platform & AI)](https://in.linkedin.com/jobs/view/senior-product-manager-platform-ai-at-wrike-4476191934) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
-| P1 | 73 | ai_pm | Optum India | [Lead Technical Product Manager](https://in.linkedin.com/jobs/view/lead-technical-product-manager-at-optum-india-4484280369) | Hyderabad, Telangana, India | 2026-10-27 | linkedin |
 | P1 | 73 | ai_pm | Navi | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-navi-4483619429) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
+| P1 | 73 | ai_pm | Optum India | [Lead Technical Product Manager](https://in.linkedin.com/jobs/view/lead-technical-product-manager-at-optum-india-4484280369) | Hyderabad, Telangana, India | 2026-10-27 | linkedin |
 | P1 | 73 | ai_pm | FRND | [Lead Product Manager](https://in.linkedin.com/jobs/view/lead-product-manager-at-frnd-4484049525) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 73 | growth_strategy | SiteRecon | [Founder's Office - Operations Lead](https://in.linkedin.com/jobs/view/founder-s-office-operations-lead-at-siterecon-4481861919) | Noida, Uttar Pradesh, India | 2026-10-27 | linkedin |
-| P1 | 73 | ai_pm | Bridgestone Americas | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-bridgestone-americas-4464737162) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 73 | ai_pm | Kroll | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-kroll-4417629633) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 73 | growth_strategy | Infosys | [Business Analyst - Wealth Management-RMAI](https://in.linkedin.com/jobs/view/business-analyst-wealth-management-rmai-at-infosys-4474288126) | Bengaluru East, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 73 | ai_pm | Visteon Corporation | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-visteon-corporation-4482949258) | Chennai, Tamil Nadu, India | 2026-10-26 | linkedin |
@@ -295,25 +292,18 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 73 | growth_strategy | Amazon | [SMB Growth Manager - Amazon Shipping, IN Amazon Shipping](https://in.linkedin.com/jobs/view/smb-growth-manager-amazon-shipping-in-amazon-shipping-at-amazon-4475567672) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 73 | growth_strategy | Trail | [Enterprise GTM Manager](https://in.linkedin.com/jobs/view/enterprise-gtm-manager-at-trail-4479505261) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 73 | ai_pm | Recro | [Program Manager](https://in.linkedin.com/jobs/view/program-manager-at-recro-4482925605) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
-| P1 | 73 | growth_strategy | Tricog Health | [Operations Manager - Growth Organisation](https://in.linkedin.com/jobs/view/operations-manager-growth-organisation-at-tricog-health-4481428136) | Bengaluru, Karnataka, India | 2026-10-26 | linkedin |
 | P1 | 73 | growth_strategy | Techdome | [Founder’s Office: Strategy & Execution Associate](https://in.linkedin.com/jobs/view/founder%E2%80%99s-office-strategy-execution-associate-at-techdome-4482986611) | Hyderabad, Telangana, India | 2026-10-26 | linkedin |
 | P1 | 73 | ai_pm | Talent Toppers | [Program Manager- CEO's Office](https://in.linkedin.com/jobs/view/program-manager-ceo-s-office-at-talent-toppers-4483556438) | Gurugram, Haryana, India | 2026-10-26 | linkedin |
 | P1 | 73 | ai_pm | Caterpillar Inc. | [Digital Product Owner](https://in.linkedin.com/jobs/view/digital-product-owner-at-caterpillar-inc-4482440824) | Chennai, Tamil Nadu, India | 2026-10-25 | linkedin |
 | P1 | 73 | ai_pm | Capgemini | [FBS - Product Owner IV- Data Delivery](https://in.linkedin.com/jobs/view/fbs-product-owner-iv-data-delivery-at-capgemini-4471750120) | Hyderabad, Telangana, India | 2026-10-25 | linkedin |
 | P1 | 73 | ai_pm | Last Working Day | [ITSM/ ESM Product Owner](https://in.linkedin.com/jobs/view/itsm-esm-product-owner-at-last-working-day-4483389170) | Mumbai, Maharashtra, India | 2026-10-25 | linkedin |
 | P1 | 73 | ai_pm | Experity | [Product Owner II](https://in.linkedin.com/jobs/view/product-owner-ii-at-experity-4430700905) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
-| P1 | 73 | ai_pm | Baker Tilly US | [Associate Manager - Product Management](https://in.linkedin.com/jobs/view/associate-manager-product-management-at-baker-tilly-us-4453453760) | Bengaluru East, Karnataka, India | 2026-10-24 | linkedin |
 | P1 | 73 | ai_pm | Magna International | [Technical Product Owner, Smart Factory Solutions](https://in.linkedin.com/jobs/view/technical-product-owner-smart-factory-solutions-at-magna-international-4370955675) | Bengaluru, Karnataka, India | 2026-10-24 | linkedin |
 | P1 | 73 | ai_pm | Pocket FM | [Associate Program Manager](https://in.linkedin.com/jobs/view/associate-program-manager-at-pocket-fm-4480610869) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 73 | ai_pm | Volvo Group | [Digital Product Owner](https://in.linkedin.com/jobs/view/digital-product-owner-at-volvo-group-4482852387) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 73 | ai_pm | Amazon | [Program Manager, SWA - Claims](https://in.linkedin.com/jobs/view/program-manager-swa-claims-at-amazon-4455799209) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | Broadridge India | [Product Owner - Tax Reporting](https://in.linkedin.com/jobs/view/product-owner-tax-reporting-at-broadridge-india-4483112682) | Greater Bengaluru Area | 2026-10-23 | linkedin |
+| P1 | 73 | ai_pm | Revantage, A Blackstone Portfolio Company | [Product Owner, Workday, Talent & Performance](https://in.linkedin.com/jobs/view/product-owner-workday-talent-performance-at-revantage-a-blackstone-portfolio-company-4474347934) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | Revantage, A Blackstone Portfolio Company | [Product Owner, Workday, US Payroll & Benefits](https://in.linkedin.com/jobs/view/product-owner-workday-us-payroll-benefits-at-revantage-a-blackstone-portfolio-company-4474364106) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 73 | ai_pm | TeamViewer | [Product Owner](https://in.linkedin.com/jobs/view/product-owner-at-teamviewer-4476171396) | Noida, Uttar Pradesh, India | 2026-10-23 | linkedin |
-| P1 | 73 | growth_strategy | Vedantu | [YouTube Growth & Category Manager](https://in.linkedin.com/jobs/view/youtube-growth-category-manager-at-vedantu-4481346772) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 73 | ai_pm | Keka HR | [Associate Product Manager](https://in.linkedin.com/jobs/view/associate-product-manager-at-keka-hr-4480093316) | Hyderabad, Telangana, India | 2026-10-22 | linkedin |
-| P1 | 73 | growth_strategy | Cube | [Founder's Office Associate](https://in.linkedin.com/jobs/view/founder-s-office-associate-at-cube-4481605119) | Bengaluru, Karnataka, India | 2026-10-22 | linkedin |
-| P1 | 73 | growth_strategy | Surely Placed | [Founders Office](https://in.linkedin.com/jobs/view/founders-office-at-surely-placed-4481632244) | Gandhinagar, Gujarat, India | 2026-10-22 | linkedin |
 | P1 | 73 | ai_pm | Namma Yatri | [Product Manager](https://in.linkedin.com/jobs/view/product-manager-at-namma-yatri-4479981010) | Bangalore Urban, Karnataka, India | 2026-10-21 | getro |
 | P1 | 73 | ai_pm | Social Discovery Group | [Product Owner (Matchmaking)](https://jobgether.com/offer/6ad67027a8fae18ba2cda973-product-owner-matchmaking) | Anywhere | 2026-10-19 | jobgether |
 | P1 | 73 | ai_pm | Lokal | [Product Manager II](https://apply.workable.com/lokal-app/j/5EA45F8D16) | Bengaluru, Karnataka, India | 2026-10-16 | getro |
@@ -333,7 +323,6 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 70 | ai_pm | HighLevel | [Senior Product Manager – Reputation Management](https://jobs.lever.co/gohighlevel/de899a79-e7e0-4650-8356-08a5d95b4198) | India | 2026-10-22 | remoterocketship |
 | P1 | 70 | ai_pm | First American (India) | [Senior Product Manager](https://firstam.wd1.myworkdayjobs.com/faicareers/job/ind-karnataka-bangalore/senior-product-manager_r059212) | India | 2026-10-20 | remoterocketship |
 | P1 | 70 | ai_pm | First American | [Senior Product Manager](https://firstam.wd1.myworkdayjobs.com/faicareers/job/IND-Karnataka-Bangalore/Senior-Product-Manager_R059212) | IND, Karnataka, Bangalore | 2026-10-20 | workday |
-| P1 | 70 | growth_strategy | YourDOST | [Product Analyst](https://cutshort.io/job/Product-Analyst-HSR-Layout-Bangalore-YourDOST-MXpt7Uij) | HSR Layout, Bangalore | ? | cutshort |
 | P1 | 70 | ai_pm | ZenteiQ.ai | [Product Owner](https://www.instahyre.com/job-447327-product-owner-at-zenteiq-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 70 | growth_strategy | AppsForBharat | [Retention Manager (Product Growth)](https://www.instahyre.com/job-441819-retention-manager-product-growth-at-appsforbharat-bangalore/) | Bangalore | ? | instahyre |
 | P1 | 70 | ai_pm | Tekion | [Manager - Product Management](https://www.instahyre.com/job-446023-manager-product-management-at-tekion-bangalore/) | Bangalore | ? | instahyre |
@@ -356,8 +345,8 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 68 | growth_strategy | FemiSafe | [D2C Growth Lead](https://in.linkedin.com/jobs/view/d2c-growth-lead-at-femisafe-4484933298) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 68 | growth_strategy | McKinsey & Company | [Senior Product Analyst - Periscope](https://in.linkedin.com/jobs/view/senior-product-analyst-periscope-at-mckinsey-company-4476784681) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 68 | ai_pm | Arcesium | [Product Lead - Opterra - Financial Reporting](https://in.linkedin.com/jobs/view/product-lead-opterra-financial-reporting-at-arcesium-4465564231) | Hyderabad, Telangana, India | 2026-10-29 | linkedin |
+| P1 | 68 | growth_strategy | Biocon Biologics | [Sr. Specialist-Operations-Strategy & Program](https://in.linkedin.com/jobs/view/sr-specialist-operations-strategy-program-at-biocon-biologics-4482595438) | Bengaluru, Karnataka, India | 2026-10-29 | linkedin |
 | P1 | 68 | ai_pm | PhonePe | [Product Lead](https://in.linkedin.com/jobs/view/product-lead-at-phonepe-4465547127) | Bengaluru, Karnataka, India | 2026-10-28 | linkedin |
-| P1 | 68 | ai_pm | airtel | [Product Lead](https://in.linkedin.com/jobs/view/product-lead-at-airtel-4482511320) | Gurgaon, Haryana, India | 2026-10-28 | linkedin |
 | P1 | 68 | ai_pm | GSK | [Senior Product Owner - Veeva Vault](https://in.linkedin.com/jobs/view/senior-product-owner-veeva-vault-at-gsk-4482240931) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
 | P1 | 68 | ai_pm | ANSR | [Sr Product Owner, Technology Products [T500-30448]](https://in.linkedin.com/jobs/view/sr-product-owner-technology-products-t500-30448-at-ansr-4484072396) | Hyderabad, Telangana, India | 2026-10-27 | linkedin |
 | P1 | 68 | ai_pm | ALLEN Digital | [Product Lead](https://in.linkedin.com/jobs/view/product-lead-at-allen-digital-4474676472) | Bengaluru, Karnataka, India | 2026-10-27 | linkedin |
@@ -373,15 +362,16 @@ Scanned **15,283** live postings from **19** sources → **487** passed every ga
 | P1 | 68 | ai_pm | Amazon | [Senior Product Manager, Amazon Now](https://in.linkedin.com/jobs/view/senior-product-manager-amazon-now-at-amazon-4455913458) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | Fam | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-fam-4482821733) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | Pidge | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-pidge-4482833834) | Gurugram, Haryana, India | 2026-10-23 | linkedin |
+| P1 | 68 | ai_pm | GeneralMind | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-generalmind-4480657069) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | Optum India | [Senior Technical Product Manager - HealthTech Projects Experience](https://in.linkedin.com/jobs/view/senior-technical-product-manager-healthtech-projects-experience-at-optum-india-4483150693) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 68 | ai_pm | Amplify Health | [Senior Associate, Product Manager-Clinical Intelligence](https://in.linkedin.com/jobs/view/senior-associate-product-manager-clinical-intelligence-at-amplify-health-4481681693) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | Kwalee | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-kwalee-4472585580) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | Amazon | [Senior Product Manager - Tech](https://in.linkedin.com/jobs/view/senior-product-manager-tech-at-amazon-4455792646) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
-| P1 | 68 | ai_pm | GeneralMind | [Senior Product Manager](https://in.linkedin.com/jobs/view/senior-product-manager-at-generalmind-4480657069) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
+| P1 | 68 | ai_pm | Amplify Health | [Senior Associate, Product Manager-Clinical Intelligence](https://in.linkedin.com/jobs/view/senior-associate-product-manager-clinical-intelligence-at-amplify-health-4481681693) | Bengaluru, Karnataka, India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | Providence India | [Lead Product Manager](https://in.linkedin.com/jobs/view/lead-product-manager-at-providence-india-4474361829) | Hyderabad, Telangana, India | 2026-10-23 | linkedin |
 | P1 | 68 | growth_strategy | Shooting Stars Foundation | [Founders Office Senior Associate](https://in.linkedin.com/jobs/view/founders-office-senior-associate-at-shooting-stars-foundation-4481953833) | India | 2026-10-23 | linkedin |
 | P1 | 68 | ai_pm | KIMARU Talent | [Senior Product Manager](https://jobs.ashbyhq.com/kimarutalent/10d498c2-16e6-4398-9182-80d831fbd0db) | Worldwide | 2026-10-19 | remoterocketship |
 | P1 | 68 | growth_strategy | Padcare Labs | [Product Analyst (Process & Systems)](https://padcarelabs.zohorecruit.in/jobs/Careers/169282000002103110/Product-Analyst-Process-Systems-?source=CareerSite) | Pune, Maharashtra, India | 2026-10-17 | getro |
+| P1 | 68 | ai_pm | Chess.com | [Senior Product Manager, Gameplay](https://ats.rippling.com/chess/jobs/42a147ba-3fce-401a-8dca-7161dc2608dd) | Worldwide | 2026-10-16 | remoterocketship |
 | P1 | 68 | ai_pm | JK Technosoft Ltd | [Product Manager - AI/GenAI](https://cutshort.io/job/Product-Manager-AI-GenAI-Bengaluru-Bangalore-JK-Technosoft-Ltd-nt1hEXBD) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 68 | ai_pm | LeadSquared | [Senior Product Manager](https://cutshort.io/job/Senior-Product-Manager-Bengaluru-Bangalore-Right-Hire-B8SgxlJU) | Bengaluru (Bangalore) | ? | cutshort |
 | P1 | 68 | ai_pm | Staffnixcom | [Ex-Sprinklr Forward Deployed Product Manager | Product Manager |](https://cutshort.io/job/Ex-Sprinklr-Forward-Deployed-Product-Manager-Product-Manager-Gurugram-Bengaluru-Bangalore-Staffnixcom-fRggkQTG) | Gurugram / Bengaluru (Bangalore) | ? | cutshort |
@@ -436,30 +426,30 @@ P2 roles are in [`jobs.csv`](jobs.csv).
 
 | Source | Scanned | Kept |
 |---|---|---|
-| ats | 11,540 | 28 |
-| getro | 1,211 | 19 |
+| ats | 11,565 | 28 |
+| getro | 1,213 | 20 |
 | instahyre | 350 | 163 |
-| linkedin | 287 | 159 |
-| remoterocketship | 264 | 31 |
-| weworkremotely | 260 | 8 |
+| linkedin | 283 | 151 |
+| weworkremotely | 261 | 8 |
+| remoterocketship | 260 | 30 |
 | hn_whoishiring | 234 | 0 |
-| unstop | 214 | 11 |
-| jobicy | 210 | 0 |
+| jobicy | 223 | 0 |
+| unstop | 213 | 11 |
 | himalayas | 189 | 2 |
-| yc | 161 | 1 |
+| yc | 162 | 1 |
 | remoteok | 99 | 2 |
-| themuse | 71 | 0 |
-| cutshort | 50 | 38 |
+| themuse | 68 | 0 |
+| cutshort | 50 | 37 |
 | jobgether | 38 | 6 |
 | workingnomads | 38 | 0 |
 | weekday | 36 | 19 |
-| arbeitnow | 19 | 0 |
+| arbeitnow | 22 | 0 |
 | remotive | 12 | 0 |
 
 </details>
 
 <details><summary>1 source errors</summary>
 
-- consider: HTTPSConnectionPool(host='jobs.gv.com', port=443): Read timed out. (read timeout=30)
+- consider: HTTPSConnectionPool(host='jobs.felicis.com', port=443): Read timed out. (read timeout=30)
 
 </details>
