@@ -2,7 +2,6 @@
  "scanned": [
   "arbeitnow",
   "ats",
-  "consider",
   "cutshort",
   "getro",
   "himalayas",
@@ -21,6 +20,7 @@
   "yc"
  ],
  "failed": [
+  "consider",
   "themuse"
  ]
 }
